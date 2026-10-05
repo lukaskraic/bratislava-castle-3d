@@ -72,6 +72,8 @@ func _ready() -> void:
 		var i := args.find("--shots")
 		var dir := args[i + 1] if i + 1 < args.size() else "user://shots"
 		await _shots(dir)
+	elif "--sighttest" in args:
+		await _sighttest()
 	elif "--walktest" in args:
 		await _walktest()
 	get_tree().quit()
@@ -372,3 +374,17 @@ func _probe_shots() -> Dictionary:
 			var t: Array = d[pair[1]][1]
 			out[pair[0]] = [Vector3(e[0], e[1], e[2]), Vector3(t[0], t[1], t[2])]
 	return out
+
+
+## Teleport to every sight and check the player stays on the floor (no falling off edges).
+func _sighttest() -> void:
+	var ok := true
+	for i in main.SIGHTS.size():
+		main.goto_sight(i)
+		var y0: float = main.player.global_position.y
+		await _wait(3.0)
+		var dy: float = main.player.global_position.y - y0
+		var good: bool = absf(dy) < 1.0 or main.player.flying
+		ok = ok and good
+		print("SIGHT %-26s y %.2f -> %.2f %s" % [main.SIGHTS[i][0], y0, main.player.global_position.y, "OK" if good else "FELL"])
+	print("SIGHTTEST %s" % ("PASS" if ok else "FAIL"))

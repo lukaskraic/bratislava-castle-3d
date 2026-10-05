@@ -7,11 +7,11 @@ const COLLISION_KEYWORDS: PackedStringArray = [
 const HELP := "WASD move, Shift run, Space jump, F fly, Esc mouse, F1 quality, F2 time of day, 0-9 jump to sights"
 ## Points of interest (Blender coords: x east, y north, z up; eye, look-at) for keys 1-9.
 const SIGHTS := [
-	["Čestný dvor", Vector3(-14, -80, 2.2), Vector3(-6, -40, 10)],
+	["Čestný dvor", Vector3(-8, -62, 1.7), Vector3(-6, -38, 9)],
 	["Nádvorie a studňa", Vector3(-12, -15, 1.7), Vector3(19, -7, 2)],
 	["Rytierska sála", Vector3(-1.0, -32.5, 1.65), Vector3(22, -34.5, 2.6)],
 	["Hlavné schodisko", Vector3(-28.5, 14.7, 7.25), Vector3(-33.8, 15.6, 8.1)],
-	["Sála s freskou", Vector3(-1.0, -32.0, 7.3), Vector3(8, -33.5, 8.5)],
+	["Sála s freskou", Vector3(-3.5, -31.0, 7.3), Vector3(8, -33.5, 8.5)],
 	["Korunná veža – vyhliadka", Vector3(-43.2, -33.6, 24.9), Vector3(-43.2, -140, 0)],
 	["Suterén", Vector3(-12.5, -30.6, -2.95), Vector3(20, -33, -2.2)],
 	["Baroková záhrada", Vector3(28, 95, -2.4), Vector3(2, 10, 14)],
@@ -179,6 +179,30 @@ func _collect_model_lights(model: Node) -> void:
 			if m and m.emission_enabled and not emissive_mats.has(m):
 				emissive_mats.append(m)
 	print("Model lights: %d, emissive materials: %d" % [model_lights.size(), emissive_mats.size()])
+
+
+func goto_sight(i: int) -> void:
+	var s: Array = SIGHTS[i]
+	var b2g := func(v: Vector3) -> Vector3: return Vector3(v.x, v.z, -v.y)
+	var flying_sight: bool = s[0] == "Letecký pohľad"
+	player.set_flying(flying_sight)
+	var eye: Vector3 = b2g.call(s[1])
+	if not flying_sight:
+		eye = _ground_eye(eye)
+	player.place_eye(eye, b2g.call(s[2]))
+	sight_label = s[0]
+	for k3 in sight_labels.size():      # highlight the active sight
+		sight_labels[k3].add_theme_color_override("font_color", Color(0.98, 0.82, 0.45) if SIGHTS[k3][0] == s[0] else Color(0.86, 0.88, 0.9))
+	_toast(s[0])
+
+
+## Snap a teleport target to the walkable surface below it (eye height above the floor hit).
+func _ground_eye(eye: Vector3) -> Vector3:
+	var space := get_world_3d().direct_space_state
+	var q := PhysicsRayQueryParameters3D.create(eye + Vector3.UP * 1.0, eye + Vector3.DOWN * 12.0)
+	q.exclude = [player.get_rid()]
+	var hit := space.intersect_ray(q)
+	return (hit.position + Vector3.UP * 1.65) if hit else eye
 
 
 func _ripple_tex(seed_: int) -> NoiseTexture2D:
@@ -533,14 +557,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		_apply_time()
 		_toast("Denná doba: " + TIME_NAMES[TIMES[time_index].name])
 	elif event is InputEventKey and event.pressed and not event.echo and event.keycode >= KEY_0 and event.keycode <= KEY_9:
-		var s: Array = SIGHTS[9 if event.keycode == KEY_0 else event.keycode - KEY_1]
-		var b2g := func(v: Vector3) -> Vector3: return Vector3(v.x, v.z, -v.y)
-		player.set_flying(s[0] == "Letecký pohľad")
-		player.place_eye(b2g.call(s[1]), b2g.call(s[2]))
-		sight_label = s[0]
-		for k3 in sight_labels.size():      # highlight the active sight
-			sight_labels[k3].add_theme_color_override("font_color", Color(0.98, 0.82, 0.45) if SIGHTS[k3][0] == s[0] else Color(0.86, 0.88, 0.9))
-		_toast(s[0])
+		goto_sight(9 if event.keycode == KEY_0 else event.keycode - KEY_1)
 
 
 func _process(delta: float) -> void:
