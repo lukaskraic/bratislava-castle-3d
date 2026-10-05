@@ -55,6 +55,7 @@ const TIME_NAMES := {"morning": "ráno", "noon": "poludnie", "afternoon": "popol
 var quality := 2
 var forward_plus := true
 var detail_meshes: Array[MeshInstance3D] = []
+var sight_labels: Array[Label] = []
 var night_lights: Array[OmniLight3D] = []
 ## Interior lights from Blender (chandeliers, corridor lamps): off by day, dim warm at night.
 var model_lights: Array[Light3D] = []
@@ -435,13 +436,15 @@ func _setup_hud() -> void:
 	sights_panel.grow_horizontal = Control.GROW_DIRECTION_BEGIN
 	sights_panel.offset_right = -18
 	sights_panel.offset_top = 16
-	sights_panel.visible = false
+	sights_panel.visible = true
 	hud.add_child(sights_panel)
 	var sl := VBoxContainer.new()
 	sights_panel.add_child(sl)
 	sl.add_child(_label("Zaujímavé miesta", 16, Color(0.97, 0.9, 0.74)))
 	for k2 in SIGHTS.size():
-		sl.add_child(_label("%d   %s" % [(k2 + 1) % 10, SIGHTS[k2][0]], 14, Color(0.86, 0.88, 0.9)))
+		var sl_lab := _label("%d   %s" % [(k2 + 1) % 10, SIGHTS[k2][0]], 14, Color(0.86, 0.88, 0.9))
+		sight_labels.append(sl_lab)
+		sl.add_child(sl_lab)
 	# toast (centre)
 	toast = _label("", 22, Color(0.97, 0.9, 0.74))
 	toast.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.8))
@@ -535,6 +538,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		player.set_flying(s[0] == "Letecký pohľad")
 		player.place_eye(b2g.call(s[1]), b2g.call(s[2]))
 		sight_label = s[0]
+		for k3 in sight_labels.size():      # highlight the active sight
+			sight_labels[k3].add_theme_color_override("font_color", Color(0.98, 0.82, 0.45) if SIGHTS[k3][0] == s[0] else Color(0.86, 0.88, 0.9))
 		_toast(s[0])
 
 

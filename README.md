@@ -80,7 +80,7 @@ a sadou screenshotov z hry.
 ## Ovládanie
 
 WASD pohyb, myš rozhliadanie, **Shift** beh, **Space** skok, **F** lietanie, **F1** kvalita (Nízka / Stredná /
-Vysoká / Ultra), **F2** denná doba, **0–9** rýchly presun na zaujímavé miesta, **Tab** zoznam miest,
+Vysoká / Ultra), **F2** denná doba, **0–9** rýchly presun na zaujímavé miesta, **Tab** skryje/zobrazí zoznam miest (aktuálne miesto je zvýraznené),
 **H** skryje rozhranie, **Esc** uvoľní myš.
 
 Web verzia beží na renderi Compatibility (WebGL 2) a nemá globálne osvetlenie ani odrazy (SDFGI, SSR).
