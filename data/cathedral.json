@@ -1,0 +1,1181 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-02T23:15:36Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 38975518,
+  "nodes": [
+    463562689,
+    463562710,
+    463562716,
+    463562742,
+    463562722,
+    463562777,
+    5290363243,
+    2687482503,
+    463562767,
+    463562769,
+    463562622,
+    463562627,
+    1802092312,
+    1802092311,
+    4536516061,
+    463562762,
+    463562670,
+    463562689
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "321",
+    "addr:country": "SK",
+    "addr:housenumber": "321/19",
+    "addr:postcode": "81101",
+    "addr:street": "Kapitulská",
+    "addr:streetnumber": "19",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "castle_type": "palace",
+    "historic": "castle",
+    "name": "Prepoštský palác",
+    "name:hu": "Préposti palota",
+    "ref:minvskaddress": "5973385",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2022-12",
+    "wikidata": "Q12774507",
+    "wikipedia": "sk:Prepoštský palác (Bratislava)"
+  }
+},
+{
+  "type": "way",
+  "id": 58371864,
+  "nodes": [
+    3740270218,
+    723898823,
+    723964629,
+    723956839,
+    723890228,
+    723896182,
+    723940623,
+    723902206,
+    723948024,
+    723902590,
+    723957250,
+    723920912,
+    723886847,
+    723936520,
+    723933052,
+    723894451,
+    723953165,
+    723962003,
+    723927929,
+    723904621,
+    723952329,
+    723898374,
+    3022937325,
+    723941498,
+    723959961,
+    3740270218
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "4716",
+    "addr:country": "SK",
+    "addr:housenumber": "4716/3",
+    "addr:postcode": "81101",
+    "addr:street": "Židovská",
+    "addr:streetnumber": "3",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "import": "budovy201004",
+    "ref:minvskaddress": "5110087840",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "way",
+  "id": 58372585,
+  "nodes": [
+    723891201,
+    723965168,
+    723953706,
+    723889403,
+    723924621,
+    723949999,
+    723886902,
+    723959505,
+    723904621,
+    723927929,
+    723917181,
+    723928979,
+    723891201
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "438",
+    "addr:country": "SK",
+    "addr:housenumber": "438/2",
+    "addr:postcode": "81101",
+    "addr:street": "Mikulášska",
+    "addr:streetnumber": "2",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "building:architecture": "rococo",
+    "historic": "building",
+    "import": "budovy201004",
+    "name": "Dom U dobrého pastiera",
+    "name:de": "Haus zum Guten Hirten",
+    "name:en": "House at the Good Shepherd",
+    "ref:minvskaddress": "5973902",
+    "ref:pusr": "245/1",
+    "source": "kapor2;survey;https://www.pamiatky.sk/online-sluzby/registre-evidencie/register-nnkp/detail-nnkp?code=RNNKP&detail_id=39309eca-43b6-49d3-862a-0e14314a10b3;https://csemadok.sk/emlekhelyek/emlekhelyek/jo-pasztor-haza/",
+    "source:addr": "minvskaddress 2025-01",
+    "start_date": "1765",
+    "wikidata": "Q1589718",
+    "wikimedia_commons": "Category:House At the Good Shepherd",
+    "wikipedia": "sk:Dom U dobrého pastiera"
+  }
+},
+{
+  "type": "way",
+  "id": 58373282,
+  "nodes": [
+    723898882,
+    723958504,
+    723923136,
+    723887788,
+    723948310,
+    723928128,
+    723898021,
+    723957298,
+    723903558,
+    723898882
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "294",
+    "addr:country": "SK",
+    "addr:housenumber": "294/7",
+    "addr:postcode": "81101",
+    "addr:street": "Beblavého",
+    "addr:streetnumber": "7",
+    "addr:suburb": "Staré Mesto",
+    "building": "commercial",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "ref:minvskaddress": "7101005384",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2022-12"
+  }
+},
+{
+  "type": "way",
+  "id": 58373694,
+  "nodes": [
+    723955416,
+    723911411,
+    723963153,
+    723934941,
+    723945101,
+    723917398,
+    723955959,
+    723955416
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "283",
+    "addr:country": "SK",
+    "addr:housenumber": "283/1",
+    "addr:postcode": "81101",
+    "addr:street": "Zámocké schody",
+    "addr:streetnumber": "1",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "import": "budovy201004",
+    "ref:minvskaddress": "5972890",
+    "ruins": "yes",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-10"
+  }
+},
+{
+  "type": "way",
+  "id": 58374095,
+  "nodes": [
+    723924595,
+    723917124,
+    10022637250,
+    723918471,
+    723937815,
+    6815619941,
+    723894549,
+    723891298,
+    4673223970,
+    4673223975,
+    723924595
+  ],
+  "tags": {
+    "building": "office",
+    "building:levels": "3",
+    "import": "budovy201004",
+    "source": "kapor2"
+  }
+},
+{
+  "type": "way",
+  "id": 58375961,
+  "nodes": [
+    723891171,
+    723937710,
+    723950445,
+    723942376,
+    723892139,
+    723930231,
+    723888991,
+    4673223973,
+    723891171
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "293",
+    "addr:country": "SK",
+    "addr:housenumber": "293/1",
+    "addr:postcode": "81101",
+    "addr:street": "Beblavého",
+    "addr:streetnumber": "1",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "building:levels": "4",
+    "import": "budovy201004",
+    "ref:minvskaddress": "5972351",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2021-10"
+  }
+},
+{
+  "type": "way",
+  "id": 58376492,
+  "nodes": [
+    723905638,
+    723957298,
+    723898021,
+    723961620,
+    723905638
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "294",
+    "addr:country": "SK",
+    "addr:housenumber": "294/5",
+    "addr:postcode": "81101",
+    "addr:street": "Beblavého",
+    "addr:streetnumber": "5",
+    "addr:suburb": "Staré Mesto",
+    "building": "commercial",
+    "building:levels": "2",
+    "import": "budovy201004",
+    "ref:minvskaddress": "5972362",
+    "source": "kapor2",
+    "source:addr": "minvskaddress 2022-12"
+  }
+},
+{
+  "type": "way",
+  "id": 475080938,
+  "nodes": [
+    5225302728,
+    4688903775,
+    5290304771,
+    417139024,
+    14078559305,
+    5225302735,
+    5276019072,
+    5225302728
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "4552",
+    "addr:country": "SK",
+    "addr:housenumber": "4552/4",
+    "addr:postcode": "81101",
+    "addr:street": "Rudnayovo námestie",
+    "addr:streetnumber": "4",
+    "addr:suburb": "Staré Mesto",
+    "building": "yes",
+    "building:levels": "3",
+    "ref:minvskaddress": "6015394",
+    "roof:direction": "SE",
+    "roof:levels": "1",
+    "roof:material": "roof_tiles",
+    "roof:shape": "side_hipped",
+    "source:addr": "minvskaddress 2021-10"
+  }
+},
+{
+  "type": "way",
+  "id": 493777968,
+  "nodes": [
+    4673223974,
+    4673223971,
+    723949665,
+    723891171,
+    4673223973,
+    723888991,
+    12128489359,
+    12128489358,
+    12128489353,
+    12128489357,
+    12128489356,
+    12128489355,
+    12128489354,
+    723888189,
+    723903989,
+    723917124,
+    723924595,
+    4673223976,
+    4673223978,
+    4673223977,
+    723896223,
+    4673223974
+  ],
+  "tags": {
+    "building": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1218998935,
+  "nodes": [
+    11295505738,
+    417139021,
+    4688903775,
+    5225302728,
+    5225302733,
+    11295505746,
+    4688903767,
+    11295505744,
+    11295505738
+  ],
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "4550",
+    "addr:country": "SK",
+    "addr:housenumber": "4550/3",
+    "addr:postcode": "81101",
+    "addr:street": "Rudnayovo námestie",
+    "addr:streetnumber": "3",
+    "addr:suburb": "Staré Mesto",
+    "building": "retail",
+    "building:levels": "4",
+    "name": "Martineum",
+    "ref:minvskaddress": "6015372",
+    "roof:levels": "1",
+    "roof:material": "roof_tiles",
+    "roof:shape": "gabled",
+    "source": "https://www.staremesto.sk/sk/news/view/schatrany-dom-v-susedstve-domu-sv-martina-konecne-dostal-dostojnu-podobu-premenovali-ho-na-martineum",
+    "source:addr": "minvskaddress 2021-10"
+  }
+},
+{
+  "type": "way",
+  "id": 1475151500,
+  "nodes": [
+    5275187300,
+    177058053,
+    5290304769,
+    11295505740,
+    11295505739,
+    11295505738,
+    11295505744,
+    4688903767,
+    13533189388,
+    5275187304,
+    11295505743,
+    5275187303,
+    5275187302,
+    5275187301,
+    5275187300
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "building:material": "glass"
+  }
+},
+{
+  "type": "node",
+  "id": 177058053,
+  "lat": 48.1418230,
+  "lon": 17.1048832
+},
+{
+  "type": "node",
+  "id": 417139021,
+  "lat": 48.1417407,
+  "lon": 17.1048284
+},
+{
+  "type": "node",
+  "id": 723886847,
+  "lat": 48.1424587,
+  "lon": 17.1039468
+},
+{
+  "type": "node",
+  "id": 723886902,
+  "lat": 48.1423046,
+  "lon": 17.1039415
+},
+{
+  "type": "node",
+  "id": 723887788,
+  "lat": 48.1416582,
+  "lon": 17.1036892
+},
+{
+  "type": "node",
+  "id": 723888189,
+  "lat": 48.1419466,
+  "lon": 17.1040962
+},
+{
+  "type": "node",
+  "id": 723888991,
+  "lat": 48.1420868,
+  "lon": 17.1039910
+},
+{
+  "type": "node",
+  "id": 723889403,
+  "lat": 48.1422569,
+  "lon": 17.1039706
+},
+{
+  "type": "node",
+  "id": 723890228,
+  "lat": 48.1425380,
+  "lon": 17.1037828
+},
+{
+  "type": "node",
+  "id": 723891171,
+  "lat": 48.1420860,
+  "lon": 17.1037470
+},
+{
+  "type": "node",
+  "id": 723891201,
+  "lat": 48.1422514,
+  "lon": 17.1040044
+},
+{
+  "type": "node",
+  "id": 723891298,
+  "lat": 48.1416991,
+  "lon": 17.1037850
+},
+{
+  "type": "node",
+  "id": 723892139,
+  "lat": 48.1421916,
+  "lon": 17.1039371
+},
+{
+  "type": "node",
+  "id": 723894451,
+  "lat": 48.1424460,
+  "lon": 17.1039588
+},
+{
+  "type": "node",
+  "id": 723894549,
+  "lat": 48.1417370,
+  "lon": 17.1039251
+},
+{
+  "type": "node",
+  "id": 723896182,
+  "lat": 48.1425585,
+  "lon": 17.1039198
+},
+{
+  "type": "node",
+  "id": 723896223,
+  "lat": 48.1419287,
+  "lon": 17.1038154
+},
+{
+  "type": "node",
+  "id": 723898021,
+  "lat": 48.1417982,
+  "lon": 17.1035934
+},
+{
+  "type": "node",
+  "id": 723898374,
+  "lat": 48.1423240,
+  "lon": 17.1039267
+},
+{
+  "type": "node",
+  "id": 723898823,
+  "lat": 48.1424192,
+  "lon": 17.1038642
+},
+{
+  "type": "node",
+  "id": 723898882,
+  "lat": 48.1416770,
+  "lon": 17.1037166
+},
+{
+  "type": "node",
+  "id": 723902206,
+  "lat": 48.1425181,
+  "lon": 17.1039404
+},
+{
+  "type": "node",
+  "id": 723902590,
+  "lat": 48.1424968,
+  "lon": 17.1039587
+},
+{
+  "type": "node",
+  "id": 723903558,
+  "lat": 48.1416969,
+  "lon": 17.1037263
+},
+{
+  "type": "node",
+  "id": 723903989,
+  "lat": 48.1419087,
+  "lon": 17.1041120
+},
+{
+  "type": "node",
+  "id": 723904621,
+  "lat": 48.1423227,
+  "lon": 17.1039412
+},
+{
+  "type": "node",
+  "id": 723905638,
+  "lat": 48.1418210,
+  "lon": 17.1037718
+},
+{
+  "type": "node",
+  "id": 723911411,
+  "lat": 48.1416107,
+  "lon": 17.1038896
+},
+{
+  "type": "node",
+  "id": 723917124,
+  "lat": 48.1418295,
+  "lon": 17.1041318
+},
+{
+  "type": "node",
+  "id": 723917181,
+  "lat": 48.1422629,
+  "lon": 17.1040416
+},
+{
+  "type": "node",
+  "id": 723917398,
+  "lat": 48.1416945,
+  "lon": 17.1039910
+},
+{
+  "type": "node",
+  "id": 723918471,
+  "lat": 48.1417468,
+  "lon": 17.1041348
+},
+{
+  "type": "node",
+  "id": 723920912,
+  "lat": 48.1424623,
+  "lon": 17.1039675
+},
+{
+  "type": "node",
+  "id": 723923136,
+  "lat": 48.1416594,
+  "lon": 17.1037067
+},
+{
+  "type": "node",
+  "id": 723924595,
+  "lat": 48.1418243,
+  "lon": 17.1039580
+},
+{
+  "type": "node",
+  "id": 723924621,
+  "lat": 48.1422829,
+  "lon": 17.1039548
+},
+{
+  "type": "node",
+  "id": 723927929,
+  "lat": 48.1423385,
+  "lon": 17.1040082
+},
+{
+  "type": "node",
+  "id": 723928128,
+  "lat": 48.1417020,
+  "lon": 17.1034875
+},
+{
+  "type": "node",
+  "id": 723928979,
+  "lat": 48.1422614,
+  "lon": 17.1040368
+},
+{
+  "type": "node",
+  "id": 723930231,
+  "lat": 48.1421898,
+  "lon": 17.1039450
+},
+{
+  "type": "node",
+  "id": 723933052,
+  "lat": 48.1424503,
+  "lon": 17.1039565
+},
+{
+  "type": "node",
+  "id": 723934941,
+  "lat": 48.1416377,
+  "lon": 17.1037716
+},
+{
+  "type": "node",
+  "id": 723936520,
+  "lat": 48.1424488,
+  "lon": 17.1039516
+},
+{
+  "type": "node",
+  "id": 723937710,
+  "lat": 48.1421237,
+  "lon": 17.1037702
+},
+{
+  "type": "node",
+  "id": 723937815,
+  "lat": 48.1416976,
+  "lon": 17.1041292
+},
+{
+  "type": "node",
+  "id": 723940623,
+  "lat": 48.1425499,
+  "lon": 17.1039245
+},
+{
+  "type": "node",
+  "id": 723941498,
+  "lat": 48.1423803,
+  "lon": 17.1038904
+},
+{
+  "type": "node",
+  "id": 723942376,
+  "lat": 48.1421791,
+  "lon": 17.1038368
+},
+{
+  "type": "node",
+  "id": 723945101,
+  "lat": 48.1417041,
+  "lon": 17.1039159
+},
+{
+  "type": "node",
+  "id": 723948024,
+  "lat": 48.1425184,
+  "lon": 17.1039445
+},
+{
+  "type": "node",
+  "id": 723948310,
+  "lat": 48.1416264,
+  "lon": 17.1036366
+},
+{
+  "type": "node",
+  "id": 723949665,
+  "lat": 48.1419729,
+  "lon": 17.1036949
+},
+{
+  "type": "node",
+  "id": 723949999,
+  "lat": 48.1422855,
+  "lon": 17.1039587
+},
+{
+  "type": "node",
+  "id": 723950445,
+  "lat": 48.1421664,
+  "lon": 17.1038176
+},
+{
+  "type": "node",
+  "id": 723952329,
+  "lat": 48.1423198,
+  "lon": 17.1039307
+},
+{
+  "type": "node",
+  "id": 723953165,
+  "lat": 48.1424328,
+  "lon": 17.1039650
+},
+{
+  "type": "node",
+  "id": 723953706,
+  "lat": 48.1422406,
+  "lon": 17.1039798
+},
+{
+  "type": "node",
+  "id": 723955416,
+  "lat": 48.1415907,
+  "lon": 17.1039112
+},
+{
+  "type": "node",
+  "id": 723955959,
+  "lat": 48.1416486,
+  "lon": 17.1040315
+},
+{
+  "type": "node",
+  "id": 723956839,
+  "lat": 48.1424495,
+  "lon": 17.1038444
+},
+{
+  "type": "node",
+  "id": 723957250,
+  "lat": 48.1424629,
+  "lon": 17.1039757
+},
+{
+  "type": "node",
+  "id": 723957298,
+  "lat": 48.1417415,
+  "lon": 17.1037456
+},
+{
+  "type": "node",
+  "id": 723958504,
+  "lat": 48.1416722,
+  "lon": 17.1037124
+},
+{
+  "type": "node",
+  "id": 723959505,
+  "lat": 48.1423077,
+  "lon": 17.1039529
+},
+{
+  "type": "node",
+  "id": 723959961,
+  "lat": 48.1423943,
+  "lon": 17.1038807
+},
+{
+  "type": "node",
+  "id": 723961620,
+  "lat": 48.1418698,
+  "lon": 17.1036426
+},
+{
+  "type": "node",
+  "id": 723962003,
+  "lat": 48.1423497,
+  "lon": 17.1040056
+},
+{
+  "type": "node",
+  "id": 723963153,
+  "lat": 48.1415884,
+  "lon": 17.1038441
+},
+{
+  "type": "node",
+  "id": 723964629,
+  "lat": 48.1424387,
+  "lon": 17.1038511
+},
+{
+  "type": "node",
+  "id": 723965168,
+  "lat": 48.1422497,
+  "lon": 17.1039970
+},
+{
+  "type": "node",
+  "id": 3022937325,
+  "lat": 48.1423413,
+  "lon": 17.1039165
+},
+{
+  "type": "node",
+  "id": 3740270218,
+  "lat": 48.1423979,
+  "lon": 17.1038789
+},
+{
+  "type": "node",
+  "id": 4673223970,
+  "lat": 48.1418245,
+  "lon": 17.1038036
+},
+{
+  "type": "node",
+  "id": 4673223971,
+  "lat": 48.1418830,
+  "lon": 17.1036466
+},
+{
+  "type": "node",
+  "id": 4673223973,
+  "lat": 48.1420815,
+  "lon": 17.1038626
+},
+{
+  "type": "node",
+  "id": 4673223974,
+  "lat": 48.1418460,
+  "lon": 17.1037661
+},
+{
+  "type": "node",
+  "id": 4673223975,
+  "lat": 48.1418361,
+  "lon": 17.1039413
+},
+{
+  "type": "node",
+  "id": 4673223976,
+  "lat": 48.1419180,
+  "lon": 17.1039808
+},
+{
+  "type": "node",
+  "id": 4673223977,
+  "lat": 48.1420567,
+  "lon": 17.1038749
+},
+{
+  "type": "node",
+  "id": 4673223978,
+  "lat": 48.1420540,
+  "lon": 17.1039259
+},
+{
+  "type": "node",
+  "id": 5275187300,
+  "lat": 48.1418386,
+  "lon": 17.1048755
+},
+{
+  "type": "node",
+  "id": 5290304769,
+  "lat": 48.1418186,
+  "lon": 17.1048633
+},
+{
+  "type": "node",
+  "id": 6815619941,
+  "lat": 48.1417142,
+  "lon": 17.1040697
+},
+{
+  "type": "node",
+  "id": 10022637250,
+  "lat": 48.1418142,
+  "lon": 17.1041324
+},
+{
+  "type": "node",
+  "id": 11295505738,
+  "lat": 48.1417774,
+  "lon": 17.1048857
+},
+{
+  "type": "node",
+  "id": 11295505739,
+  "lat": 48.1417925,
+  "lon": 17.1048659
+},
+{
+  "type": "node",
+  "id": 11295505740,
+  "lat": 48.1418031,
+  "lon": 17.1048844
+},
+{
+  "type": "node",
+  "id": 11295505744,
+  "lat": 48.1417827,
+  "lon": 17.1048945
+},
+{
+  "type": "node",
+  "id": 12128489353,
+  "lat": 48.1420091,
+  "lon": 17.1040473
+},
+{
+  "type": "node",
+  "id": 12128489354,
+  "lat": 48.1419650,
+  "lon": 17.1040880
+},
+{
+  "type": "node",
+  "id": 12128489355,
+  "lat": 48.1419585,
+  "lon": 17.1040615
+},
+{
+  "type": "node",
+  "id": 12128489356,
+  "lat": 48.1419857,
+  "lon": 17.1040462
+},
+{
+  "type": "node",
+  "id": 12128489357,
+  "lat": 48.1419907,
+  "lon": 17.1040587
+},
+{
+  "type": "node",
+  "id": 12128489358,
+  "lat": 48.1420288,
+  "lon": 17.1040351
+},
+{
+  "type": "node",
+  "id": 12128489359,
+  "lat": 48.1420260,
+  "lon": 17.1040225
+},
+{
+  "type": "node",
+  "id": 417139024,
+  "lat": 48.1414439,
+  "lon": 17.1052432
+},
+{
+  "type": "node",
+  "id": 463562622,
+  "lat": 48.1425903,
+  "lon": 17.1055656
+},
+{
+  "type": "node",
+  "id": 463562627,
+  "lat": 48.1425941,
+  "lon": 17.1054585
+},
+{
+  "type": "node",
+  "id": 463562670,
+  "lat": 48.1424114,
+  "lon": 17.1057052
+},
+{
+  "type": "node",
+  "id": 463562689,
+  "lat": 48.1424163,
+  "lon": 17.1056711
+},
+{
+  "type": "node",
+  "id": 463562710,
+  "lat": 48.1423050,
+  "lon": 17.1056491
+},
+{
+  "type": "node",
+  "id": 463562716,
+  "lat": 48.1422469,
+  "lon": 17.1056375
+},
+{
+  "type": "node",
+  "id": 463562722,
+  "lat": 48.1421756,
+  "lon": 17.1056237
+},
+{
+  "type": "node",
+  "id": 463562742,
+  "lat": 48.1421955,
+  "lon": 17.1056275
+},
+{
+  "type": "node",
+  "id": 463562762,
+  "lat": 48.1426523,
+  "lon": 17.1057346
+},
+{
+  "type": "node",
+  "id": 463562767,
+  "lat": 48.1422670,
+  "lon": 17.1053982
+},
+{
+  "type": "node",
+  "id": 463562769,
+  "lat": 48.1422568,
+  "lon": 17.1055040
+},
+{
+  "type": "node",
+  "id": 463562777,
+  "lat": 48.1421970,
+  "lon": 17.1053891
+},
+{
+  "type": "node",
+  "id": 1802092311,
+  "lat": 48.1426653,
+  "lon": 17.1055293
+},
+{
+  "type": "node",
+  "id": 1802092312,
+  "lat": 48.1426684,
+  "lon": 17.1054721
+},
+{
+  "type": "node",
+  "id": 2687482503,
+  "lat": 48.1422817,
+  "lon": 17.1052343
+},
+{
+  "type": "node",
+  "id": 4536516061,
+  "lat": 48.1426631,
+  "lon": 17.1055912
+},
+{
+  "type": "node",
+  "id": 4688903767,
+  "lat": 48.1417886,
+  "lon": 17.1049042
+},
+{
+  "type": "node",
+  "id": 4688903775,
+  "lat": 48.1415742,
+  "lon": 17.1050653
+},
+{
+  "type": "node",
+  "id": 5225302728,
+  "lat": 48.1416163,
+  "lon": 17.1051354
+},
+{
+  "type": "node",
+  "id": 5225302733,
+  "lat": 48.1416396,
+  "lon": 17.1051001
+},
+{
+  "type": "node",
+  "id": 5225302735,
+  "lat": 48.1414852,
+  "lon": 17.1053221
+},
+{
+  "type": "node",
+  "id": 5275187301,
+  "lat": 48.1418521,
+  "lon": 17.1049376
+},
+{
+  "type": "node",
+  "id": 5275187302,
+  "lat": 48.1418341,
+  "lon": 17.1049473
+},
+{
+  "type": "node",
+  "id": 5275187303,
+  "lat": 48.1418345,
+  "lon": 17.1049531
+},
+{
+  "type": "node",
+  "id": 5275187304,
+  "lat": 48.1418121,
+  "lon": 17.1049637
+},
+{
+  "type": "node",
+  "id": 5276019072,
+  "lat": 48.1415457,
+  "lon": 17.1052343
+},
+{
+  "type": "node",
+  "id": 5290304771,
+  "lat": 48.1414543,
+  "lon": 17.1052287
+},
+{
+  "type": "node",
+  "id": 5290363243,
+  "lat": 48.1422070,
+  "lon": 17.1052356
+},
+{
+  "type": "node",
+  "id": 11295505743,
+  "lat": 48.1418239,
+  "lon": 17.1049581
+},
+{
+  "type": "node",
+  "id": 11295505746,
+  "lat": 48.1417152,
+  "lon": 17.1050015
+},
+{
+  "type": "node",
+  "id": 13533189388,
+  "lat": 48.1418038,
+  "lon": 17.1049428
+},
+{
+  "type": "node",
+  "id": 14078559305,
+  "lat": 48.1414733,
+  "lon": 17.1052993
+}
+
+  ]
+}

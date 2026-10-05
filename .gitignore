@@ -1,0 +1,14 @@
+# generated
+out/
+build/
+*.blend
+*.blend1
+# Godot caches and imported models (regenerate with scripts/build_castle.py + import_model.sh)
+.godot/
+godot/models/
+godot_web/models/
+# reference photos from Wikimedia (third-party licences) and scratch data
+data/ref/
+data/dmr_test.tif
+.DS_Store
+__pycache__/

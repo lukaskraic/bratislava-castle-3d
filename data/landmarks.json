@@ -1,0 +1,1600 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-02T23:14:29Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 463165502,
+  "lat": 48.1446031,
+  "lon": 17.1123600,
+  "tags": {
+    "amenity": "fast_food",
+    "check_date": "2026-07-09",
+    "cuisine": "arab;indian",
+    "diet:vegan": "yes",
+    "diet:vegetarian": "yes",
+    "name": "UFO-Food",
+    "opening_hours": "Mo-Sa 11:00-20:00; Fr 15:00-22:00",
+    "operator": "Sultan s.r.o.",
+    "source": "survey",
+    "takeaway": "only"
+  }
+},
+{
+  "type": "node",
+  "id": 2378288128,
+  "lat": 48.1368639,
+  "lon": 17.1045822,
+  "tags": {
+    "charge": "12.50 EUR/adult",
+    "fee": "yes",
+    "min_height": "95",
+    "name": "UFO",
+    "opening_hours": "Mo-Su 10:00-23:00",
+    "source:charge": "https://www.u-f-o.sk/vstupne",
+    "tourism": "viewpoint",
+    "website": "https://www.u-f-o.sk/"
+  }
+},
+{
+  "type": "way",
+  "id": 25737798,
+  "nodes": [
+    8373205809,
+    7787641767
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177",
+    "bridge:structure": "cable-stayed",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight": "21",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "shoulder": "no",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 34325343,
+  "nodes": [
+    18396377,
+    10731451279,
+    8373205808
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177a",
+    "bridge:structure": "cable-stayed",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight": "21",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "shoulder": "no",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 34325344,
+  "nodes": [
+    2085017270,
+    10731451278,
+    2477019127
+  ],
+  "tags": {
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177.1",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "name": "Most SNP",
+    "name:de": "Neue Brücke",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "oneway": "yes",
+    "source:maxspeed": "SK:urban",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 34325477,
+  "nodes": [
+    18396375,
+    10731451276,
+    18396377
+  ],
+  "tags": {
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177.2",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lanes:psv": "1",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxweight": "21",
+    "maxweight:bus": "none",
+    "name": "Most SNP",
+    "name:de": "Neue Brücke",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "oneway": "yes",
+    "psv:lanes": "yes|designated",
+    "source:maxspeed": "SK:urban",
+    "source:maxweight": "sign",
+    "surface": "asphalt",
+    "vehicle:lanes": "yes|no",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 126365751,
+  "nodes": [
+    1401028563,
+    1401028565
+  ],
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "lit": "yes",
+    "local_ref": "B",
+    "name": "Most SNP",
+    "network": "MHD Bratislava",
+    "operator": "DPB",
+    "public_transport": "platform",
+    "railway": "platform",
+    "request_stop": "no",
+    "route_ref": "4;6",
+    "shelter": "yes",
+    "surface": "asphalt",
+    "tactile_paving": "no",
+    "tram": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 126365752,
+  "nodes": [
+    1401028558,
+    1401028560
+  ],
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "lit": "yes",
+    "local_ref": "A",
+    "name": "Most SNP",
+    "network": "MHD Bratislava",
+    "operator": "DPB",
+    "public_transport": "platform",
+    "railway": "platform",
+    "request_stop": "no",
+    "route_ref": "4;6",
+    "shelter": "yes",
+    "surface": "asphalt",
+    "tactile_paving": "no",
+    "tram": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 238810163,
+  "nodes": [
+    2466068349,
+    2484342376,
+    2466068347,
+    8373171130,
+    8373171131,
+    2466068341,
+    8373171133,
+    2466068339,
+    2466068337,
+    2466068335,
+    8373171134,
+    8373171135,
+    2466068334,
+    8373171137,
+    8373171139,
+    8373171140,
+    8373171143,
+    8373171147,
+    2466068330,
+    2466068329,
+    2466068328,
+    8373205810,
+    8373205814,
+    8373205816,
+    8373205813,
+    8373214118,
+    13139762141,
+    8373214124,
+    2466068326,
+    280685682,
+    280685679,
+    2466068327,
+    3820607534,
+    8373214125,
+    13139762140,
+    8373214119,
+    8373214117,
+    8373205815,
+    8373205812,
+    8373205811,
+    1374999939,
+    8373171146,
+    8373171144,
+    8373171145,
+    2466068332,
+    8373171142,
+    8373171141,
+    8373171138,
+    2466068333,
+    8373171136,
+    8373171123,
+    8373171124,
+    2466068336,
+    2466068340,
+    2466068346,
+    8373171122,
+    2466068357,
+    32031441,
+    2466068355,
+    8373171153,
+    8373171150,
+    8373171154,
+    8373171151,
+    8373171149,
+    8373171152,
+    8373171148,
+    799476917,
+    8373114116,
+    2466068372,
+    18396376,
+    18396375,
+    2466068371,
+    8373114115,
+    5345126954,
+    2466068370,
+    8373171118,
+    2466068368,
+    2466068365,
+    8373171125,
+    2466068363,
+    2466068362,
+    2466068360,
+    29536623,
+    2466068358,
+    2466068359,
+    2466068361,
+    8373171126,
+    2466068364,
+    2466068367,
+    8373171119,
+    8373171121,
+    2466068343,
+    2466068342,
+    2466068345,
+    2466068348,
+    8373171132,
+    8373171127,
+    2466068350,
+    8373171128,
+    2466068351,
+    2466068352,
+    2466068353,
+    2466068356,
+    2476642823,
+    358307004,
+    2466068349
+  ],
+  "tags": {
+    "alt_name": "Most cestný;Most Slovenského národného povstania;UFO Bridge;Nový most",
+    "architect": "Jozef Lacko;Ladislav Kušnír;Ivan Slameň",
+    "bridge": "yes",
+    "bridge:ref": "M 177",
+    "bridge:structure": "cable-stayed",
+    "building:architecture": "modernism",
+    "heritage": "2",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/View_of_Bratislava_St1.JPG",
+    "layer": "1",
+    "length": "430.8",
+    "man_made": "bridge",
+    "material": "steel",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "old_name:1993-2012-08-28": "Nový most",
+    "source": "https://www.petrzalka.sk/wp-content/uploads/2019/04/sken.pdf;https://www.pamiatky.sk/nkp-a-po/register-po/objekt-detail/?idObjekt=24464",
+    "start_date": "1972-08-26",
+    "width": "21",
+    "wikidata": "Q837291",
+    "wikimedia_commons": "File:View of Bratislava St1.JPG",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 239933948,
+  "nodes": [
+    2477019127,
+    18396376
+  ],
+  "tags": {
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177.1",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "lanes:psv": "1",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Neue Brücke",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "oneway": "yes",
+    "psv:lanes": "yes|designated",
+    "source:maxspeed": "SK:urban",
+    "surface": "asphalt",
+    "vehicle:lanes": "yes|no",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 338667906,
+  "nodes": [
+    1411109557,
+    3457872994
+  ],
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "covered": "yes",
+    "highway": "platform",
+    "name": "Most SNP (J)",
+    "network": "MHD Bratislava",
+    "network:wikidata": "Q7258005",
+    "operator": "Dopravný podnik Bratislava",
+    "operator:short": "DPB",
+    "operator:wikidata": "Q685601",
+    "public_transport": "platform",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 378574918,
+  "nodes": [
+    7064867937,
+    3819810832,
+    3819810830,
+    3819810828,
+    8373205807,
+    3819810827,
+    3819810829,
+    8373214122,
+    8373205806,
+    3819810831,
+    3819810834,
+    3819810837,
+    7064867935,
+    7064867936,
+    3819810840,
+    8373214121,
+    3819810842,
+    8373205809,
+    3819810844,
+    3819810845,
+    8373205808,
+    3819810843,
+    3819810841,
+    3819810839,
+    8373214120,
+    3819810835,
+    7064867937
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "architect": "Jozef Lacko;Ladislav Kušnír;Ivan Slameň",
+    "building": "bridge",
+    "building:architecture": "modernism",
+    "height": "95",
+    "heritage": "2",
+    "layer": "5",
+    "man_made": "tower",
+    "material": "metal",
+    "min_height": "85",
+    "name": "UFO",
+    "old_name": "Bystrica",
+    "opening_hours": "Mo-Su 10:00-23:00",
+    "roof:material": "metal",
+    "roof:shape": "pyramidal",
+    "source": "https://www.pamiatky.sk/nkp-a-po/register-po/objekt-detail/?idObjekt=24463",
+    "start_date": "1971",
+    "tower:type": "observation",
+    "website": "https://www.u-f-o.sk/",
+    "wikidata": "Q17513752",
+    "wikipedia": "en:UFO (restaurant)"
+  }
+},
+{
+  "type": "way",
+  "id": 834246977,
+  "nodes": [
+    7787641767,
+    2085017270
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177",
+    "bridge:structure": "cable-stayed",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxweight": "21",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "smoothness": "excellent",
+    "source:maxspeed": "SK:urban",
+    "surface": "asphalt",
+    "turn:lanes": "through|through;slight_right",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 901349536,
+  "nodes": [
+    280685679,
+    8373205806
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 901349537,
+  "nodes": [
+    8373205806,
+    8373205809
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177",
+    "covered": "yes",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxheight": "default",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 901349538,
+  "nodes": [
+    8373205807,
+    10019416822
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177a",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 901349539,
+  "nodes": [
+    8373205808,
+    13854281650
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177a",
+    "covered": "yes",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxheight": "default",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 1093971442,
+  "nodes": [
+    10019416822,
+    280685682
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177b",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "smoothness": "excellent",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "way",
+  "id": 1517805283,
+  "nodes": [
+    13854281650,
+    8373205807
+  ],
+  "tags": {
+    "abutters": "residential",
+    "agricultural": "no",
+    "bicycle": "no",
+    "bridge": "yes",
+    "bridge:ref": "M177a",
+    "covered": "yes",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "layer": "2",
+    "lit": "yes",
+    "maxheight": "default",
+    "maxspeed": "50",
+    "maxspeed:type": "SK:urban",
+    "maxweight:signed": "no",
+    "name": "Most SNP",
+    "name:de": "Brücke des Slowakischen Nationalaufstandes",
+    "name:en": "Bridge of the Slovak National Uprising",
+    "name:etymology:wikidata": "Q163780",
+    "old_name": "Nový most",
+    "old_name:de": "Neue Brücke",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "wikidata": "Q837291",
+    "wikipedia": "sk:Most SNP"
+  }
+},
+{
+  "type": "node",
+  "id": 280685679,
+  "lat": 48.1352472,
+  "lon": 17.1047449
+},
+{
+  "type": "node",
+  "id": 280685682,
+  "lat": 48.1352439,
+  "lon": 17.1046202
+},
+{
+  "type": "node",
+  "id": 1374999939,
+  "lat": 48.1369289,
+  "lon": 17.1047326
+},
+{
+  "type": "node",
+  "id": 2466068326,
+  "lat": 48.1352423,
+  "lon": 17.1045544
+},
+{
+  "type": "node",
+  "id": 2466068327,
+  "lat": 48.1352487,
+  "lon": 17.1048094
+},
+{
+  "type": "node",
+  "id": 2466068328,
+  "lat": 48.1368062,
+  "lon": 17.1044573
+},
+{
+  "type": "node",
+  "id": 2466068329,
+  "lat": 48.1384211,
+  "lon": 17.1043822
+},
+{
+  "type": "node",
+  "id": 3819810827,
+  "lat": 48.1367494,
+  "lon": 17.1045813
+},
+{
+  "type": "node",
+  "id": 3819810828,
+  "lat": 48.1367629,
+  "lon": 17.1045034
+},
+{
+  "type": "node",
+  "id": 3819810829,
+  "lat": 48.1367512,
+  "lon": 17.1046165
+},
+{
+  "type": "node",
+  "id": 3819810830,
+  "lat": 48.1367806,
+  "lon": 17.1044661
+},
+{
+  "type": "node",
+  "id": 3819810831,
+  "lat": 48.1367722,
+  "lon": 17.1046891
+},
+{
+  "type": "node",
+  "id": 3819810832,
+  "lat": 48.1368042,
+  "lon": 17.1044369
+},
+{
+  "type": "node",
+  "id": 3819810834,
+  "lat": 48.1367927,
+  "lon": 17.1047212
+},
+{
+  "type": "node",
+  "id": 3819810835,
+  "lat": 48.1368623,
+  "lon": 17.1044105
+},
+{
+  "type": "node",
+  "id": 3819810837,
+  "lat": 48.1368179,
+  "lon": 17.1047445
+},
+{
+  "type": "node",
+  "id": 3819810839,
+  "lat": 48.1369213,
+  "lon": 17.1044313
+},
+{
+  "type": "node",
+  "id": 3819810840,
+  "lat": 48.1369048,
+  "lon": 17.1047500
+},
+{
+  "type": "node",
+  "id": 3819810841,
+  "lat": 48.1369461,
+  "lon": 17.1044582
+},
+{
+  "type": "node",
+  "id": 3819810842,
+  "lat": 48.1369535,
+  "lon": 17.1047007
+},
+{
+  "type": "node",
+  "id": 3819810843,
+  "lat": 48.1369654,
+  "lon": 17.1044937
+},
+{
+  "type": "node",
+  "id": 3819810844,
+  "lat": 48.1369799,
+  "lon": 17.1046225
+},
+{
+  "type": "node",
+  "id": 3819810845,
+  "lat": 48.1369825,
+  "lon": 17.1045789
+},
+{
+  "type": "node",
+  "id": 3820607534,
+  "lat": 48.1353646,
+  "lon": 17.1048041
+},
+{
+  "type": "node",
+  "id": 7064867935,
+  "lat": 48.1368462,
+  "lon": 17.1047575
+},
+{
+  "type": "node",
+  "id": 7064867936,
+  "lat": 48.1368759,
+  "lon": 17.1047594
+},
+{
+  "type": "node",
+  "id": 7064867937,
+  "lat": 48.1368321,
+  "lon": 17.1044180
+},
+{
+  "type": "node",
+  "id": 8373205806,
+  "lat": 48.1367643,
+  "lon": 17.1046715
+},
+{
+  "type": "node",
+  "id": 8373205807,
+  "lat": 48.1367522,
+  "lon": 17.1045464
+},
+{
+  "type": "node",
+  "id": 8373205808,
+  "lat": 48.1369778,
+  "lon": 17.1045356
+},
+{
+  "type": "node",
+  "id": 8373205809,
+  "lat": 48.1369701,
+  "lon": 17.1046639
+},
+{
+  "type": "node",
+  "id": 8373205810,
+  "lat": 48.1366578,
+  "lon": 17.1044665
+},
+{
+  "type": "node",
+  "id": 8373205811,
+  "lat": 48.1366740,
+  "lon": 17.1047443
+},
+{
+  "type": "node",
+  "id": 8373205812,
+  "lat": 48.1366488,
+  "lon": 17.1047454
+},
+{
+  "type": "node",
+  "id": 8373205813,
+  "lat": 48.1364792,
+  "lon": 17.1044776
+},
+{
+  "type": "node",
+  "id": 8373205814,
+  "lat": 48.1365481,
+  "lon": 17.1044733
+},
+{
+  "type": "node",
+  "id": 8373205815,
+  "lat": 48.1365750,
+  "lon": 17.1047488
+},
+{
+  "type": "node",
+  "id": 8373205816,
+  "lat": 48.1365296,
+  "lon": 17.1044745
+},
+{
+  "type": "node",
+  "id": 8373214117,
+  "lat": 48.1365553,
+  "lon": 17.1047497
+},
+{
+  "type": "node",
+  "id": 8373214118,
+  "lat": 48.1362236,
+  "lon": 17.1044935
+},
+{
+  "type": "node",
+  "id": 8373214119,
+  "lat": 48.1362267,
+  "lon": 17.1047647
+},
+{
+  "type": "node",
+  "id": 8373214120,
+  "lat": 48.1368927,
+  "lon": 17.1044151
+},
+{
+  "type": "node",
+  "id": 8373214121,
+  "lat": 48.1369313,
+  "lon": 17.1047300
+},
+{
+  "type": "node",
+  "id": 8373214122,
+  "lat": 48.1367570,
+  "lon": 17.1046475
+},
+{
+  "type": "node",
+  "id": 8373214124,
+  "lat": 48.1354716,
+  "lon": 17.1045402
+},
+{
+  "type": "node",
+  "id": 8373214125,
+  "lat": 48.1354000,
+  "lon": 17.1048025
+},
+{
+  "type": "node",
+  "id": 10019416822,
+  "lat": 48.1361695,
+  "lon": 17.1045749
+},
+{
+  "type": "node",
+  "id": 13139762140,
+  "lat": 48.1361892,
+  "lon": 17.1047664
+},
+{
+  "type": "node",
+  "id": 13139762141,
+  "lat": 48.1361862,
+  "lon": 17.1044958
+},
+{
+  "type": "node",
+  "id": 13854281650,
+  "lat": 48.1368670,
+  "lon": 17.1045409
+},
+{
+  "type": "node",
+  "id": 18396375,
+  "lat": 48.1414411,
+  "lon": 17.1043155
+},
+{
+  "type": "node",
+  "id": 18396376,
+  "lat": 48.1414440,
+  "lon": 17.1044426
+},
+{
+  "type": "node",
+  "id": 18396377,
+  "lat": 48.1400244,
+  "lon": 17.1043882
+},
+{
+  "type": "node",
+  "id": 29536623,
+  "lat": 48.1406615,
+  "lon": 17.1037991
+},
+{
+  "type": "node",
+  "id": 32031441,
+  "lat": 48.1409055,
+  "lon": 17.1046229
+},
+{
+  "type": "node",
+  "id": 358307004,
+  "lat": 48.1405600,
+  "lon": 17.1038458
+},
+{
+  "type": "node",
+  "id": 799476917,
+  "lat": 48.1412171,
+  "lon": 17.1045175
+},
+{
+  "type": "node",
+  "id": 1411109557,
+  "lat": 48.1402485,
+  "lon": 17.1042959
+},
+{
+  "type": "node",
+  "id": 2085017270,
+  "lat": 48.1399756,
+  "lon": 17.1045236
+},
+{
+  "type": "node",
+  "id": 2466068330,
+  "lat": 48.1395476,
+  "lon": 17.1043289
+},
+{
+  "type": "node",
+  "id": 2466068332,
+  "lat": 48.1397472,
+  "lon": 17.1046103
+},
+{
+  "type": "node",
+  "id": 2466068333,
+  "lat": 48.1398959,
+  "lon": 17.1046198
+},
+{
+  "type": "node",
+  "id": 2466068334,
+  "lat": 48.1399097,
+  "lon": 17.1042976
+},
+{
+  "type": "node",
+  "id": 2466068335,
+  "lat": 48.1401820,
+  "lon": 17.1042820
+},
+{
+  "type": "node",
+  "id": 2466068336,
+  "lat": 48.1402746,
+  "lon": 17.1046689
+},
+{
+  "type": "node",
+  "id": 2466068337,
+  "lat": 48.1402845,
+  "lon": 17.1042563
+},
+{
+  "type": "node",
+  "id": 2466068339,
+  "lat": 48.1403445,
+  "lon": 17.1042205
+},
+{
+  "type": "node",
+  "id": 2466068340,
+  "lat": 48.1403995,
+  "lon": 17.1046831
+},
+{
+  "type": "node",
+  "id": 2466068341,
+  "lat": 48.1404144,
+  "lon": 17.1041621
+},
+{
+  "type": "node",
+  "id": 2466068342,
+  "lat": 48.1404615,
+  "lon": 17.1042804
+},
+{
+  "type": "node",
+  "id": 2466068343,
+  "lat": 48.1404633,
+  "lon": 17.1042947
+},
+{
+  "type": "node",
+  "id": 2466068345,
+  "lat": 48.1404992,
+  "lon": 17.1042422
+},
+{
+  "type": "node",
+  "id": 2466068346,
+  "lat": 48.1405005,
+  "lon": 17.1046873
+},
+{
+  "type": "node",
+  "id": 2466068347,
+  "lat": 48.1405196,
+  "lon": 17.1039710
+},
+{
+  "type": "node",
+  "id": 2466068348,
+  "lat": 48.1405217,
+  "lon": 17.1042152
+},
+{
+  "type": "node",
+  "id": 2466068349,
+  "lat": 48.1405288,
+  "lon": 17.1038462
+},
+{
+  "type": "node",
+  "id": 2466068350,
+  "lat": 48.1405455,
+  "lon": 17.1041727
+},
+{
+  "type": "node",
+  "id": 2466068351,
+  "lat": 48.1405795,
+  "lon": 17.1040913
+},
+{
+  "type": "node",
+  "id": 2466068352,
+  "lat": 48.1405929,
+  "lon": 17.1040531
+},
+{
+  "type": "node",
+  "id": 2466068353,
+  "lat": 48.1406102,
+  "lon": 17.1039707
+},
+{
+  "type": "node",
+  "id": 2466068355,
+  "lat": 48.1409041,
+  "lon": 17.1045621
+},
+{
+  "type": "node",
+  "id": 2466068356,
+  "lat": 48.1406174,
+  "lon": 17.1039000
+},
+{
+  "type": "node",
+  "id": 2466068357,
+  "lat": 48.1409065,
+  "lon": 17.1046657
+},
+{
+  "type": "node",
+  "id": 2466068358,
+  "lat": 48.1406222,
+  "lon": 17.1038456
+},
+{
+  "type": "node",
+  "id": 2466068359,
+  "lat": 48.1406823,
+  "lon": 17.1039629
+},
+{
+  "type": "node",
+  "id": 2466068360,
+  "lat": 48.1406953,
+  "lon": 17.1037609
+},
+{
+  "type": "node",
+  "id": 2466068361,
+  "lat": 48.1407394,
+  "lon": 17.1040589
+},
+{
+  "type": "node",
+  "id": 2466068362,
+  "lat": 48.1407620,
+  "lon": 17.1039067
+},
+{
+  "type": "node",
+  "id": 2466068363,
+  "lat": 48.1408232,
+  "lon": 17.1039915
+},
+{
+  "type": "node",
+  "id": 2466068364,
+  "lat": 48.1408234,
+  "lon": 17.1041614
+},
+{
+  "type": "node",
+  "id": 2466068365,
+  "lat": 48.1409102,
+  "lon": 17.1040839
+},
+{
+  "type": "node",
+  "id": 2466068367,
+  "lat": 48.1409714,
+  "lon": 17.1042691
+},
+{
+  "type": "node",
+  "id": 2466068368,
+  "lat": 48.1410028,
+  "lon": 17.1041406
+},
+{
+  "type": "node",
+  "id": 2466068370,
+  "lat": 48.1412193,
+  "lon": 17.1042030
+},
+{
+  "type": "node",
+  "id": 2466068371,
+  "lat": 48.1414389,
+  "lon": 17.1042236
+},
+{
+  "type": "node",
+  "id": 2466068372,
+  "lat": 48.1414454,
+  "lon": 17.1045032
+},
+{
+  "type": "node",
+  "id": 2476642823,
+  "lat": 48.1406218,
+  "lon": 17.1038456
+},
+{
+  "type": "node",
+  "id": 2477019127,
+  "lat": 48.1402135,
+  "lon": 17.1045135
+},
+{
+  "type": "node",
+  "id": 2484342376,
+  "lat": 48.1405222,
+  "lon": 17.1039352
+},
+{
+  "type": "node",
+  "id": 3457872994,
+  "lat": 48.1404480,
+  "lon": 17.1042864
+},
+{
+  "type": "node",
+  "id": 5345126954,
+  "lat": 48.1413107,
+  "lon": 17.1042116
+},
+{
+  "type": "node",
+  "id": 7787641767,
+  "lat": 48.1395794,
+  "lon": 17.1045399
+},
+{
+  "type": "node",
+  "id": 8373114115,
+  "lat": 48.1413947,
+  "lon": 17.1042195
+},
+{
+  "type": "node",
+  "id": 8373114116,
+  "lat": 48.1414041,
+  "lon": 17.1045049
+},
+{
+  "type": "node",
+  "id": 8373171118,
+  "lat": 48.1410933,
+  "lon": 17.1041742
+},
+{
+  "type": "node",
+  "id": 8373171119,
+  "lat": 48.1406897,
+  "lon": 17.1042833
+},
+{
+  "type": "node",
+  "id": 8373171121,
+  "lat": 48.1405315,
+  "lon": 17.1042913
+},
+{
+  "type": "node",
+  "id": 8373171122,
+  "lat": 48.1405820,
+  "lon": 17.1046854
+},
+{
+  "type": "node",
+  "id": 8373171123,
+  "lat": 48.1401850,
+  "lon": 17.1046573
+},
+{
+  "type": "node",
+  "id": 8373171124,
+  "lat": 48.1402329,
+  "lon": 17.1046635
+},
+{
+  "type": "node",
+  "id": 8373171125,
+  "lat": 48.1408616,
+  "lon": 17.1040323
+},
+{
+  "type": "node",
+  "id": 8373171126,
+  "lat": 48.1407924,
+  "lon": 17.1041236
+},
+{
+  "type": "node",
+  "id": 8373171127,
+  "lat": 48.1405412,
+  "lon": 17.1041803
+},
+{
+  "type": "node",
+  "id": 8373171128,
+  "lat": 48.1405591,
+  "lon": 17.1041401
+},
+{
+  "type": "node",
+  "id": 8373171130,
+  "lat": 48.1404760,
+  "lon": 17.1040862
+},
+{
+  "type": "node",
+  "id": 8373171131,
+  "lat": 48.1404315,
+  "lon": 17.1041432
+},
+{
+  "type": "node",
+  "id": 8373171132,
+  "lat": 48.1405318,
+  "lon": 17.1041971
+},
+{
+  "type": "node",
+  "id": 8373171133,
+  "lat": 48.1403941,
+  "lon": 17.1041864
+},
+{
+  "type": "node",
+  "id": 8373171134,
+  "lat": 48.1401154,
+  "lon": 17.1042858
+},
+{
+  "type": "node",
+  "id": 8373171135,
+  "lat": 48.1399899,
+  "lon": 17.1042930
+},
+{
+  "type": "node",
+  "id": 8373171136,
+  "lat": 48.1399784,
+  "lon": 17.1046305
+},
+{
+  "type": "node",
+  "id": 8373171137,
+  "lat": 48.1398505,
+  "lon": 17.1043031
+},
+{
+  "type": "node",
+  "id": 8373171138,
+  "lat": 48.1398506,
+  "lon": 17.1046168
+},
+{
+  "type": "node",
+  "id": 8373171139,
+  "lat": 48.1397983,
+  "lon": 17.1043072
+},
+{
+  "type": "node",
+  "id": 8373171140,
+  "lat": 48.1397666,
+  "lon": 17.1043100
+},
+{
+  "type": "node",
+  "id": 8373171141,
+  "lat": 48.1397954,
+  "lon": 17.1046134
+},
+{
+  "type": "node",
+  "id": 8373171142,
+  "lat": 48.1397678,
+  "lon": 17.1046116
+},
+{
+  "type": "node",
+  "id": 8373171143,
+  "lat": 48.1397094,
+  "lon": 17.1043217
+},
+{
+  "type": "node",
+  "id": 8373171144,
+  "lat": 48.1397108,
+  "lon": 17.1046103
+},
+{
+  "type": "node",
+  "id": 8373171145,
+  "lat": 48.1397361,
+  "lon": 17.1046104
+},
+{
+  "type": "node",
+  "id": 8373171146,
+  "lat": 48.1395895,
+  "lon": 17.1046113
+},
+{
+  "type": "node",
+  "id": 8373171147,
+  "lat": 48.1395864,
+  "lon": 17.1043255
+},
+{
+  "type": "node",
+  "id": 8373171148,
+  "lat": 48.1406163,
+  "lon": 17.1045525
+},
+{
+  "type": "node",
+  "id": 8373171149,
+  "lat": 48.1403610,
+  "lon": 17.1045643
+},
+{
+  "type": "node",
+  "id": 8373171150,
+  "lat": 48.1405053,
+  "lon": 17.1045782
+},
+{
+  "type": "node",
+  "id": 8373171151,
+  "lat": 48.1403609,
+  "lon": 17.1045678
+},
+{
+  "type": "node",
+  "id": 8373171152,
+  "lat": 48.1405302,
+  "lon": 17.1045565
+},
+{
+  "type": "node",
+  "id": 8373171153,
+  "lat": 48.1405302,
+  "lon": 17.1045788
+},
+{
+  "type": "node",
+  "id": 8373171154,
+  "lat": 48.1404443,
+  "lon": 17.1045748
+},
+{
+  "type": "node",
+  "id": 10731451276,
+  "lat": 48.1400870,
+  "lon": 17.1043850
+},
+{
+  "type": "node",
+  "id": 10731451278,
+  "lat": 48.1400921,
+  "lon": 17.1045187
+},
+{
+  "type": "node",
+  "id": 10731451279,
+  "lat": 48.1395771,
+  "lon": 17.1044098
+},
+{
+  "type": "node",
+  "id": 1401028558,
+  "lat": 48.1397405,
+  "lon": 17.1051299
+},
+{
+  "type": "node",
+  "id": 1401028560,
+  "lat": 48.1397455,
+  "lon": 17.1058170
+},
+{
+  "type": "node",
+  "id": 1401028563,
+  "lat": 48.1398193,
+  "lon": 17.1051297
+},
+{
+  "type": "node",
+  "id": 1401028565,
+  "lat": 48.1398230,
+  "lon": 17.1058130
+}
+
+  ]
+}

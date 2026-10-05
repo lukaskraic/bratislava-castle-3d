@@ -1,0 +1,7921 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-02T18:24:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 30287420,
+  "lat": 48.1433132,
+  "lon": 17.0986865,
+  "tags": {
+    "name": "Zámocká",
+    "operator": "DPB",
+    "public_transport": "stop_position",
+    "trolleybus": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 30287974,
+  "lat": 48.1424638,
+  "lon": 17.0972768,
+  "tags": {
+    "name": "Hrad",
+    "operator": "DPB",
+    "public_transport": "stop_position",
+    "trolleybus": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 35453582,
+  "lat": 48.1419311,
+  "lon": 17.0979367,
+  "tags": {
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "surveillance:zone": "town"
+  }
+},
+{
+  "type": "node",
+  "id": 331850651,
+  "lat": 48.1407610,
+  "lon": 17.1020729,
+  "tags": {
+    "contact:facebook": "http://www.facebook.com/groups/subclub.sk/",
+    "contact:phone": "+421 2 544 111 83",
+    "contact:website": "http://www.subclub.sk/",
+    "disused:amenity": "nightclub",
+    "disused:name": "Subclub",
+    "opening_hours": "Th-Sa 21:00-04:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 354955047,
+  "lat": 48.1433663,
+  "lon": 17.1020645,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "gate",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no",
+    "maxwidth:physical": "0.5",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 437117037,
+  "lat": 48.1420580,
+  "lon": 17.0984904,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "sally_port",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 437117057,
+  "lat": 48.1413215,
+  "lon": 17.0994595,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "sally_port",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 437117102,
+  "lat": 48.1411964,
+  "lon": 17.1020866,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00); no @ (Nov 15-Mar 31)",
+    "barrier": "gate",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 437117122,
+  "lat": 48.1416006,
+  "lon": 17.1024369,
+  "tags": {
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 437135671,
+  "lat": 48.1435234,
+  "lon": 17.1021415,
+  "tags": {
+    "addr:city": "Bratislava - Staré Mesto",
+    "addr:country": "SK",
+    "fee": "no",
+    "name": "Hudobné múzeum SNM",
+    "name:de": "Musikmuseum",
+    "name:en": "Music Museum Bratislava",
+    "name:hu": "Zenei Múzeum",
+    "tourism": "museum",
+    "website": "https://www.snm.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 437135673,
+  "lat": 48.1425307,
+  "lon": 17.1001073,
+  "tags": {
+    "addr:full": "Bratislavský hrad, PO Box 13, 810 06 Bratislava 16",
+    "addr:postcode": "811 01",
+    "check_date:opening_hours": "2026-05-28",
+    "email": "bratislavskyhrad@snm.sk",
+    "fee": "yes",
+    "name": "Historické múzeum SNM",
+    "name:de": "Historisches Museum",
+    "name:en": "Museum of History",
+    "name:hu": "Szlovák Nemzeti Múzeum",
+    "name:pl": "Muzeum Historyczne",
+    "opening_hours": "We-Mo 10:00-18:00",
+    "operator": "Slovenské národné múzeum",
+    "phone": "+421 2 204 83 104",
+    "phone2": "+421 2 204 83 111",
+    "tourism": "museum",
+    "website": "https://www.snm.sk/muzea-snm/historicke-muzeum",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 456084538,
+  "lat": 48.1431239,
+  "lon": 17.0988393,
+  "tags": {
+    "amenity": "atm",
+    "brand": "Tatra banka",
+    "brand:wikidata": "Q1718069",
+    "check_date": "2026-08-10",
+    "opening_hours": "24/7",
+    "operator": "Tatra banka",
+    "operator:wikidata": "Q1718069",
+    "ref": "TATN132A",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 464753385,
+  "lat": 48.1416517,
+  "lon": 17.1032987,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2026-09-15",
+    "check_date:opening_hours": "2026-09-15",
+    "cuisine": "regional",
+    "name": "Modrá hviezda",
+    "opening_hours": "Mo-Fr 17:30-22:00; Sa,Su 12:00-22:00",
+    "website": "https://modrahviezda.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 570739824,
+  "lat": 48.1420659,
+  "lon": 17.0973658,
+  "tags": {
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "surveillance:zone": "town"
+  }
+},
+{
+  "type": "node",
+  "id": 701437832,
+  "lat": 48.1436742,
+  "lon": 17.0995003,
+  "tags": {
+    "fixme": "bývala pasáž, dneska uzavretá a sprístupnená len pre obyvateľov, slúži aj ako vchod do bytovky"
+  }
+},
+{
+  "type": "node",
+  "id": 794953677,
+  "lat": 48.1419952,
+  "lon": 17.0985129,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "5",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1119873766,
+  "lat": 48.1414141,
+  "lon": 17.0990760,
+  "tags": {
+    "highway": "traffic_signals",
+    "traffic_signals:direction": "forward"
+  }
+},
+{
+  "type": "node",
+  "id": 1305579124,
+  "lat": 48.1424545,
+  "lon": 17.1001089,
+  "tags": {
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1305579276,
+  "lat": 48.1416347,
+  "lon": 17.0995181,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "gate",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1305579330,
+  "lat": 48.1416181,
+  "lon": 17.1004771,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "gate",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no",
+    "maxwidth:physical": "1.4",
+    "source:maxwidth:physical": "ARCore"
+  }
+},
+{
+  "type": "node",
+  "id": 1374677697,
+  "lat": 48.1424491,
+  "lon": 17.0971124,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "A",
+    "name": "Hrad",
+    "operator": "DPB",
+    "public_transport": "platform",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1374677718,
+  "lat": 48.1433229,
+  "lon": 17.0986170,
+  "tags": {
+    "bench": "no",
+    "bin": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "B",
+    "name": "Zámocká",
+    "operator": "DPB",
+    "public_transport": "platform",
+    "request_stop": "yes",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1374677726,
+  "lat": 48.1436591,
+  "lon": 17.0987808,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "departures_board": "realtime",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "local_ref": "A",
+    "name": "Zámocká",
+    "operator": "DPB",
+    "passenger_information_display": "yes",
+    "public_transport": "platform",
+    "request_stop": "yes",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911821,
+  "lat": 48.1436751,
+  "lon": 17.0986794,
+  "tags": {
+    "name": "Zámocká",
+    "operator": "DPB",
+    "public_transport": "stop_position",
+    "trolleybus": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911847,
+  "lat": 48.1425674,
+  "lon": 17.0971594,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:markings": "zebra",
+    "highway": "crossing",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911849,
+  "lat": 48.1426238,
+  "lon": 17.0968603,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:island": "no",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911858,
+  "lat": 48.1428199,
+  "lon": 17.0984457,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:markings": "zebra",
+    "highway": "crossing",
+    "kerb": "lowered",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911860,
+  "lat": 48.1428413,
+  "lon": 17.0966452,
+  "tags": {
+    "crossing": "unmarked",
+    "highway": "crossing",
+    "kerb": "lowered",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911871,
+  "lat": 48.1430465,
+  "lon": 17.0986630,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:island": "no",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1454911888,
+  "lat": 48.1434447,
+  "lon": 17.0988533,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 1470667475,
+  "lat": 48.1431516,
+  "lon": 17.1029092,
+  "tags": {
+    "alt_name": "Dievča s havranmi",
+    "artwork_type": "statue",
+    "name": "Plastika Bosorka",
+    "name:en": "Girl With Ravens",
+    "name:hu": "Boszorkány",
+    "panoramax": "bebdedf2-0576-44cd-b581-a13324cdb517",
+    "panoramax:0": "3899e61a-276b-42f1-a857-1ae99d4d9755",
+    "tourism": "artwork",
+    "url": "http://www.panorama.sk/go/clanky/1346.asp"
+  }
+},
+{
+  "type": "node",
+  "id": 1676876927,
+  "lat": 48.1429972,
+  "lon": 17.1019317,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "regional",
+    "name": "HRADNÁ reštaurácia",
+    "old_name": "Hrad",
+    "opening_hours": "We-Su 11:00-20:00",
+    "operator": "CITY GASTRO s.r.o.",
+    "outdoor_seating": "yes",
+    "website": "https://hradna.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 1699960294,
+  "lat": 48.1408389,
+  "lon": 17.1034760,
+  "tags": {
+    "barrier": "entrance",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 1699960306,
+  "lat": 48.1411216,
+  "lon": 17.0984964,
+  "tags": {
+    "access": "no",
+    "barrier": "gate",
+    "note": "policajny zakaz vstupu"
+  }
+},
+{
+  "type": "node",
+  "id": 1699960426,
+  "lat": 48.1427150,
+  "lon": 17.0984474,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:markings": "zebra",
+    "crossing_ref": "zebra",
+    "highway": "crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 1699960427,
+  "lat": 48.1427089,
+  "lon": 17.0984216,
+  "tags": {
+    "access": "yes",
+    "amenity": "parking_entrance",
+    "lpg": "no",
+    "maxheight": "2.1",
+    "maxspeed": "15",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 1736060759,
+  "lat": 48.1405966,
+  "lon": 17.0971551,
+  "tags": {
+    "name": "Výstavný pavilón Podhradie",
+    "name:hu": "Óváros–Váraljai Kiállítási Pavilon",
+    "operator": "SNM",
+    "tourism": "museum",
+    "website": "https://www.snm.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 1998663903,
+  "lat": 48.1424379,
+  "lon": 17.0971668,
+  "tags": {
+    "amenity": "vending_machine",
+    "check_date": "2023-07-04",
+    "operator": "DPB",
+    "payment:coins": "yes",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "ref": "470",
+    "vending": "public_transport_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 2055342122,
+  "lat": 48.1421247,
+  "lon": 17.0980887,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "15",
+    "covered": "no",
+    "name": "NR SR",
+    "supervised": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636613,
+  "lat": 48.1421376,
+  "lon": 17.1020877,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "sv. Alžbeta Durínska",
+    "name:en": "Elizabeth of Hungary",
+    "name:hu": "Árpád-házi Szent Erzsébet",
+    "name:ru": "Св. Елизавета Венгерская",
+    "name:sk": "sv. Alžbeta Durínska",
+    "religion": "christian",
+    "statue": "saint",
+    "subject:wikidata": "Q159862",
+    "subject:wikimedia_commons": "File:Simone_Martini_046.jpg",
+    "subject:wikipedia": "sk:Alžbeta Uhorská (svätica)",
+    "url": "https://pam.epocha.sk/pamatniky-bratislava/stare-mesto/alzbeta-uhorska-1207-1231-hradne-nadvorie"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636621,
+  "lat": 48.1416903,
+  "lon": 17.1000148,
+  "tags": {
+    "direction": "180",
+    "height": "7.8",
+    "historic": "memorial",
+    "layer": "1",
+    "memorial": "statue",
+    "name": "Svätopluk",
+    "start_date": "2010-06-06",
+    "statue": "equestrian",
+    "subject:wikidata": "Q437589",
+    "subject:wikipedia": "sk:Svätopluk I. (Veľká Morava)",
+    "url": "https://pam.epocha.sk/pamatniky-bratislava/stare-mesto/svatopluk-846-894-bratislavsky-hrad",
+    "wheelchair": "yes",
+    "wikidata": "Q12776400",
+    "wikimedia_commons": "Category:Statue of Svatopluk I",
+    "wikipedia": "sk:Socha Svätopluka na Bratislavskom hrade"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636628,
+  "lat": 48.1419763,
+  "lon": 17.0980555,
+  "tags": {
+    "artwork_type": "statue",
+    "material": "metal",
+    "name": "Vítanie",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636636,
+  "lat": 48.1415443,
+  "lon": 17.1000290,
+  "tags": {
+    "direction": "180",
+    "tourism": "viewpoint",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636656,
+  "lat": 48.1417093,
+  "lon": 17.1001686,
+  "tags": {
+    "highway": "street_lamp",
+    "layer": "1",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636658,
+  "lat": 48.1417191,
+  "lon": 17.0998668,
+  "tags": {
+    "highway": "street_lamp",
+    "layer": "1",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636677,
+  "lat": 48.1419670,
+  "lon": 17.1000331,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "gate",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 2554636703,
+  "lat": 48.1426010,
+  "lon": 17.0994492,
+  "tags": {
+    "access": "yes",
+    "amenity": "toilets",
+    "drinking_water": "yes",
+    "fee": "yes",
+    "opening_hours": "Mo-Su 09:00-20:00",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 2721118079,
+  "lat": 48.1439416,
+  "lon": 17.0991223,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "6873",
+    "addr:country": "SK",
+    "addr:housenumber": "6873/14",
+    "addr:postcode": "81101",
+    "addr:street": "Zámocká",
+    "addr:streetnumber": "14",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "6101067346",
+    "source:addr": "minvskaddress 2023-01"
+  }
+},
+{
+  "type": "node",
+  "id": 2759463377,
+  "lat": 48.1431354,
+  "lon": 17.0988887,
+  "tags": {
+    "name": "UNIQA",
+    "office": "insurance",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 3022854410,
+  "lat": 48.1438646,
+  "lon": 17.0982018,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "693",
+    "addr:country": "SK",
+    "addr:housenumber": "693/11",
+    "addr:postcode": "81103",
+    "addr:street": "Palisády",
+    "addr:streetnumber": "11",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "5976443",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3022854411,
+  "lat": 48.1436219,
+  "lon": 17.0982288,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "693",
+    "addr:country": "SK",
+    "addr:housenumber": "693/7",
+    "addr:postcode": "81103",
+    "addr:street": "Palisády",
+    "addr:streetnumber": "7",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "5976421",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3022854412,
+  "lat": 48.1437856,
+  "lon": 17.0982997,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "693",
+    "addr:country": "SK",
+    "addr:housenumber": "693/9",
+    "addr:postcode": "81103",
+    "addr:street": "Palisády",
+    "addr:streetnumber": "9",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "5976432",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3022937329,
+  "lat": 48.1426550,
+  "lon": 17.1034666,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "6651",
+    "addr:country": "SK",
+    "addr:housenumber": "6651/1A",
+    "addr:postcode": "81101",
+    "addr:street": "Mikulášska",
+    "addr:streetnumber": "1A",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "6101048173",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3022937332,
+  "lat": 48.1427956,
+  "lon": 17.1030625,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "6652",
+    "addr:country": "SK",
+    "addr:housenumber": "6652/1C",
+    "addr:postcode": "81101",
+    "addr:street": "Mikulášska",
+    "addr:streetnumber": "1C",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "yes",
+    "ref:minvskaddress": "6101048195",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 3124617644,
+  "lat": 48.1425117,
+  "lon": 17.0977807,
+  "tags": {
+    "amenity": "cafe",
+    "contact:instagram": "https://www.instagram.com/giselle_bratislava/",
+    "cuisine": "coffee_shop",
+    "email": "info@giselle.sk",
+    "level": "2",
+    "name": "Giselle Bratislava",
+    "opening_hours": "Tu-Fr 09:00-19:00; Sa,Su 09:00-18:00",
+    "outdoor_seating": "yes",
+    "phone": "+421 948 930 002",
+    "website": "https://giselle.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 3124617645,
+  "lat": 48.1432384,
+  "lon": 17.0987958,
+  "tags": {
+    "traffic_calming": "bump"
+  }
+},
+{
+  "type": "node",
+  "id": 3188760478,
+  "lat": 48.1415349,
+  "lon": 17.0995663,
+  "tags": {
+    "name": "Suveníry",
+    "shop": "gift",
+    "source": "local knowledge",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 3200645638,
+  "lat": 48.1422096,
+  "lon": 17.0993947,
+  "tags": {
+    "amenity": "restaurant",
+    "check_date": "2024-12-29",
+    "cuisine": "regional",
+    "name": "Hradná Hviezda",
+    "opening_hours": "off",
+    "website": "https://hradnahviezda.business.site/"
+  }
+},
+{
+  "type": "node",
+  "id": 3725144965,
+  "lat": 48.1414645,
+  "lon": 17.1017938,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2023-06-02",
+    "man_made": "water_tap"
+  }
+},
+{
+  "type": "node",
+  "id": 3733792049,
+  "lat": 48.1425834,
+  "lon": 17.1008789,
+  "tags": {
+    "access": "permissive",
+    "barrier": "gate",
+    "maxwidth:physical": "2.9",
+    "source": "Ortofotomozaika SR",
+    "source:maxwidth:physical": "ARCore"
+  }
+},
+{
+  "type": "node",
+  "id": 4006502663,
+  "lat": 48.1413415,
+  "lon": 17.0983393,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "4819",
+    "addr:country": "SK",
+    "addr:housenumber": "4819/2",
+    "addr:postcode": "81101",
+    "addr:street": "Námestie Alexandra Dubčeka",
+    "addr:streetnumber": "2",
+    "amenity": "restaurant",
+    "loc_name": "Parlamentka",
+    "name": "Restaurant Parlament",
+    "opening_hours": "Mo-Sa 10:00-22:00; Su 10:00-20:00",
+    "outdoor_seating": "yes",
+    "website": "https://www.restaurantparlament.sk/",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4140055475,
+  "lat": 48.1420472,
+  "lon": 17.0984280,
+  "tags": {
+    "camera:type": "fixed",
+    "check_date": "2024-06-08",
+    "man_made": "surveillance",
+    "surveillance": "public",
+    "surveillance:type": "camera",
+    "surveillance:zone": "town"
+  }
+},
+{
+  "type": "node",
+  "id": 4140055478,
+  "lat": 48.1421734,
+  "lon": 17.0974954,
+  "tags": {
+    "man_made": "surveillance",
+    "surveillance": "outdoor",
+    "surveillance:type": "camera",
+    "surveillance:zone": "parking"
+  }
+},
+{
+  "type": "node",
+  "id": 4318754228,
+  "lat": 48.1426713,
+  "lon": 17.1034644,
+  "tags": {
+    "access": "private",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 4345843007,
+  "lat": 48.1406428,
+  "lon": 17.1008459,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/Colt-Club-strelnica-101160298296296/",
+    "contact:instagram": "https://www.instagram.com/coltclub_strelnica/",
+    "email": "coltclub@centrum.sk",
+    "leisure": "pitch",
+    "location": "underground",
+    "name": "Colt Club",
+    "opening_hours": "Tu,Th 16:00-19:00",
+    "phone": "+421 2 54 432 902",
+    "shooting": "indoor_range",
+    "sport": "shooting",
+    "website": "https://www.coltclub-strelnica.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 4501110306,
+  "lat": 48.1439720,
+  "lon": 17.0991068,
+  "tags": {
+    "amenity": "pharmacy",
+    "email": "lekaren.zamocka@gmail.com",
+    "name": "Zámocká",
+    "opening_hours": "Mo-Fr 08:30-16:30",
+    "operator": "Lumater s.r.o."
+  }
+},
+{
+  "type": "node",
+  "id": 4524993590,
+  "lat": 48.1423266,
+  "lon": 17.1001480,
+  "tags": {
+    "xmas:day_date": "28.11.2025-21.12.2025",
+    "xmas:feature": "market",
+    "xmas:location": "Bratislavský hrad",
+    "xmas:name": "Stredoveké vianočné trhy",
+    "xmas:opening_hours": "Sa,Su 10:00-18:00",
+    "xmas:url": "https://www.visitbratislava.com/sk/podujatia/stredoveke-vianocne-trhy/"
+  }
+},
+{
+  "type": "node",
+  "id": 4774379751,
+  "lat": 48.1438056,
+  "lon": 17.0988084,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:island": "no",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Ortofotomozaika SR",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4993467322,
+  "lat": 48.1434380,
+  "lon": 17.0989668,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Four Seasons",
+    "opening_hours": "Mo,Tu 10:30-15:30; We,Th 10:30-20:00; Fr 10:30-15:00",
+    "outdoor_seating": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5020350131,
+  "lat": 48.1429238,
+  "lon": 17.1009026,
+  "tags": {
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 5020350220,
+  "lat": 48.1429770,
+  "lon": 17.1003038,
+  "tags": {
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 5328766326,
+  "lat": 48.1413870,
+  "lon": 17.0981465,
+  "tags": {
+    "name": "Vodný vrch",
+    "name:sk": "Vodný vrch",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 5357621424,
+  "lat": 48.1420017,
+  "lon": 17.1009221,
+  "tags": {
+    "board_type": "history",
+    "check_date": "2026-08-10",
+    "information": "board",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 5874041446,
+  "lat": 48.1420461,
+  "lon": 17.0972735,
+  "tags": {
+    "access": "private",
+    "amenity": "parking_entrance",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 5874041476,
+  "lat": 48.1415291,
+  "lon": 17.0980930,
+  "tags": {
+    "barrier": "planter"
+  }
+},
+{
+  "type": "node",
+  "id": 5874041478,
+  "lat": 48.1414162,
+  "lon": 17.0978442,
+  "tags": {
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 5874041722,
+  "lat": 48.1417731,
+  "lon": 17.0978805,
+  "tags": {
+    "access": "private",
+    "entrance": "main"
+  }
+},
+{
+  "type": "node",
+  "id": 5875374061,
+  "lat": 48.1426919,
+  "lon": 17.1002292,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5878737382,
+  "lat": 48.1429521,
+  "lon": 17.0992273,
+  "tags": {
+    "fixme": "kam ide tato cesta?"
+  }
+},
+{
+  "type": "node",
+  "id": 5910148911,
+  "lat": 48.1434082,
+  "lon": 17.1032785,
+  "tags": {
+    "access": "no",
+    "barrier": "gate",
+    "bicycle": "private",
+    "foot": "private",
+    "horse": "no",
+    "motor_vehicle": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5916239293,
+  "lat": 48.1415119,
+  "lon": 17.0995701,
+  "tags": {
+    "direction": "180",
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 5916256975,
+  "lat": 48.1417696,
+  "lon": 17.1007327,
+  "tags": {
+    "noexit": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508449,
+  "lat": 48.1419289,
+  "lon": 17.0989990,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2024-12-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508450,
+  "lat": 48.1419926,
+  "lon": 17.0990199,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2024-12-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508451,
+  "lat": 48.1419636,
+  "lon": 17.0990085,
+  "tags": {
+    "amenity": "waste_basket",
+    "check_date": "2024-12-29"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508452,
+  "lat": 48.1419084,
+  "lon": 17.0991040,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508453,
+  "lat": 48.1419437,
+  "lon": 17.0991404,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508466,
+  "lat": 48.1418527,
+  "lon": 17.0993032,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2025-07-17"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508467,
+  "lat": 48.1419636,
+  "lon": 17.0998953,
+  "tags": {
+    "man_made": "flagpole"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508468,
+  "lat": 48.1419560,
+  "lon": 17.1001551,
+  "tags": {
+    "man_made": "flagpole"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508469,
+  "lat": 48.1418689,
+  "lon": 17.0993238,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2025-07-17"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508470,
+  "lat": 48.1418931,
+  "lon": 17.0993287,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2025-07-17"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508471,
+  "lat": 48.1418152,
+  "lon": 17.0993189,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2025-07-17"
+  }
+},
+{
+  "type": "node",
+  "id": 5931508472,
+  "lat": 48.1418250,
+  "lon": 17.0993571,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "check_date": "2025-07-17"
+  }
+},
+{
+  "type": "node",
+  "id": 5961897606,
+  "lat": 48.1428147,
+  "lon": 17.0989881,
+  "tags": {
+    "amenity": "parking_entrance",
+    "lpg": "no",
+    "maxheight": "2",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 5961897609,
+  "lat": 48.1432519,
+  "lon": 17.0989176,
+  "tags": {
+    "name": "SLOVESTNIK",
+    "shop": "gift",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 6190633964,
+  "lat": 48.1422061,
+  "lon": 17.0985326,
+  "tags": {
+    "amenity": "post_box",
+    "collection_times": "Mo-Fr 12:00",
+    "old_ref": "623",
+    "operator": "Slovenská pošta",
+    "operator:wikidata": "Q1191849",
+    "ref": "178",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 6634926257,
+  "lat": 48.1424100,
+  "lon": 17.1018150,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 6694403293,
+  "lat": 48.1412255,
+  "lon": 17.1008477,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "seats": "6"
+  }
+},
+{
+  "type": "node",
+  "id": 6694403295,
+  "lat": 48.1417428,
+  "lon": 17.1023697,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 6694404785,
+  "lat": 48.1420516,
+  "lon": 17.0986450,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "7",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6709431686,
+  "lat": 48.1411754,
+  "lon": 17.1015206,
+  "tags": {
+    "amenity": "waste_basket",
+    "check_date": "2026-09-15"
+  }
+},
+{
+  "type": "node",
+  "id": 6709431687,
+  "lat": 48.1411933,
+  "lon": 17.1010662,
+  "tags": {
+    "amenity": "waste_basket",
+    "check_date": "2026-09-15"
+  }
+},
+{
+  "type": "node",
+  "id": 6709431688,
+  "lat": 48.1411625,
+  "lon": 17.0999332,
+  "tags": {
+    "amenity": "waste_basket",
+    "check_date": "2026-09-15"
+  }
+},
+{
+  "type": "node",
+  "id": 6709446285,
+  "lat": 48.1411739,
+  "lon": 17.1008226,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 6709446286,
+  "lat": 48.1411706,
+  "lon": 17.1006283,
+  "tags": {
+    "amenity": "waste_basket",
+    "check_date": "2026-09-15"
+  }
+},
+{
+  "type": "node",
+  "id": 6709488944,
+  "lat": 48.1419340,
+  "lon": 17.0982895,
+  "tags": {
+    "alt_name": "Dankov Slovenský Národný Stožiar (SNS) / od Danka",
+    "colour": "#EE1C25",
+    "country": "SK",
+    "flag:name": "Slovakia",
+    "flag:type": "national",
+    "flag:wikidata": "Q160861",
+    "height": "30",
+    "inscription": "Štátna vlajka Slovenskej republiky bola po prvý raz vztýčená 1. septembra 2019 v deň ústavy Slovenskej republiky v roku 75. výročia Slovenského národného povstania a 30. výročia Nežnej revolúcie",
+    "lit": "yes",
+    "man_made": "flagpole",
+    "material": "metal",
+    "name": "Národný stožiar",
+    "operator": "NRSR",
+    "subject": "Slovakia",
+    "subject:wikidata": "Q214"
+  }
+},
+{
+  "type": "node",
+  "id": 6733497150,
+  "lat": 48.1420756,
+  "lon": 17.0985459,
+  "tags": {
+    "access": "permissive",
+    "access:conditional": "yes @ (Mo-Su 08:00-22:00); private @ (Mo-Su 22:00-08:00)",
+    "barrier": "wicket_gate",
+    "bicycle": "no",
+    "dog": "no",
+    "kick_scooter": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6733497158,
+  "lat": 48.1416779,
+  "lon": 17.0985592,
+  "tags": {
+    "artist_name": "Ľudmila Cvengrošová",
+    "historic": "memorial",
+    "inscription": "Alexander Dubček Slovenský štátnik 1921-1992",
+    "material": "metal",
+    "memorial": "bust",
+    "name": "Alexander Dubček",
+    "start_date": "2002",
+    "subject:wikidata": "Q150543",
+    "subject:wikipedia": "sk:Alexander Dubček"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500802,
+  "lat": 48.1421842,
+  "lon": 17.0974731,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "rising"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500843,
+  "lat": 48.1415752,
+  "lon": 17.0979957,
+  "tags": {
+    "colour": "#003399",
+    "height": "12",
+    "man_made": "flagpole",
+    "operator": "NRSR"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500844,
+  "lat": 48.1415680,
+  "lon": 17.0980438,
+  "tags": {
+    "colour": "#EE1C25",
+    "country": "SK",
+    "flag:type": "national",
+    "height": "12",
+    "man_made": "flagpole",
+    "operator": "NRSR"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500845,
+  "lat": 48.1415363,
+  "lon": 17.0980332,
+  "tags": {
+    "colour": "#003399",
+    "height": "12",
+    "man_made": "flagpole",
+    "operator": "NRSR"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500846,
+  "lat": 48.1415435,
+  "lon": 17.0979850,
+  "tags": {
+    "colour": "#EE1C25",
+    "country": "SK",
+    "flag:type": "national",
+    "height": "12",
+    "man_made": "flagpole",
+    "operator": "NRSR"
+  }
+},
+{
+  "type": "node",
+  "id": 6733500864,
+  "lat": 48.1417464,
+  "lon": 17.0980824,
+  "tags": {
+    "amenity": "fountain",
+    "layer": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 6747088585,
+  "lat": 48.1433132,
+  "lon": 17.1023533,
+  "tags": {
+    "amenity": "drinking_water",
+    "check_date": "2023-06-02"
+  }
+},
+{
+  "type": "node",
+  "id": 8693112115,
+  "lat": 48.1423603,
+  "lon": 17.1016022,
+  "tags": {
+    "man_made": "water_well"
+  }
+},
+{
+  "type": "node",
+  "id": 9066805494,
+  "lat": 48.1417615,
+  "lon": 17.1010579,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9066823164,
+  "lat": 48.1417762,
+  "lon": 17.1010924,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9066824969,
+  "lat": 48.1418257,
+  "lon": 17.1011634,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9066897561,
+  "lat": 48.1418314,
+  "lon": 17.0991232,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9066914224,
+  "lat": 48.1418326,
+  "lon": 17.0991561,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403361765,
+  "lat": 48.1417696,
+  "lon": 17.1007531,
+  "tags": {
+    "historic": "memorial",
+    "inscription": "Tieto tri lipy boli zasadené pri príležitosti podpísania ústavného zákona o Československej federácii dňa 30. októbra 1968 najvyššími predstaviteľmi ČSSR",
+    "memorial": "plaque",
+    "name": "Ústavný zákon o československej federácii",
+    "panoramax": "af037dba-93fe-41ae-aa34-87705e2e34e2",
+    "url": "https://pam.epocha.sk/pamatniky-bratislava/stare-mesto/federacia-ceskoslovenska-30-10-1968-hradne-nadvorie",
+    "wikimedia_commons": "File:Bratislava hradny vrch.jpg"
+  }
+},
+{
+  "type": "node",
+  "id": 9403361775,
+  "lat": 48.1418580,
+  "lon": 17.1025834,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403367521,
+  "lat": 48.1430357,
+  "lon": 17.1009937,
+  "tags": {
+    "amenity": "parking_entrance",
+    "foot": "yes",
+    "motor_vehicle": "no",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 9403367525,
+  "lat": 48.1430899,
+  "lon": 17.1010210,
+  "tags": {
+    "highway": "elevator"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406907,
+  "lat": 48.1420811,
+  "lon": 17.1024131,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406908,
+  "lat": 48.1421319,
+  "lon": 17.1023856,
+  "tags": {
+    "amenity": "waste_basket",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406909,
+  "lat": 48.1421663,
+  "lon": 17.1023742,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406910,
+  "lat": 48.1420943,
+  "lon": 17.1023930,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406911,
+  "lat": 48.1418433,
+  "lon": 17.1025593,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406912,
+  "lat": 48.1418813,
+  "lon": 17.1025814,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406913,
+  "lat": 48.1416603,
+  "lon": 17.1024936,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406914,
+  "lat": 48.1416106,
+  "lon": 17.1025097,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "seats": "3"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406915,
+  "lat": 48.1415712,
+  "lon": 17.1025170,
+  "tags": {
+    "amenity": "waste_basket",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 9403406916,
+  "lat": 48.1424500,
+  "lon": 17.1009620,
+  "tags": {
+    "colour": "red",
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "green",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 9423872877,
+  "lat": 48.1414970,
+  "lon": 17.1025043,
+  "tags": {
+    "camera:mount": "pole",
+    "camera:type": "dome",
+    "man_made": "surveillance",
+    "surveillance:type": "camera",
+    "surveillance:zone": "town"
+  }
+},
+{
+  "type": "node",
+  "id": 9423872889,
+  "lat": 48.1414889,
+  "lon": 17.1024118,
+  "tags": {
+    "amenity": "waste_basket",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 9423872890,
+  "lat": 48.1414943,
+  "lon": 17.1023977,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "seats": "3",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9423872891,
+  "lat": 48.1416267,
+  "lon": 17.1023943,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9423872916,
+  "lat": 48.1417826,
+  "lon": 17.1002678,
+  "tags": {
+    "level": "0",
+    "name": "Múzejný obchod",
+    "name:en": "Museum Shop",
+    "opening_hours": "Mo,We-Su 10:00-18:00",
+    "shop": "gift"
+  }
+},
+{
+  "type": "node",
+  "id": 9423998728,
+  "lat": 48.1412482,
+  "lon": 17.1022763,
+  "tags": {
+    "information": "map",
+    "map_size": "site",
+    "map_type": "street",
+    "name": "Hradný vrch",
+    "name:en": "Castle hill",
+    "source": "survey",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962825,
+  "lat": 48.1414173,
+  "lon": 17.0995063,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962826,
+  "lat": 48.1413019,
+  "lon": 17.0996236,
+  "tags": {
+    "handle": "no",
+    "man_made": "water_well",
+    "pump": "no",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962848,
+  "lat": 48.1419520,
+  "lon": 17.1005677,
+  "tags": {
+    "access": "no",
+    "barrier": "gate",
+    "note": "tu sa neda ist na cestu, ktora je o poschodie vyssie"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962851,
+  "lat": 48.1419624,
+  "lon": 17.1012941,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962862,
+  "lat": 48.1424672,
+  "lon": 17.1013107,
+  "tags": {
+    "amenity": "waste_basket",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962863,
+  "lat": 48.1424487,
+  "lon": 17.1013167,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962864,
+  "lat": 48.1424272,
+  "lon": 17.1018974,
+  "tags": {
+    "playground": "slide",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962866,
+  "lat": 48.1431471,
+  "lon": 17.1015796,
+  "tags": {
+    "amenity": "waste_basket",
+    "source": "Ortofotomozaika SR",
+    "waste": "trash"
+  }
+},
+{
+  "type": "node",
+  "id": 9425962867,
+  "lat": 48.1424505,
+  "lon": 17.1023092,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "seats": "8"
+  }
+},
+{
+  "type": "node",
+  "id": 9426813973,
+  "lat": 48.1422549,
+  "lon": 17.1003769,
+  "tags": {
+    "drinking_water": "no",
+    "man_made": "water_well",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 9733120900,
+  "lat": 48.1431781,
+  "lon": 17.0988113,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9733150741,
+  "lat": 48.1429904,
+  "lon": 17.0967352,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9786533214,
+  "lat": 48.1412537,
+  "lon": 17.1023283,
+  "tags": {
+    "amenity": "drinking_water",
+    "man_made": "water_tap",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 9862583499,
+  "lat": 48.1435342,
+  "lon": 17.1022674,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862599693,
+  "lat": 48.1426272,
+  "lon": 17.1022693,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862600415,
+  "lat": 48.1429563,
+  "lon": 17.1030892,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862603472,
+  "lat": 48.1430785,
+  "lon": 17.0996906,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862615692,
+  "lat": 48.1437725,
+  "lon": 17.1020204,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862615694,
+  "lat": 48.1435153,
+  "lon": 17.0987761,
+  "tags": {
+    "amenity": "vending_machine",
+    "vending": "public_transport_tickets"
+  }
+},
+{
+  "type": "node",
+  "id": 9862615763,
+  "lat": 48.1430676,
+  "lon": 17.1026687,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862619896,
+  "lat": 48.1430563,
+  "lon": 17.1021646,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862619897,
+  "lat": 48.1429357,
+  "lon": 17.1022393,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862624867,
+  "lat": 48.1426562,
+  "lon": 17.1022633,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862624868,
+  "lat": 48.1428665,
+  "lon": 17.0990249,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862632454,
+  "lat": 48.1419470,
+  "lon": 17.1024714,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862638098,
+  "lat": 48.1434040,
+  "lon": 17.1021967,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862641447,
+  "lat": 48.1439115,
+  "lon": 17.0996671,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862641543,
+  "lat": 48.1430413,
+  "lon": 17.1029408,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862641544,
+  "lat": 48.1439786,
+  "lon": 17.1017278,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862643060,
+  "lat": 48.1433984,
+  "lon": 17.1021281,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862643061,
+  "lat": 48.1425914,
+  "lon": 17.1023211,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862643285,
+  "lat": 48.1429136,
+  "lon": 17.1029426,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862646969,
+  "lat": 48.1438452,
+  "lon": 17.0995607,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862647985,
+  "lat": 48.1431131,
+  "lon": 17.1027656,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862647986,
+  "lat": 48.1433791,
+  "lon": 17.1022864,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862648747,
+  "lat": 48.1439853,
+  "lon": 17.0996418,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862650133,
+  "lat": 48.1422248,
+  "lon": 17.1024079,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862650799,
+  "lat": 48.1430262,
+  "lon": 17.1024511,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 9862650800,
+  "lat": 48.1430263,
+  "lon": 17.1022193,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862650922,
+  "lat": 48.1432307,
+  "lon": 17.1021257,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862654296,
+  "lat": 48.1432416,
+  "lon": 17.1023900,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862654297,
+  "lat": 48.1429895,
+  "lon": 17.1021853,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9862654298,
+  "lat": 48.1435659,
+  "lon": 17.1022457,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862654754,
+  "lat": 48.1430511,
+  "lon": 17.1024520,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 9862655783,
+  "lat": 48.1416963,
+  "lon": 17.1025460,
+  "tags": {
+    "highway": "street_lamp"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658273,
+  "lat": 48.1427807,
+  "lon": 17.1014071,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658274,
+  "lat": 48.1429324,
+  "lon": 17.1013375,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658275,
+  "lat": 48.1430428,
+  "lon": 17.1012989,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658276,
+  "lat": 48.1417795,
+  "lon": 17.1008136,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658277,
+  "lat": 48.1419209,
+  "lon": 17.0988097,
+  "tags": {
+    "leaf_type": "broadleaved",
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 10315658298,
+  "lat": 48.1423848,
+  "lon": 17.1014566,
+  "tags": {
+    "access": "private",
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10315668012,
+  "lat": 48.1434282,
+  "lon": 17.1003145,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 10315802019,
+  "lat": 48.1412897,
+  "lon": 17.1015134,
+  "tags": {
+    "fixme": "mozno par schodov?"
+  }
+},
+{
+  "type": "node",
+  "id": 10315802034,
+  "lat": 48.1426974,
+  "lon": 17.0977060,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:markings": "no",
+    "highway": "crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 10315802040,
+  "lat": 48.1422994,
+  "lon": 17.0973623,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "rising"
+  }
+},
+{
+  "type": "node",
+  "id": 10315811370,
+  "lat": 48.1437219,
+  "lon": 17.0989207,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing_ref": "zebra",
+    "highway": "crossing",
+    "source": "Ortofotomozaika SR",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10316312443,
+  "lat": 48.1433950,
+  "lon": 17.1010653,
+  "tags": {
+    "access": "permissive",
+    "barrier": "wicket_gate",
+    "maxwidth:physical": "1.2",
+    "source:maxwidth:physical": "ARCore"
+  }
+},
+{
+  "type": "node",
+  "id": 10316312445,
+  "lat": 48.1433075,
+  "lon": 17.1016001,
+  "tags": {
+    "entrance": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10946293705,
+  "lat": 48.1428069,
+  "lon": 17.1029178,
+  "tags": {
+    "amenity": "cafe",
+    "indoor_seating": "yes",
+    "name": "Hexe",
+    "opening_hours": "Mo-Th 11:00-23:00; Fr,Sa 11:00-24:00; Su 11:00-21:00",
+    "outdoor_seating": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11028739245,
+  "lat": 48.1422627,
+  "lon": 17.1010604,
+  "tags": {
+    "artist_name": "Anton Gábrik",
+    "artwork_type": "statue",
+    "comment": "Súsošie sv. Cyrila, Metoda a Gorazda.",
+    "height": "4",
+    "material": "bronze",
+    "name": "Rotunda",
+    "panoramax": "d2e2ce10-7afe-4830-9cb3-48adb1c435d2",
+    "source:name": "https://bratislava.sme.sk/c/6302353/cyril-a-metod-uz-maju-vitaza.html",
+    "start_date": "2023-07",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 11073908240,
+  "lat": 48.1426128,
+  "lon": 17.0983579,
+  "tags": {
+    "access": "yes",
+    "amenity": "toilets",
+    "fee": "yes",
+    "note": "€1 to open door to multiple toilets. So you can go with multiple people at once. !Wheelchair toilet is locked and without coin access, unclear how to access. might only be accesible between opening hours shop next to toilet (11h-17h)",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11780474132,
+  "lat": 48.1424844,
+  "lon": 17.1019425,
+  "tags": {
+    "amenity": "drinking_water",
+    "description": "Off 2.4.24",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12057308462,
+  "lat": 48.1415497,
+  "lon": 17.1031846,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12057310214,
+  "lat": 48.1412642,
+  "lon": 17.1023662,
+  "tags": {
+    "amenity": "waste_basket",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248105,
+  "lat": 48.1434739,
+  "lon": 17.1018819,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248106,
+  "lat": 48.1434217,
+  "lon": 17.1011985,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248107,
+  "lat": 48.1434065,
+  "lon": 17.1011033,
+  "tags": {
+    "amenity": "waste_basket",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248108,
+  "lat": 48.1436577,
+  "lon": 17.1006275,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248110,
+  "lat": 48.1417985,
+  "lon": 17.1001934,
+  "tags": {
+    "check_date": "2026-01-02",
+    "level": "1",
+    "opening_hours": "Mo-Su 10:00-18:00; Tu off",
+    "operator": "Slovenské národné múzeum",
+    "payment:apple_pay": "yes",
+    "payment:cards": "yes",
+    "payment:cash": "yes",
+    "payment:contactless": "yes",
+    "payment:credit_cards": "yes",
+    "payment:debit_cards": "yes",
+    "payment:ec_cards": "yes",
+    "payment:girocard": "yes",
+    "payment:google_pay": "yes",
+    "payment:mastercard": "yes",
+    "payment:visa": "yes",
+    "shop": "ticket",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248118,
+  "lat": 48.1428470,
+  "lon": 17.1007038,
+  "tags": {
+    "access": "yes",
+    "amenity": "parking",
+    "charge": "3 EUR/hour",
+    "fee": "yes",
+    "layer": "-1",
+    "name": "Garáž Hrad",
+    "name:en": "Castle garage",
+    "opening_hours": "Mo-Su 08:00-24:00",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248123,
+  "lat": 48.1425813,
+  "lon": 17.1015909,
+  "tags": {
+    "barrier": "bollard",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248124,
+  "lat": 48.1424776,
+  "lon": 17.1020614,
+  "tags": {
+    "playground": "structure",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248125,
+  "lat": 48.1424565,
+  "lon": 17.1020340,
+  "tags": {
+    "playground": "seesaw",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248126,
+  "lat": 48.1424465,
+  "lon": 17.1019808,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248127,
+  "lat": 48.1423921,
+  "lon": 17.1021088,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248128,
+  "lat": 48.1424299,
+  "lon": 17.1020390,
+  "tags": {
+    "playground": "balancebeam",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248129,
+  "lat": 48.1424387,
+  "lon": 17.1020947,
+  "tags": {
+    "playground": "wobble_bridge",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248130,
+  "lat": 48.1423871,
+  "lon": 17.1018478,
+  "tags": {
+    "playground": "swing",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248131,
+  "lat": 48.1424548,
+  "lon": 17.1018411,
+  "tags": {
+    "playground": "climbingwall",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248139,
+  "lat": 48.1433047,
+  "lon": 17.1018823,
+  "tags": {
+    "access": "no",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248148,
+  "lat": 48.1433245,
+  "lon": 17.1018197,
+  "tags": {
+    "information": "map",
+    "map_size": "site",
+    "map_type": "street",
+    "name": "Areál bratislavského hradu",
+    "name:en": "Area Bratislava castle",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248160,
+  "lat": 48.1434492,
+  "lon": 17.1022609,
+  "tags": {
+    "information": "map",
+    "map_size": "site",
+    "map_type": "street",
+    "name": "Hradný vrch",
+    "name:en": "Castle hill",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12123248163,
+  "lat": 48.1428907,
+  "lon": 17.1030139,
+  "tags": {
+    "amenity": "ice_cream",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467435,
+  "lat": 48.1426523,
+  "lon": 17.0984097,
+  "tags": {
+    "access": "yes",
+    "amenity": "parking_entrance",
+    "maxheight": "2.1",
+    "parking": "underground"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467438,
+  "lat": 48.1426289,
+  "lon": 17.0984352,
+  "tags": {
+    "crossing": "uncontrolled",
+    "crossing:markings": "zebra",
+    "crossing_ref": "zebra",
+    "highway": "crossing"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467464,
+  "lat": 48.1436837,
+  "lon": 17.1032814,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "7622",
+    "addr:country": "SK",
+    "addr:housenumber": "7622/11",
+    "addr:postcode": "81101",
+    "addr:street": "Skalná",
+    "addr:streetnumber": "11",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "7001963353",
+    "source:addr": "minvskaddress 2024-08"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467465,
+  "lat": 48.1438430,
+  "lon": 17.1030754,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "7622",
+    "addr:country": "SK",
+    "addr:housenumber": "7622/9",
+    "addr:postcode": "81101",
+    "addr:street": "Skalná",
+    "addr:streetnumber": "9",
+    "addr:suburb": "Staré Mesto",
+    "ref:minvskaddress": "7001963342",
+    "source:addr": "minvskaddress 2024-08"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467472,
+  "lat": 48.1416003,
+  "lon": 17.1032325,
+  "tags": {
+    "amenity": "cafe",
+    "check_date:opening_hours": "2026-09-15",
+    "name": "cafe one",
+    "opening_hours": "Mo-Su 10:30-21:30",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467482,
+  "lat": 48.1412419,
+  "lon": 17.1022334,
+  "tags": {
+    "amenity": "waste_basket",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467483,
+  "lat": 48.1411578,
+  "lon": 17.1006723,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "seats": "2"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467484,
+  "lat": 48.1417520,
+  "lon": 17.0983710,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467485,
+  "lat": 48.1416558,
+  "lon": 17.0983432,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128467498,
+  "lat": 48.1427942,
+  "lon": 17.0966118,
+  "tags": {
+    "highway": "give_way",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12128489311,
+  "lat": 48.1425678,
+  "lon": 17.0967839,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12128489360,
+  "lat": 48.1419221,
+  "lon": 17.0984810,
+  "tags": {
+    "information": "map",
+    "map_size": "site",
+    "map_type": "street",
+    "name": "Hradný vrch",
+    "name:en": "Castle hill",
+    "source": "survey",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12135902962,
+  "lat": 48.1426026,
+  "lon": 17.0982818,
+  "tags": {
+    "amenity": "car_wash",
+    "automated": "no",
+    "email": "info@autoumyvarenparkhrad.sk",
+    "name": "PARK-HRAD",
+    "opening_hours": "Mo-Fr 08:00-18:00",
+    "operator": "Autopionier.sk, s.r.o.",
+    "phone": "+421 911 919 901",
+    "self_service": "no",
+    "source": "survey",
+    "website": "https://autoumyvarenparkhrad.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910537,
+  "lat": 48.1438760,
+  "lon": 17.0983563,
+  "tags": {
+    "name": "ZELENÁ IZBA",
+    "shop": "florist",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910538,
+  "lat": 48.1438908,
+  "lon": 17.0990738,
+  "tags": {
+    "name": "ELEMENT",
+    "shop": "hairdresser"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910539,
+  "lat": 48.1438004,
+  "lon": 17.0990530,
+  "tags": {
+    "craft": "architect",
+    "name": "GLAMOUR INTERIORS",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910540,
+  "lat": 48.1438137,
+  "lon": 17.0987202,
+  "tags": {
+    "direction": "forward",
+    "highway": "give_way",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910541,
+  "lat": 48.1433301,
+  "lon": 17.0989410,
+  "tags": {
+    "name": "papaver",
+    "shop": "florist"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910615,
+  "lat": 48.1433234,
+  "lon": 17.0985668,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910616,
+  "lat": 48.1433973,
+  "lon": 17.0985668,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910617,
+  "lat": 48.1434729,
+  "lon": 17.0985688,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910618,
+  "lat": 48.1435700,
+  "lon": 17.0985682,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910619,
+  "lat": 48.1434035,
+  "lon": 17.0987640,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910620,
+  "lat": 48.1435328,
+  "lon": 17.0987901,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910621,
+  "lat": 48.1436017,
+  "lon": 17.0988055,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910622,
+  "lat": 48.1436630,
+  "lon": 17.0988156,
+  "tags": {
+    "natural": "tree",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910626,
+  "lat": 48.1429579,
+  "lon": 17.0987854,
+  "tags": {
+    "information": "map",
+    "map_size": "site",
+    "map_type": "street",
+    "name": "Hradný vrch",
+    "name:en": "Castle hill",
+    "source": "survey",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910629,
+  "lat": 48.1429669,
+  "lon": 17.0984682,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "691",
+    "addr:country": "SK",
+    "addr:housenumber": "691/1",
+    "addr:postcode": "81101",
+    "addr:street": "Palisády",
+    "addr:streetnumber": "1",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "5976399",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910630,
+  "lat": 48.1431563,
+  "lon": 17.0984166,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "691",
+    "addr:country": "SK",
+    "addr:housenumber": "691/3",
+    "addr:postcode": "81101",
+    "addr:street": "Palisády",
+    "addr:streetnumber": "3",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "597640A",
+    "source:addr": "minvskaddress 2025-01"
+  }
+},
+{
+  "type": "node",
+  "id": 12142910632,
+  "lat": 48.1428925,
+  "lon": 17.0985313,
+  "tags": {
+    "highway": "traffic_mirror",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 12176607811,
+  "lat": 48.1415145,
+  "lon": 17.0980531,
+  "tags": {
+    "access": "private",
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 12460638101,
+  "lat": 48.1423843,
+  "lon": 17.1021867,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 12538620396,
+  "lat": 48.1409128,
+  "lon": 17.0988690,
+  "tags": {
+    "name": "Kempelenov vodovod",
+    "name:de": "Kempelens wasserleitung",
+    "name:en": "Kempelen's aqueduct",
+    "name:hu": "Kempelen vízvezetéke",
+    "tourism": "attraction"
+  }
+},
+{
+  "type": "node",
+  "id": 12538620397,
+  "lat": 48.1409098,
+  "lon": 17.0988610,
+  "tags": {
+    "information": "board",
+    "name": "Kempelenov vodovod",
+    "name:de": "Kempelens wasserleitung",
+    "name:en": "Kempelen's aqueduct",
+    "name:hu": "Kempelen vízvezetéke",
+    "ref": "6",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12538643651,
+  "lat": 48.1405913,
+  "lon": 17.1002506,
+  "tags": {
+    "board_type": "history",
+    "information": "board",
+    "name": "Ľadová jama",
+    "name:de": "Eisgrube",
+    "name:en": "Ice pit",
+    "name:hu": "A jégverem",
+    "ref": "4",
+    "tourism": "information"
+  }
+},
+{
+  "type": "node",
+  "id": 12706849311,
+  "lat": 48.1405255,
+  "lon": 17.0976542,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/SNMarcheologickemuzeum/",
+    "email": "archeolog@snm.sk",
+    "fee": "yes",
+    "museum": "archaeological",
+    "name": "Archeologické múzeum",
+    "name:hu": "Régészeti Múzeum",
+    "opening_hours": "Tu-Su 10:00-17:00",
+    "operator": "SNM",
+    "phone": "+421 2 20 491 273",
+    "tourism": "museum",
+    "website": "https://www.snm.sk/am"
+  }
+},
+{
+  "type": "node",
+  "id": 12706849312,
+  "lat": 48.1406166,
+  "lon": 17.0970339,
+  "tags": {
+    "access": "private",
+    "contact:facebook": "https://www.facebook.com/hudobnemuzeum.snm/",
+    "fee": "yes",
+    "museum": "music",
+    "name": "Hudobné múzeum",
+    "name:hu": "Zenei Múzeum",
+    "opening_hours": "Mo-Su \"na objednávku/on appointment\"",
+    "operator": "SNM",
+    "phone": "+421 2 204 91 281",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 12706849313,
+  "lat": 48.1405573,
+  "lon": 17.0973873,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/karpatskiNemci.muzeum/",
+    "email": "mkkn@snm.sk",
+    "fee": "yes",
+    "museum": "ethnography",
+    "name": "Múzeum kultúry karpatských Nemcov",
+    "name:hu": "Kárpáti Német Kultúra Múzeuma",
+    "opening_hours": "Mo-Su 10:00-17:00",
+    "operator": "SNM",
+    "phone": "+421 2 204 91 212",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 12706849314,
+  "lat": 48.1406226,
+  "lon": 17.0969528,
+  "tags": {
+    "contact:facebook": "https://www.facebook.com/SNMMKMS/",
+    "email": "mkms@snm.sk",
+    "fee": "yes",
+    "museum": "ethnography",
+    "name": "Múzeum kultúry Maďarov na Slovensku",
+    "name:hu": "Szlovákiai Magyar Kultúra Múzeuma",
+    "opening_hours": "Nov-Feb Tu-Su 10:00-16:00; Mar-Jun Tu-Su 10:00-17:00; Jul-Aug Tu-Fr 10:00-17:00; Sep-Oct Tu-Su 10:00-17:00",
+    "operator": "SNM",
+    "phone": "+421 2 204 91 258",
+    "tourism": "museum",
+    "website": "https://www.snm.sk/mkms"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721184,
+  "lat": 48.1407269,
+  "lon": 17.1002848,
+  "tags": {
+    "amenity": "recycling",
+    "recycling:glass": "yes",
+    "recycling:paper": "yes",
+    "recycling:plastic_packaging": "yes",
+    "recycling:waste": "yes",
+    "recycling_type": "container"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721185,
+  "lat": 48.1407810,
+  "lon": 17.1003022,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721186,
+  "lat": 48.1408736,
+  "lon": 17.0983237,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721187,
+  "lat": 48.1408718,
+  "lon": 17.0983073,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721188,
+  "lat": 48.1409188,
+  "lon": 17.0986687,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721189,
+  "lat": 48.1409173,
+  "lon": 17.0986892,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood",
+    "seats": "1"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721190,
+  "lat": 48.1408253,
+  "lon": 17.0987130,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes",
+    "material": "wood"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721191,
+  "lat": 48.1405573,
+  "lon": 17.0998422,
+  "tags": {
+    "leaf_cycle": "deciduous",
+    "natural": "tree",
+    "source": "ESRI"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721192,
+  "lat": 48.1405667,
+  "lon": 17.0997128,
+  "tags": {
+    "leaf_cycle": "deciduous",
+    "natural": "tree",
+    "source": "ESRI"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721193,
+  "lat": 48.1406123,
+  "lon": 17.0991596,
+  "tags": {
+    "leaf_cycle": "deciduous",
+    "natural": "tree",
+    "source": "ESRI"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721194,
+  "lat": 48.1406226,
+  "lon": 17.0990469,
+  "tags": {
+    "leaf_cycle": "deciduous",
+    "natural": "tree",
+    "source": "ESRI"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721195,
+  "lat": 48.1406333,
+  "lon": 17.0989490,
+  "tags": {
+    "leaf_cycle": "deciduous",
+    "natural": "tree",
+    "source": "ESRI"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721196,
+  "lat": 48.1406602,
+  "lon": 17.0983851,
+  "tags": {
+    "fixme": "priblizna poloha",
+    "leaf_cycle": "deciduous",
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721197,
+  "lat": 48.1406387,
+  "lon": 17.0982704,
+  "tags": {
+    "fixme": "priblizna poloha",
+    "leaf_cycle": "deciduous",
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721198,
+  "lat": 48.1406410,
+  "lon": 17.0984045,
+  "tags": {
+    "fixme": "priblizna poloha",
+    "leaf_cycle": "deciduous",
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 12729721199,
+  "lat": 48.1406902,
+  "lon": 17.0983851,
+  "tags": {
+    "fixme": "priblizna poloha",
+    "leaf_cycle": "deciduous",
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851907,
+  "lat": 48.1406902,
+  "lon": 17.0984575,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "no",
+    "material": "wood"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851908,
+  "lat": 48.1407046,
+  "lon": 17.0984107,
+  "tags": {
+    "amenity": "recycling",
+    "recycling:glass": "yes",
+    "recycling:paper": "yes",
+    "recycling:plastic_packaging": "yes",
+    "recycling:waste": "yes",
+    "recycling_type": "container"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851909,
+  "lat": 48.1406606,
+  "lon": 17.0993567,
+  "tags": {
+    "amenity": "recycling",
+    "recycling:glass": "yes",
+    "recycling:paper": "yes",
+    "recycling:plastic_packaging": "yes",
+    "recycling:waste": "yes",
+    "recycling_type": "container"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851910,
+  "lat": 48.1406598,
+  "lon": 17.0993413,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "4",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851912,
+  "lat": 48.1405940,
+  "lon": 17.0998891,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8127",
+    "addr:country": "SK",
+    "addr:housenumber": "8127/20",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "20",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399996",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851913,
+  "lat": 48.1406204,
+  "lon": 17.0997852,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/bistronomy.sk",
+    "contact:instagram": "https://www.instagram.com/bistronomy.sk/",
+    "email": "restaurant@bistronomy.sk",
+    "fixme": "na webstranke maju ine otvaracie hodiny",
+    "name": "Bistronomy",
+    "opening_hours": "08:30-12:30,15:00-22:00",
+    "phone": "+421 910 111 957",
+    "website": "https://bistronomy.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851914,
+  "lat": 48.1406303,
+  "lon": 17.0996596,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8127",
+    "addr:country": "SK",
+    "addr:housenumber": "8127/16",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "16",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399974",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851915,
+  "lat": 48.1406384,
+  "lon": 17.0994453,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8127",
+    "addr:country": "SK",
+    "addr:housenumber": "8127/14",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "14",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399963",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851916,
+  "lat": 48.1406513,
+  "lon": 17.0994090,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8126",
+    "addr:country": "SK",
+    "addr:housenumber": "8126/12",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "12",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405188",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851917,
+  "lat": 48.1405851,
+  "lon": 17.0999903,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8126",
+    "addr:country": "SK",
+    "addr:housenumber": "8126/22",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "22",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "710340520A",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 12729851918,
+  "lat": 48.1405962,
+  "lon": 17.1001111,
+  "tags": {
+    "amenity": "restaurant",
+    "contact:facebook": "https://www.facebook.com/profile.php?id=61568205461884",
+    "contact:instagram": "https://www.instagram.com/itresomari",
+    "cuisine": "italian",
+    "email": "itresomariv@gmail.com",
+    "name": "da Cono I tre somari",
+    "opening_hours": "11:00-22:00",
+    "phone": "+421 918 481 755",
+    "website": "https://www.itresomari.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 12783737163,
+  "lat": 48.1405237,
+  "lon": 17.0965284,
+  "tags": {
+    "emergency": "fire_hydrant",
+    "fire_hydrant:position": "green",
+    "fire_hydrant:type": "pillar"
+  }
+},
+{
+  "type": "node",
+  "id": 12850756083,
+  "lat": 48.1416597,
+  "lon": 17.1017436,
+  "tags": {
+    "historic": "memorial",
+    "memorial": "statue",
+    "name": "Tŕním korunovanie Krista",
+    "panoramax": "cb0424e5-6676-490d-85ca-5d529c5076f8",
+    "statue": "saint",
+    "worship": "station_of_the_cross"
+  }
+},
+{
+  "type": "node",
+  "id": 12919200801,
+  "lat": 48.1431785,
+  "lon": 17.0987123,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "stands",
+    "capacity": "3",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12919200802,
+  "lat": 48.1434091,
+  "lon": 17.0987821,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 12919200901,
+  "lat": 48.1437724,
+  "lon": 17.0989583,
+  "tags": {
+    "amenity": "bicycle_parking"
+  }
+},
+{
+  "type": "node",
+  "id": 12994677977,
+  "lat": 48.1405094,
+  "lon": 17.0965518,
+  "tags": {
+    "amenity": "fountain",
+    "drinking_water": "no",
+    "fountain": "decorative",
+    "height": "1",
+    "lit": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 13024008877,
+  "lat": 48.1405132,
+  "lon": 17.0973904,
+  "tags": {
+    "artist_name": "Július Mag",
+    "direction": "195",
+    "historic": "memorial",
+    "inscription": "NA PAMIATKU KARPATSKONEMECKÝCH SPOLUOBČANOV,\nKTORÍ BOLI V ROKOCH 1944-1947 PRINÚTENÍ OPUSTIŤ\nSLOVENSKO, SVOJU 800-ROČNÚ VLASŤ",
+    "material": "metal",
+    "memorial": "plaque",
+    "name": "Vysťahovanie karpatských Nemcov",
+    "source": "survey;https://pam.epocha.sk/pamatniky-bratislava/stare-mesto/vystahovanie-karpatskych-nemcov-zizkova-14",
+    "start_date": "2006"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734859,
+  "lat": 48.1436413,
+  "lon": 17.1008485,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes",
+    "source": "survey"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734860,
+  "lat": 48.1436576,
+  "lon": 17.1005737,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734861,
+  "lat": 48.1436210,
+  "lon": 17.1008488,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734862,
+  "lat": 48.1435673,
+  "lon": 17.1005431,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734863,
+  "lat": 48.1436229,
+  "lon": 17.1010056,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734864,
+  "lat": 48.1432633,
+  "lon": 17.1009078,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734865,
+  "lat": 48.1433236,
+  "lon": 17.1010230,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073734866,
+  "lat": 48.1431415,
+  "lon": 17.1009784,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073736045,
+  "lat": 48.1432023,
+  "lon": 17.1002968,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073736046,
+  "lat": 48.1430852,
+  "lon": 17.1002704,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073736047,
+  "lat": 48.1433749,
+  "lon": 17.1003361,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073736048,
+  "lat": 48.1430190,
+  "lon": 17.1009517,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073744135,
+  "lat": 48.1415124,
+  "lon": 17.0995440,
+  "tags": {
+    "amenity": "binoculars",
+    "fee": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073744136,
+  "lat": 48.1415616,
+  "lon": 17.0996453,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073744137,
+  "lat": 48.1415935,
+  "lon": 17.0996020,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073744138,
+  "lat": 48.1415738,
+  "lon": 17.0996465,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746179,
+  "lat": 48.1416422,
+  "lon": 17.1005054,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746180,
+  "lat": 48.1426130,
+  "lon": 17.1008591,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746181,
+  "lat": 48.1417435,
+  "lon": 17.1010187,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746182,
+  "lat": 48.1417868,
+  "lon": 17.1011136,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746183,
+  "lat": 48.1416389,
+  "lon": 17.1005388,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746184,
+  "lat": 48.1416382,
+  "lon": 17.1005720,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746185,
+  "lat": 48.1416430,
+  "lon": 17.1006154,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746186,
+  "lat": 48.1417306,
+  "lon": 17.1009880,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746187,
+  "lat": 48.1418132,
+  "lon": 17.1011448,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746188,
+  "lat": 48.1417597,
+  "lon": 17.1010830,
+  "tags": {
+    "direction": "135",
+    "tourism": "viewpoint"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746189,
+  "lat": 48.1419478,
+  "lon": 17.1012855,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073746190,
+  "lat": 48.1425805,
+  "lon": 17.1011954,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13073749923,
+  "lat": 48.1425133,
+  "lon": 17.1008339,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13073749924,
+  "lat": 48.1426406,
+  "lon": 17.1002673,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13123659019,
+  "lat": 48.1406999,
+  "lon": 17.0967749,
+  "tags": {
+    "location": "indoor",
+    "name": "TS-1041",
+    "power": "substation",
+    "ref": "1041",
+    "substation": "minor_distribution"
+  }
+},
+{
+  "type": "node",
+  "id": 13190444669,
+  "lat": 48.1406450,
+  "lon": 17.1027761,
+  "tags": {
+    "name": "Vydrica",
+    "name:de": "Vydrica",
+    "name:hu": "Vödric",
+    "old_name:de": "Weidritz",
+    "place": "neighbourhood",
+    "wikidata": "Q15614886",
+    "wikipedia": "sk:Vydrica (Bratislava)"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816638,
+  "lat": 48.1405180,
+  "lon": 17.1000088,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8137",
+    "addr:country": "SK",
+    "addr:housenumber": "8137/25",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "25",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103402922",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816643,
+  "lat": 48.1405040,
+  "lon": 17.0995974,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8134",
+    "addr:country": "SK",
+    "addr:housenumber": "8134/15",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "15",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405782",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816644,
+  "lat": 48.1405692,
+  "lon": 17.0994076,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8133",
+    "addr:country": "SK",
+    "addr:housenumber": "8133/13",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "13",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103400293",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816645,
+  "lat": 48.1405374,
+  "lon": 17.0991770,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8132",
+    "addr:country": "SK",
+    "addr:housenumber": "8132/11",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "11",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103400172",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816647,
+  "lat": 48.1405539,
+  "lon": 17.0989847,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8131",
+    "addr:country": "SK",
+    "addr:housenumber": "8131/7",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "7",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103400150",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816648,
+  "lat": 48.1405618,
+  "lon": 17.0988933,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8131",
+    "addr:country": "SK",
+    "addr:housenumber": "8131/5",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "5",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "710340014A",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816649,
+  "lat": 48.1405698,
+  "lon": 17.0987995,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8130",
+    "addr:country": "SK",
+    "addr:housenumber": "8130/3",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "3",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405716",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816650,
+  "lat": 48.1405420,
+  "lon": 17.0991234,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8130",
+    "addr:country": "SK",
+    "addr:housenumber": "8130/9",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "9",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405727",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816651,
+  "lat": 48.1406272,
+  "lon": 17.0986896,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8129",
+    "addr:country": "SK",
+    "addr:housenumber": "8129/1",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "1",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103400084",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816652,
+  "lat": 48.1406990,
+  "lon": 17.0986808,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8125",
+    "addr:country": "SK",
+    "addr:housenumber": "8125/4",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "4",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399336",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816653,
+  "lat": 48.1407136,
+  "lon": 17.0985944,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8125",
+    "addr:country": "SK",
+    "addr:housenumber": "8125/2",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "2",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399303",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816654,
+  "lat": 48.1406859,
+  "lon": 17.0990194,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8125",
+    "addr:country": "SK",
+    "addr:housenumber": "8125/8",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "8",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399347",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816655,
+  "lat": 48.1406947,
+  "lon": 17.0987318,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8124",
+    "addr:country": "SK",
+    "addr:housenumber": "8124/6",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "6",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405012",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816656,
+  "lat": 48.1406475,
+  "lon": 17.0992782,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8124",
+    "addr:country": "SK",
+    "addr:housenumber": "8124/10",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "10",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103405628",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816657,
+  "lat": 48.1406025,
+  "lon": 17.0997920,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8127",
+    "addr:country": "SK",
+    "addr:housenumber": "8127/18",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "18",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "7103399985",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13283816658,
+  "lat": 48.1405762,
+  "lon": 17.1000964,
+  "tags": {
+    "addr:city": "Bratislava",
+    "addr:conscriptionnumber": "8128",
+    "addr:country": "SK",
+    "addr:housenumber": "8128/24",
+    "addr:postcode": "81102",
+    "addr:street": "Floriánska",
+    "addr:streetnumber": "24",
+    "addr:suburb": "Staré Mesto",
+    "entrance": "home",
+    "ref:minvskaddress": "710340003A",
+    "source:addr": "minvskaddress 2025-11"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373120,
+  "lat": 48.1428216,
+  "lon": 17.0967060,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373121,
+  "lat": 48.1427937,
+  "lon": 17.0967084,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373122,
+  "lat": 48.1427574,
+  "lon": 17.0967144,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373123,
+  "lat": 48.1427379,
+  "lon": 17.0967362,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373124,
+  "lat": 48.1427294,
+  "lon": 17.0967536,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373125,
+  "lat": 48.1427451,
+  "lon": 17.0967238,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal",
+    "source": "Ortofotomozaika SR"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373134,
+  "lat": 48.1425890,
+  "lon": 17.0968267,
+  "tags": {
+    "barrier": "kerb",
+    "kerb": "flush",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373135,
+  "lat": 48.1426521,
+  "lon": 17.0968876,
+  "tags": {
+    "barrier": "kerb",
+    "kerb": "flush",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373136,
+  "lat": 48.1425315,
+  "lon": 17.0972521,
+  "tags": {
+    "barrier": "kerb",
+    "kerb": "flush",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13358373137,
+  "lat": 48.1426006,
+  "lon": 17.0970728,
+  "tags": {
+    "barrier": "kerb",
+    "kerb": "flush",
+    "tactile_paving": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13420776740,
+  "lat": 48.1405357,
+  "lon": 17.0967449,
+  "tags": {
+    "amenity": "bicycle_parking",
+    "bicycle_parking": "wall_loops",
+    "capacity": "6",
+    "covered": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13420801071,
+  "lat": 48.1405330,
+  "lon": 17.0965828,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13420899101,
+  "lat": 48.1405768,
+  "lon": 17.0986407,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Ost Block"
+  }
+},
+{
+  "type": "node",
+  "id": 13658423940,
+  "lat": 48.1406486,
+  "lon": 17.0996612,
+  "tags": {
+    "name": "KRUH",
+    "opening_hours": "Mo-Fr 07:00-17:00; Sa 07:00-15:00",
+    "phone": "+421 915 512 230",
+    "shop": "bakery",
+    "website": "https://www.kruhpekaren.sk/"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418822,
+  "lat": 48.1422546,
+  "lon": 17.0998009,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418823,
+  "lat": 48.1424301,
+  "lon": 17.1002016,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418824,
+  "lat": 48.1422213,
+  "lon": 17.1000843,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418825,
+  "lat": 48.1424363,
+  "lon": 17.1001675,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418826,
+  "lat": 48.1422055,
+  "lon": 17.1002917,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418827,
+  "lat": 48.1424559,
+  "lon": 17.1000238,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418828,
+  "lat": 48.1421642,
+  "lon": 17.1002508,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418829,
+  "lat": 48.1420066,
+  "lon": 17.1001215,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418830,
+  "lat": 48.1422163,
+  "lon": 17.1001575,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "yes",
+    "backrest": "yes",
+    "material": "wood;metal",
+    "seats": "4"
+  }
+},
+{
+  "type": "node",
+  "id": 13926418831,
+  "lat": 48.1422175,
+  "lon": 17.1003883,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447383,
+  "lat": 48.1431771,
+  "lon": 17.1007057,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447384,
+  "lat": 48.1432174,
+  "lon": 17.1007112,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447385,
+  "lat": 48.1432571,
+  "lon": 17.1007167,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447386,
+  "lat": 48.1432939,
+  "lon": 17.1007218,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447387,
+  "lat": 48.1433309,
+  "lon": 17.1007269,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447388,
+  "lat": 48.1433696,
+  "lon": 17.1007323,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447389,
+  "lat": 48.1433830,
+  "lon": 17.1008452,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447390,
+  "lat": 48.1433780,
+  "lon": 17.1009099,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447391,
+  "lat": 48.1433730,
+  "lon": 17.1009740,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447392,
+  "lat": 48.1433375,
+  "lon": 17.1009653,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447393,
+  "lat": 48.1433347,
+  "lon": 17.1010267,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447394,
+  "lat": 48.1433682,
+  "lon": 17.1010352,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447395,
+  "lat": 48.1432965,
+  "lon": 17.1010176,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447396,
+  "lat": 48.1432662,
+  "lon": 17.1010098,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447397,
+  "lat": 48.1432249,
+  "lon": 17.1010015,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447398,
+  "lat": 48.1431909,
+  "lon": 17.1009925,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447399,
+  "lat": 48.1433024,
+  "lon": 17.1009570,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073447400,
+  "lat": 48.1432674,
+  "lon": 17.1009496,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489701,
+  "lat": 48.1432290,
+  "lon": 17.1009411,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489702,
+  "lat": 48.1431957,
+  "lon": 17.1009318,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489703,
+  "lat": 48.1431577,
+  "lon": 17.1009236,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489704,
+  "lat": 48.1431559,
+  "lon": 17.1009810,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489705,
+  "lat": 48.1433880,
+  "lon": 17.1007821,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489706,
+  "lat": 48.1434833,
+  "lon": 17.1007534,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489707,
+  "lat": 48.1434560,
+  "lon": 17.1007890,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489708,
+  "lat": 48.1434212,
+  "lon": 17.1007934,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489709,
+  "lat": 48.1434165,
+  "lon": 17.1008584,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489710,
+  "lat": 48.1434118,
+  "lon": 17.1009221,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489711,
+  "lat": 48.1434075,
+  "lon": 17.1009804,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489712,
+  "lat": 48.1434606,
+  "lon": 17.1009943,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489713,
+  "lat": 48.1434578,
+  "lon": 17.1010567,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489714,
+  "lat": 48.1434030,
+  "lon": 17.1010426,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489715,
+  "lat": 48.1431022,
+  "lon": 17.1007841,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489716,
+  "lat": 48.1431324,
+  "lon": 17.1007897,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489717,
+  "lat": 48.1431271,
+  "lon": 17.1008524,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489718,
+  "lat": 48.1430950,
+  "lon": 17.1008471,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489719,
+  "lat": 48.1431162,
+  "lon": 17.1009164,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489720,
+  "lat": 48.1431171,
+  "lon": 17.1009744,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489721,
+  "lat": 48.1434948,
+  "lon": 17.1010025,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489722,
+  "lat": 48.1434931,
+  "lon": 17.1010645,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489723,
+  "lat": 48.1435321,
+  "lon": 17.1010099,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14073489724,
+  "lat": 48.1435287,
+  "lon": 17.1010726,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14085355243,
+  "lat": 48.1433639,
+  "lon": 17.1021351,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14085373498,
+  "lat": 48.1432076,
+  "lon": 17.1027742,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14085376537,
+  "lat": 48.1430440,
+  "lon": 17.1027446,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14085392256,
+  "lat": 48.1430426,
+  "lon": 17.1010832,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437523,
+  "lat": 48.1435647,
+  "lon": 17.1010814,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437524,
+  "lat": 48.1435990,
+  "lon": 17.1010910,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437525,
+  "lat": 48.1436337,
+  "lon": 17.1010990,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437526,
+  "lat": 48.1436707,
+  "lon": 17.1011068,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437527,
+  "lat": 48.1437039,
+  "lon": 17.1011154,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437528,
+  "lat": 48.1437081,
+  "lon": 17.1010554,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437529,
+  "lat": 48.1436751,
+  "lon": 17.1010472,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437530,
+  "lat": 48.1436344,
+  "lon": 17.1010369,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437531,
+  "lat": 48.1436031,
+  "lon": 17.1010270,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437532,
+  "lat": 48.1435688,
+  "lon": 17.1010199,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437533,
+  "lat": 48.1436797,
+  "lon": 17.1009829,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437534,
+  "lat": 48.1437140,
+  "lon": 17.1009864,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437535,
+  "lat": 48.1436845,
+  "lon": 17.1009164,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437536,
+  "lat": 48.1437178,
+  "lon": 17.1009235,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437537,
+  "lat": 48.1437506,
+  "lon": 17.1009259,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437538,
+  "lat": 48.1437845,
+  "lon": 17.1009281,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437539,
+  "lat": 48.1436893,
+  "lon": 17.1008499,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437540,
+  "lat": 48.1437443,
+  "lon": 17.1008584,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437541,
+  "lat": 48.1437760,
+  "lon": 17.1008641,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437542,
+  "lat": 48.1438071,
+  "lon": 17.1008705,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437543,
+  "lat": 48.1438222,
+  "lon": 17.1008093,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437544,
+  "lat": 48.1437900,
+  "lon": 17.1008018,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437545,
+  "lat": 48.1437587,
+  "lon": 17.1007952,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437546,
+  "lat": 48.1438270,
+  "lon": 17.1007284,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437547,
+  "lat": 48.1437950,
+  "lon": 17.1007239,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437548,
+  "lat": 48.1437637,
+  "lon": 17.1007177,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437549,
+  "lat": 48.1437596,
+  "lon": 17.1006498,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437550,
+  "lat": 48.1437918,
+  "lon": 17.1006564,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437551,
+  "lat": 48.1438244,
+  "lon": 17.1006628,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437552,
+  "lat": 48.1438073,
+  "lon": 17.1005955,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437553,
+  "lat": 48.1437760,
+  "lon": 17.1005880,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437554,
+  "lat": 48.1437372,
+  "lon": 17.1005833,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437555,
+  "lat": 48.1437089,
+  "lon": 17.1005774,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437556,
+  "lat": 48.1437045,
+  "lon": 17.1006353,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437557,
+  "lat": 48.1436832,
+  "lon": 17.1007028,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437558,
+  "lat": 48.1436484,
+  "lon": 17.1006967,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437559,
+  "lat": 48.1436400,
+  "lon": 17.1007753,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437560,
+  "lat": 48.1436092,
+  "lon": 17.1007704,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437561,
+  "lat": 48.1436140,
+  "lon": 17.1006915,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437562,
+  "lat": 48.1435811,
+  "lon": 17.1006837,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437563,
+  "lat": 48.1435745,
+  "lon": 17.1007654,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437564,
+  "lat": 48.1434909,
+  "lon": 17.1006647,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437565,
+  "lat": 48.1434692,
+  "lon": 17.1006208,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437566,
+  "lat": 48.1434361,
+  "lon": 17.1005979,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437567,
+  "lat": 48.1434014,
+  "lon": 17.1006096,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437568,
+  "lat": 48.1433380,
+  "lon": 17.1006343,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437569,
+  "lat": 48.1433752,
+  "lon": 17.1006419,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437570,
+  "lat": 48.1433013,
+  "lon": 17.1006274,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437571,
+  "lat": 48.1432623,
+  "lon": 17.1006200,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437572,
+  "lat": 48.1432243,
+  "lon": 17.1006128,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437573,
+  "lat": 48.1431882,
+  "lon": 17.1006060,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437574,
+  "lat": 48.1431579,
+  "lon": 17.1005072,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437575,
+  "lat": 48.1431259,
+  "lon": 17.1005028,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437576,
+  "lat": 48.1431623,
+  "lon": 17.1004371,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437577,
+  "lat": 48.1431316,
+  "lon": 17.1004311,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437578,
+  "lat": 48.1431701,
+  "lon": 17.1003649,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437579,
+  "lat": 48.1431756,
+  "lon": 17.1003011,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437580,
+  "lat": 48.1432059,
+  "lon": 17.1003687,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437581,
+  "lat": 48.1432418,
+  "lon": 17.1003734,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437582,
+  "lat": 48.1432783,
+  "lon": 17.1003795,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437583,
+  "lat": 48.1433116,
+  "lon": 17.1003847,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437584,
+  "lat": 48.1433460,
+  "lon": 17.1003894,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437585,
+  "lat": 48.1433810,
+  "lon": 17.1003946,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437586,
+  "lat": 48.1434177,
+  "lon": 17.1004012,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437587,
+  "lat": 48.1434495,
+  "lon": 17.1004067,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437588,
+  "lat": 48.1432070,
+  "lon": 17.1003066,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437589,
+  "lat": 48.1432452,
+  "lon": 17.1003141,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437590,
+  "lat": 48.1432816,
+  "lon": 17.1003182,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437591,
+  "lat": 48.1433142,
+  "lon": 17.1003235,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437592,
+  "lat": 48.1433482,
+  "lon": 17.1003309,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437593,
+  "lat": 48.1433849,
+  "lon": 17.1003348,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437594,
+  "lat": 48.1434225,
+  "lon": 17.1003403,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437595,
+  "lat": 48.1434541,
+  "lon": 17.1003447,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437596,
+  "lat": 48.1434992,
+  "lon": 17.1004167,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437597,
+  "lat": 48.1435373,
+  "lon": 17.1004186,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437598,
+  "lat": 48.1435722,
+  "lon": 17.1004258,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437599,
+  "lat": 48.1436068,
+  "lon": 17.1004311,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097437600,
+  "lat": 48.1436450,
+  "lon": 17.1004357,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531801,
+  "lat": 48.1436805,
+  "lon": 17.1004407,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531802,
+  "lat": 48.1437187,
+  "lon": 17.1004469,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531803,
+  "lat": 48.1437495,
+  "lon": 17.1004540,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531804,
+  "lat": 48.1435056,
+  "lon": 17.1003535,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531805,
+  "lat": 48.1435421,
+  "lon": 17.1003577,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531806,
+  "lat": 48.1435772,
+  "lon": 17.1003637,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531807,
+  "lat": 48.1436118,
+  "lon": 17.1003695,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531808,
+  "lat": 48.1436484,
+  "lon": 17.1003751,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531809,
+  "lat": 48.1436821,
+  "lon": 17.1003803,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531810,
+  "lat": 48.1437232,
+  "lon": 17.1003868,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531811,
+  "lat": 48.1437556,
+  "lon": 17.1003905,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531812,
+  "lat": 48.1437462,
+  "lon": 17.1005180,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531813,
+  "lat": 48.1437137,
+  "lon": 17.1005137,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531814,
+  "lat": 48.1434070,
+  "lon": 17.1005389,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531815,
+  "lat": 48.1434126,
+  "lon": 17.1004663,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531816,
+  "lat": 48.1434450,
+  "lon": 17.1004686,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531817,
+  "lat": 48.1434399,
+  "lon": 17.1005385,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531818,
+  "lat": 48.1432837,
+  "lon": 17.1004200,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531819,
+  "lat": 48.1432444,
+  "lon": 17.1009049,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14097531820,
+  "lat": 48.1435443,
+  "lon": 17.1008835,
+  "tags": {
+    "amenity": "bench",
+    "armrest": "no",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14097532631,
+  "lat": 48.1426485,
+  "lon": 17.1006180,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 14097532632,
+  "lat": 48.1426674,
+  "lon": 17.1005072,
+  "tags": {
+    "artwork_type": "sculpture",
+    "tourism": "artwork"
+  }
+},
+{
+  "type": "node",
+  "id": 14097532657,
+  "lat": 48.1431422,
+  "lon": 17.1002582,
+  "tags": {
+    "fixme": "continue"
+  }
+},
+{
+  "type": "node",
+  "id": 14097532658,
+  "lat": 48.1431017,
+  "lon": 17.1002647,
+  "tags": {
+    "barrier": "gate"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546403,
+  "lat": 48.1432007,
+  "lon": 17.1002304,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546404,
+  "lat": 48.1432713,
+  "lon": 17.1002409,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546405,
+  "lat": 48.1433416,
+  "lon": 17.1002521,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546406,
+  "lat": 48.1434096,
+  "lon": 17.1002616,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546407,
+  "lat": 48.1434802,
+  "lon": 17.1002721,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546408,
+  "lat": 48.1435559,
+  "lon": 17.1002834,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546409,
+  "lat": 48.1436253,
+  "lon": 17.1002938,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546410,
+  "lat": 48.1436947,
+  "lon": 17.1003042,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546411,
+  "lat": 48.1432074,
+  "lon": 17.1001441,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546412,
+  "lat": 48.1432782,
+  "lon": 17.1001540,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546413,
+  "lat": 48.1433461,
+  "lon": 17.1001642,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546414,
+  "lat": 48.1431424,
+  "lon": 17.1001350,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546415,
+  "lat": 48.1434144,
+  "lon": 17.1001731,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546416,
+  "lat": 48.1434863,
+  "lon": 17.1001832,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546417,
+  "lat": 48.1435627,
+  "lon": 17.1001939,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546418,
+  "lat": 48.1436328,
+  "lon": 17.1002037,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546419,
+  "lat": 48.1432145,
+  "lon": 17.1000527,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546420,
+  "lat": 48.1432853,
+  "lon": 17.1000636,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546421,
+  "lat": 48.1433508,
+  "lon": 17.1000744,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546422,
+  "lat": 48.1434191,
+  "lon": 17.1000843,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546423,
+  "lat": 48.1434923,
+  "lon": 17.1000957,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546424,
+  "lat": 48.1435693,
+  "lon": 17.1001076,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546425,
+  "lat": 48.1436398,
+  "lon": 17.1001185,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546426,
+  "lat": 48.1437075,
+  "lon": 17.1001290,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546427,
+  "lat": 48.1437787,
+  "lon": 17.1001400,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546428,
+  "lat": 48.1431505,
+  "lon": 17.1000427,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546429,
+  "lat": 48.1437662,
+  "lon": 17.1003148,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546430,
+  "lat": 48.1437727,
+  "lon": 17.1002233,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546448,
+  "lat": 48.1435993,
+  "lon": 17.0999768,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546449,
+  "lat": 48.1435664,
+  "lon": 17.0999711,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546450,
+  "lat": 48.1433082,
+  "lon": 17.0999300,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546451,
+  "lat": 48.1432777,
+  "lon": 17.0999254,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546497,
+  "lat": 48.1437081,
+  "lon": 17.1011592,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546498,
+  "lat": 48.1436399,
+  "lon": 17.1011440,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546499,
+  "lat": 48.1435669,
+  "lon": 17.1011301,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097546500,
+  "lat": 48.1434928,
+  "lon": 17.1011126,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548801,
+  "lat": 48.1434302,
+  "lon": 17.1010971,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548802,
+  "lat": 48.1433362,
+  "lon": 17.1010784,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548803,
+  "lat": 48.1432701,
+  "lon": 17.1010645,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548804,
+  "lat": 48.1432030,
+  "lon": 17.1010502,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548805,
+  "lat": 48.1431358,
+  "lon": 17.1010323,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548806,
+  "lat": 48.1431524,
+  "lon": 17.1014268,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548807,
+  "lat": 48.1427617,
+  "lon": 17.1014937,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548808,
+  "lat": 48.1427288,
+  "lon": 17.1016494,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548809,
+  "lat": 48.1426367,
+  "lon": 17.1016623,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548810,
+  "lat": 48.1424630,
+  "lon": 17.1013485,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548811,
+  "lat": 48.1424898,
+  "lon": 17.1013686,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548812,
+  "lat": 48.1425975,
+  "lon": 17.1013461,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548813,
+  "lat": 48.1427604,
+  "lon": 17.1016069,
+  "tags": {
+    "natural": "tree"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548814,
+  "lat": 48.1436781,
+  "lon": 17.1012997,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14097548815,
+  "lat": 48.1436348,
+  "lon": 17.1012547,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183278898,
+  "lat": 48.1415447,
+  "lon": 17.0981698,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183290609,
+  "lat": 48.1416459,
+  "lon": 17.0983817,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183309118,
+  "lat": 48.1413165,
+  "lon": 17.0991146,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183312090,
+  "lat": 48.1413921,
+  "lon": 17.1004879,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183312726,
+  "lat": 48.1417462,
+  "lon": 17.0984140,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183319190,
+  "lat": 48.1415088,
+  "lon": 17.0981984,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183320825,
+  "lat": 48.1415278,
+  "lon": 17.0981863,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183329443,
+  "lat": 48.1425115,
+  "lon": 17.1025537,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183334906,
+  "lat": 48.1417539,
+  "lon": 17.1029618,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183335863,
+  "lat": 48.1420385,
+  "lon": 17.1028319,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183337355,
+  "lat": 48.1411183,
+  "lon": 17.1020006,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183340856,
+  "lat": 48.1430696,
+  "lon": 17.1029931,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183346975,
+  "lat": 48.1430216,
+  "lon": 17.1030098,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183350862,
+  "lat": 48.1430468,
+  "lon": 17.1030023,
+  "tags": {
+    "amenity": "bench",
+    "backrest": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 14183529464,
+  "lat": 48.1412849,
+  "lon": 17.1010940,
+  "tags": {
+    "barrier": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14183555044,
+  "lat": 48.1434647,
+  "lon": 17.1028179,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667307,
+  "lat": 48.1425322,
+  "lon": 17.1029417,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667314,
+  "lat": 48.1425746,
+  "lon": 17.1027622,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667315,
+  "lat": 48.1425587,
+  "lon": 17.1027760,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667322,
+  "lat": 48.1424618,
+  "lon": 17.1028472,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667323,
+  "lat": 48.1424412,
+  "lon": 17.1028329,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667330,
+  "lat": 48.1422827,
+  "lon": 17.1028743,
+  "tags": {
+    "amenity": "bench"
+  }
+},
+{
+  "type": "node",
+  "id": 14183667331,
+  "lat": 48.1422764,
+  "lon": 17.1029052,
+  "tags": {
+    "amenity": "waste_basket"
+  }
+},
+{
+  "type": "node",
+  "id": 14231090096,
+  "lat": 48.1425990,
+  "lon": 17.0973334,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231090097,
+  "lat": 48.1425939,
+  "lon": 17.0973015,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231090098,
+  "lat": 48.1425891,
+  "lon": 17.0972689,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231090099,
+  "lat": 48.1426042,
+  "lon": 17.0973652,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231090100,
+  "lat": 48.1426090,
+  "lon": 17.0973975,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155801,
+  "lat": 48.1426134,
+  "lon": 17.0974301,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155802,
+  "lat": 48.1426178,
+  "lon": 17.0974634,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155803,
+  "lat": 48.1426227,
+  "lon": 17.0974963,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155804,
+  "lat": 48.1426273,
+  "lon": 17.0975291,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155805,
+  "lat": 48.1426318,
+  "lon": 17.0975608,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155806,
+  "lat": 48.1426370,
+  "lon": 17.0975948,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155807,
+  "lat": 48.1426415,
+  "lon": 17.0976262,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155808,
+  "lat": 48.1426462,
+  "lon": 17.0976596,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155809,
+  "lat": 48.1426512,
+  "lon": 17.0976924,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155810,
+  "lat": 48.1426563,
+  "lon": 17.0977238,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155811,
+  "lat": 48.1426619,
+  "lon": 17.0977550,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155812,
+  "lat": 48.1426671,
+  "lon": 17.0977896,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155813,
+  "lat": 48.1426737,
+  "lon": 17.0978231,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155814,
+  "lat": 48.1426802,
+  "lon": 17.0978563,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155815,
+  "lat": 48.1426862,
+  "lon": 17.0978890,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155816,
+  "lat": 48.1426918,
+  "lon": 17.0979170,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155817,
+  "lat": 48.1426983,
+  "lon": 17.0979486,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155818,
+  "lat": 48.1427045,
+  "lon": 17.0979811,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155819,
+  "lat": 48.1427104,
+  "lon": 17.0980123,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155820,
+  "lat": 48.1427171,
+  "lon": 17.0980440,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155821,
+  "lat": 48.1427239,
+  "lon": 17.0980769,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155822,
+  "lat": 48.1427298,
+  "lon": 17.0981079,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155823,
+  "lat": 48.1427362,
+  "lon": 17.0981396,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155824,
+  "lat": 48.1427431,
+  "lon": 17.0981710,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155825,
+  "lat": 48.1427494,
+  "lon": 17.0982041,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155826,
+  "lat": 48.1427565,
+  "lon": 17.0982356,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155827,
+  "lat": 48.1427629,
+  "lon": 17.0982669,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155828,
+  "lat": 48.1427687,
+  "lon": 17.0982991,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155829,
+  "lat": 48.1427752,
+  "lon": 17.0983308,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155830,
+  "lat": 48.1427816,
+  "lon": 17.0983631,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155831,
+  "lat": 48.1427884,
+  "lon": 17.0983943,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155832,
+  "lat": 48.1425626,
+  "lon": 17.0984086,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155833,
+  "lat": 48.1425417,
+  "lon": 17.0984037,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155834,
+  "lat": 48.1425194,
+  "lon": 17.0983950,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155835,
+  "lat": 48.1424981,
+  "lon": 17.0983898,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155836,
+  "lat": 48.1424782,
+  "lon": 17.0983782,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155837,
+  "lat": 48.1424590,
+  "lon": 17.0983638,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155838,
+  "lat": 48.1424402,
+  "lon": 17.0983458,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155839,
+  "lat": 48.1424237,
+  "lon": 17.0983262,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155840,
+  "lat": 48.1424080,
+  "lon": 17.0983027,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155841,
+  "lat": 48.1423963,
+  "lon": 17.0982769,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155842,
+  "lat": 48.1423870,
+  "lon": 17.0982492,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155843,
+  "lat": 48.1423803,
+  "lon": 17.0982165,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155844,
+  "lat": 48.1423754,
+  "lon": 17.0981849,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155845,
+  "lat": 48.1423714,
+  "lon": 17.0981524,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155846,
+  "lat": 48.1423683,
+  "lon": 17.0981178,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155847,
+  "lat": 48.1423666,
+  "lon": 17.0980861,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155848,
+  "lat": 48.1423672,
+  "lon": 17.0980531,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155849,
+  "lat": 48.1423681,
+  "lon": 17.0980205,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155850,
+  "lat": 48.1423694,
+  "lon": 17.0979875,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155851,
+  "lat": 48.1423720,
+  "lon": 17.0979555,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155852,
+  "lat": 48.1423751,
+  "lon": 17.0979209,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155853,
+  "lat": 48.1423785,
+  "lon": 17.0978872,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155854,
+  "lat": 48.1423819,
+  "lon": 17.0978554,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155855,
+  "lat": 48.1423856,
+  "lon": 17.0978220,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155856,
+  "lat": 48.1423898,
+  "lon": 17.0977885,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155857,
+  "lat": 48.1423938,
+  "lon": 17.0977547,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155858,
+  "lat": 48.1423987,
+  "lon": 17.0977224,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155859,
+  "lat": 48.1424039,
+  "lon": 17.0976897,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155860,
+  "lat": 48.1424098,
+  "lon": 17.0976582,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155861,
+  "lat": 48.1424161,
+  "lon": 17.0976261,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155862,
+  "lat": 48.1424231,
+  "lon": 17.0975942,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155863,
+  "lat": 48.1424368,
+  "lon": 17.0975298,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155864,
+  "lat": 48.1424436,
+  "lon": 17.0974993,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155865,
+  "lat": 48.1424514,
+  "lon": 17.0974670,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155866,
+  "lat": 48.1424599,
+  "lon": 17.0974356,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155867,
+  "lat": 48.1424683,
+  "lon": 17.0974046,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155868,
+  "lat": 48.1424769,
+  "lon": 17.0973747,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155869,
+  "lat": 48.1424867,
+  "lon": 17.0973439,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155870,
+  "lat": 48.1424966,
+  "lon": 17.0973137,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155871,
+  "lat": 48.1425068,
+  "lon": 17.0972845,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155872,
+  "lat": 48.1425505,
+  "lon": 17.0972576,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155873,
+  "lat": 48.1425663,
+  "lon": 17.0972527,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155874,
+  "lat": 48.1425816,
+  "lon": 17.0972493,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155875,
+  "lat": 48.1422447,
+  "lon": 17.0980139,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155876,
+  "lat": 48.1422584,
+  "lon": 17.0979504,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155877,
+  "lat": 48.1422653,
+  "lon": 17.0979171,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155878,
+  "lat": 48.1422725,
+  "lon": 17.0978860,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155879,
+  "lat": 48.1422792,
+  "lon": 17.0978552,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155880,
+  "lat": 48.1422943,
+  "lon": 17.0977906,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155881,
+  "lat": 48.1422870,
+  "lon": 17.0978225,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155882,
+  "lat": 48.1423022,
+  "lon": 17.0977588,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155883,
+  "lat": 48.1423089,
+  "lon": 17.0977276,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155884,
+  "lat": 48.1423168,
+  "lon": 17.0976950,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155885,
+  "lat": 48.1423247,
+  "lon": 17.0976627,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155886,
+  "lat": 48.1422389,
+  "lon": 17.0979333,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155887,
+  "lat": 48.1422334,
+  "lon": 17.0979600,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155888,
+  "lat": 48.1422279,
+  "lon": 17.0979857,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155889,
+  "lat": 48.1422216,
+  "lon": 17.0980121,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155890,
+  "lat": 48.1422159,
+  "lon": 17.0980375,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155891,
+  "lat": 48.1422109,
+  "lon": 17.0980632,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155892,
+  "lat": 48.1422046,
+  "lon": 17.0980896,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155893,
+  "lat": 48.1421990,
+  "lon": 17.0981162,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155894,
+  "lat": 48.1421930,
+  "lon": 17.0981427,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155895,
+  "lat": 48.1421875,
+  "lon": 17.0981695,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155896,
+  "lat": 48.1421737,
+  "lon": 17.0982397,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155897,
+  "lat": 48.1421683,
+  "lon": 17.0982564,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155898,
+  "lat": 48.1421647,
+  "lon": 17.0982737,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155899,
+  "lat": 48.1421578,
+  "lon": 17.0982880,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155900,
+  "lat": 48.1421511,
+  "lon": 17.0983022,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155901,
+  "lat": 48.1421400,
+  "lon": 17.0983216,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155902,
+  "lat": 48.1421448,
+  "lon": 17.0983129,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155903,
+  "lat": 48.1421363,
+  "lon": 17.0983287,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155904,
+  "lat": 48.1421316,
+  "lon": 17.0983344,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155905,
+  "lat": 48.1421106,
+  "lon": 17.0983534,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155906,
+  "lat": 48.1420919,
+  "lon": 17.0983455,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155907,
+  "lat": 48.1420740,
+  "lon": 17.0983392,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155908,
+  "lat": 48.1420558,
+  "lon": 17.0983316,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155909,
+  "lat": 48.1420378,
+  "lon": 17.0983247,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155910,
+  "lat": 48.1420337,
+  "lon": 17.0983434,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155911,
+  "lat": 48.1424295,
+  "lon": 17.0975621,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "fixed",
+    "material": "metal"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155912,
+  "lat": 48.1426250,
+  "lon": 17.0984805,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155913,
+  "lat": 48.1426441,
+  "lon": 17.0984737,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155914,
+  "lat": 48.1426604,
+  "lon": 17.0984932,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155915,
+  "lat": 48.1426875,
+  "lon": 17.0985013,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155916,
+  "lat": 48.1427154,
+  "lon": 17.0985099,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155917,
+  "lat": 48.1426974,
+  "lon": 17.0984812,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155918,
+  "lat": 48.1426837,
+  "lon": 17.0984575,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+},
+{
+  "type": "node",
+  "id": 14231155919,
+  "lat": 48.1426666,
+  "lon": 17.0984527,
+  "tags": {
+    "barrier": "bollard",
+    "bollard": "low",
+    "material": "concrete"
+  }
+}
+
+  ]
+}
