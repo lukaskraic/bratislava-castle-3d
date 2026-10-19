@@ -29,6 +29,8 @@ func _ready() -> void:
 	http = HTTPRequest.new()
 	http.use_threads = false
 	http.download_chunk_size = 16777216     # the default 64 KiB per frame takes ~1000 frames for one pack
+	# GitHub Pages gzips .pck; the browser's fetch already inflates it, so a second inflate in Godot fails
+	http.accept_gzip = false
 	add_child(http)
 	http.request_completed.connect(_on_completed)
 	_next()
