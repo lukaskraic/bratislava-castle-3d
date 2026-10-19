@@ -57,7 +57,7 @@ def plaster(n, rng, base='#ECE8DF', var=0.05):
     return col(base) * (1 - var + var * 2 * nz) * (0.97 + 0.03 * fine)
 
 
-def roof_tiles(n, rng):
+def roof_tiles(n, rng, base='#D8653A', contrast=1.0):
     """Beaver-tail tiles: rows of rounded tiles, staggered."""
     rows, cols = 16, 12
     y, x = np.mgrid[0:n, 0:n] / n
@@ -68,12 +68,12 @@ def roof_tiles(n, rng):
     c = np.floor(cx).astype(int)
     fx = cx - c
     edge = np.sqrt(((fx - 0.5) * 2) ** 2 + np.clip(fy * 1.2 - 0.2, 0, 1) ** 2)
-    shade = 1 - 0.55 * np.clip(edge - 0.75, 0, 1) * 4
+    shade = 1 - 0.55 * contrast * np.clip(edge - 0.75, 0, 1) * 4
     shade *= 0.85 + 0.15 * fy
     tid = (row * 31 + c * 17) % 97 / 97.0
-    tint = 0.85 + 0.25 * tid
+    tint = 1 - 0.15 * contrast + 0.25 * contrast * tid
     nz = fbm(n, rng)
-    base = col('#D8653A')
+    base = col(base)
     rgb = base[None, None, :] * (shade * tint * (0.85 + 0.3 * nz))[..., None]
     rgb[..., 1] *= 0.95 + 0.1 * nz
     return rgb
@@ -259,7 +259,7 @@ def gravel_red(n, rng):
 
 def gravel_white(n, rng):
     nz = fbm(n, rng, octaves=(32, 128, 256), weights=[0.3, 0.4, 0.3])
-    return col('#ADA38F')[None, None, :] * (0.82 + 0.26 * nz)[..., None]
+    return col('#D6D1C6')[None, None, :] * (0.82 + 0.26 * nz)[..., None]
 
 
 def hedge(n, rng):
@@ -386,8 +386,8 @@ def brick(n, rng):
     chip = (fbm(n, rng, octaves=(32, 64, 128)) > 0.78) & ~joint
     base[chip] *= 0.75
     base[joint] = col('#B8AE9C') * (0.8 + 0.2 * nz[joint][..., None])
-    smear = fbm(n, rng, octaves=(2, 4, 8)) > 0.68            # lime wash remnants
-    base[smear] = base[smear] * 0.6 + col('#CFC6B4') * 0.4
+    smear = np.clip((fbm(n, rng, octaves=(2, 4, 8)) - 0.62) / 0.2, 0, 1)[..., None] * 0.25   # faint, soft-edged lime wash
+    base = base * (1 - smear) + col('#CFC6B4')[None, None] * smear
     damp = fbm(n, rng, octaves=(1, 2, 4))
     base *= (1 - 0.25 * np.clip(damp - 0.55, 0, 1) * 2)[..., None]
     jd = np.minimum(np.minimum(fx, 1 - fx) / 0.025, np.minimum(fy, 1 - fy) / 0.08)
@@ -442,7 +442,7 @@ def grass(n, rng):
     return col('#5E7F3A')[None, None, :] * (0.7 + 0.35 * nz + 0.12 * blades)[..., None]
 
 
-HI_RES = {'plaster', 'plaster_int', 'roof', 'cobbles', 'parquet', 'stone', 'rustica', 'brick', 'gravel_white', 'grass', 'gravel_red', 'marble'}
+HI_RES = {'roof_new', 'plaster', 'plaster_int', 'roof', 'cobbles', 'parquet', 'stone', 'rustica', 'brick', 'gravel_white', 'grass', 'gravel_red', 'marble'}
 
 
 def oak(n, rng):
@@ -526,8 +526,8 @@ def build_all(outdir, n=512):
     n_lo = n
     n_hi = n * 2
     gens = {
-        'plaster': lambda: plaster(n, rng),
-        'plaster_int': lambda: plaster(n, rng, base='#E0D8C8', var=0.03),
+        'plaster': lambda: plaster(n, rng, base='#F1EEE7', var=0.022),
+        'plaster_int': lambda: plaster(n, rng, base='#EEEAE2', var=0.025),
         'roof': lambda: roof_tiles(n, rng),
         'stone': lambda: stone_blocks(n, rng),
         'rustica': lambda: stone_blocks(n, rng, base='#E2DCCF', rows=4, cols=2, mortar='#B8B0A0'),
@@ -559,17 +559,18 @@ def build_all(outdir, n=512):
         'paint_port2': lambda: painting2(512, rng, 'portrait'),
         'paint_still': lambda: painting2(512, rng, 'still'),
         'paint_harbour': lambda: painting2(512, rng, 'harbour'),
+        'roof_new': lambda: roof_tiles(n, rng, base='#EE8250', contrast=0.45),
     }
     nh = n_hi
     gens_hi = {
-        'plaster': lambda: plaster(nh, rng), 'plaster_int': lambda: plaster(nh, rng, base='#E0D8C8', var=0.03),
-        'roof': lambda: roof_tiles(nh, rng), 'cobbles': lambda: cobbles(nh, rng), 'parquet': lambda: parquet(nh, rng),
+        'plaster': lambda: plaster(nh, rng, base='#F1EEE7', var=0.022), 'plaster_int': lambda: plaster(nh, rng, base='#EEEAE2', var=0.025),
+        'roof': lambda: roof_tiles(nh, rng), 'roof_new': lambda: roof_tiles(nh, rng, base='#EE8250', contrast=0.45), 'cobbles': lambda: cobbles(nh, rng), 'parquet': lambda: parquet(nh, rng),
         'stone': lambda: stone_blocks(nh, rng), 'rustica': lambda: stone_blocks(nh, rng, base='#E2DCCF', rows=4, cols=2, mortar='#B8B0A0'),
         'brick': lambda: brick(nh, rng), 'gravel_white': lambda: gravel_white(nh, rng), 'grass': lambda: grass(nh, rng),
         'gravel_red': lambda: gravel_red(nh, rng), 'marble': lambda: marble(nh, rng),
     }
-    strength = {'roof': 3, 'rubble': 8, 'cobbles': 9, 'marble': 2, 'stone': 5, 'rustica': 5, 'parquet': 1,
-                'plaster': 3, 'plaster_int': 1.5, 'bark': 6, 'hedge': 4, 'grass': 3, 'oak': 1.5, 'brick': 6, 'gravel_red': 4, 'gravel_white': 3, 'gravel': 4}
+    strength = {'roof': 3, 'roof_new': 3, 'rubble': 8, 'cobbles': 3, 'marble': 2, 'stone': 5, 'rustica': 5, 'parquet': 1,
+                'plaster': 1.2, 'plaster_int': 1.5, 'bark': 6, 'hedge': 4, 'grass': 3, 'oak': 1.5, 'brick': 6, 'gravel_red': 4, 'gravel_white': 3, 'gravel': 4}
     out = {}
     for name, g in gens.items():
         p = os.path.join(outdir, name + '.png')
@@ -580,3 +581,223 @@ def build_all(outdir, n=512):
             src = np.repeat(hsrc[..., None], 3, -1) if hsrc is not None else rgb
             out[name + '_n'] = _save(os.path.join(outdir, name + '_n.png'), normal_from(src, strength[name]), 'Non-Color')
     return out
+
+
+# ---------------------------------------------------------------- V2 interior fabrics / floors
+def damask(n, rng, base='#8C2A2A', hi='#B4483E'):
+    """Silk damask wall covering: repeating ogival medallion, two tones, slight sheen noise."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    u = (x * 2) % 1.0 - 0.5
+    v = (y * 2 + (np.floor(x * 2) % 2) * 0.5) % 1.0 - 0.5
+    r = np.hypot(u * 1.3, v)
+    petal = np.cos(np.arctan2(v, u) * 4) * 0.08
+    motif = (r < 0.28 + petal) & (r > 0.12) | (r < 0.05)
+    frame = np.abs(np.abs(u) + np.abs(v) * 0.8 - 0.46) < 0.02
+    nz = fbm(n, rng, octaves=(32, 64, 128))
+    rgb = np.where((motif | frame)[..., None], col(hi)[None, None], col(base)[None, None]) * np.ones((n, n, 1))
+    return rgb * (0.9 + 0.15 * nz[..., None])
+
+
+def velvet(n, rng, base='#6E1E22'):
+    """Pleated velvet curtain: vertical folds (cosine shading) with soft highlights."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    folds = 0.5 + 0.5 * np.cos(x * 2 * np.pi * 6 + 0.6 * np.sin(y * 3))
+    nz = fbm(n, rng, octaves=(16, 64))
+    shade = 0.55 + 0.55 * folds ** 1.5 + 0.08 * (nz - 0.5)
+    return col(base)[None, None] * shade[..., None]
+
+
+def rug(n, rng):
+    """Oriental carpet: border bands, central medallion, field pattern, wool noise."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    dx, dy = np.abs(x - 0.5), np.abs(y - 0.5)
+    edge = np.maximum(dx, dy)
+    img = np.ones((n, n, 1)) * col('#7A1E1C')[None, None]
+    border = (edge > 0.40)
+    img[border] = col('#1E2A4A')
+    img[(edge > 0.43) & (edge < 0.455)] = col('#C9A45C')
+    med = (dx / 0.22) ** 2 + (dy / 0.3) ** 2 < 1
+    img[med] = col('#1E2A4A')
+    img[((dx / 0.16) ** 2 + (dy / 0.22) ** 2 < 1)] = col('#C9A45C')
+    img[((dx / 0.08) ** 2 + (dy / 0.11) ** 2 < 1)] = col('#7A1E1C')
+    field = (np.sin(x * 60) * np.sin(y * 60) > 0.6) & ~border & ~med
+    img[field] = img[field] * 0.6 + col('#C9A45C') * 0.4
+    nz = rng.random((n, n))
+    return img * (0.85 + 0.2 * nz[..., None])
+
+
+def parquet_star(n, rng):
+    """Versailles-style parquet panel: diagonal lattice inside square frames, oak tones."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    u, v = (x * 2) % 1.0, (y * 2) % 1.0
+    grain = fbm(n, rng, octaves=(4, 64, 128), weights=[0.3, 0.5, 0.2])
+    frame = (np.minimum(np.minimum(u, 1 - u), np.minimum(v, 1 - v)) < 0.08)
+    diag1 = np.abs(((u + v) * 3) % 1.0 - 0.5) < 0.06
+    diag2 = np.abs(((u - v) * 3) % 1.0 - 0.5) < 0.06
+    tone = np.where(frame, 0.75, np.where(diag1 | diag2, 0.62, 0.9))
+    seam = (np.abs(((u + v) * 3) % 1.0 - 0.5) > 0.49) | (np.abs(((u - v) * 3) % 1.0 - 0.5) > 0.49)
+    shade = tone * (0.85 + 0.25 * grain)
+    shade[seam] *= 0.6
+    return col('#9A6A3C')[None, None] * shade[..., None]
+
+
+def banner(n, rng, c1='#7A1E1C', c2='#E8D9B0'):
+    """Heraldic hanging banner: two-colour field, swallow-tail cut via alpha, gold cross motif."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    y = 1 - y
+    img = np.where((x < 0.5)[..., None], col(c1)[None, None], col(c2)[None, None]) * np.ones((n, n, 1))
+    cross = ((np.abs(x - 0.5) < 0.05) & (y > 0.2) & (y < 0.7)) | ((np.abs(y - 0.4) < 0.05) & (np.abs(x - 0.5) < 0.2))
+    img[cross] = col('#C9A45C')
+    nz = fbm(n, rng, octaves=(16, 64))
+    img = img * (0.85 + 0.2 * nz[..., None])
+    alpha = ~((y > 0.85) & (np.abs(x - 0.5) < (y - 0.85) * 3.0))
+    return np.concatenate([img, alpha[..., None].astype(float)], -1)
+
+
+def brick_old(n, rng):
+    """Aged irregular cellar brick (ref 37): uneven courses and lengths, dark burnt/orange/purple firing,
+    soot and damp, recessed dark mortar. Returns (rgb, height)."""
+    rows = 28
+    y, xg = np.mgrid[0:n, 0:n] / n
+    y = y + (fbm(n, rng, octaves=(4, 8, 16)) - 0.5) * 0.012
+    xg = xg + (fbm(n, rng, octaves=(8, 16)) - 0.5) * 0.008
+    ry = y * rows
+    row = np.floor(ry).astype(int) % rows
+    lens = np.random.default_rng(7).uniform(0.8, 1.25, (rows, 12))
+    edges = np.cumsum(lens, axis=1)
+    edges = edges / edges[:, -1:] * 8.0                       # 8 bricks per tile row on average
+    cx = (xg * 8 + (row % 2) * 0.5) % 8.0
+    c = np.zeros_like(row)
+    for k in range(11):
+        c += (cx > edges[row, k]).astype(int)
+    lo = np.where(c > 0, edges[row, np.maximum(c - 1, 0)], 0.0)
+    hi = edges[row, c]
+    fx = np.minimum(cx - lo, hi - cx)
+    fy = np.minimum(ry - np.floor(ry), 1 - (ry - np.floor(ry)))
+    jv = 1 + 0.8 * (fbm(n, rng, octaves=(16, 32)) - 0.5)
+    joint = (fx < 0.05 * jv) | (fy < 0.12 * jv)
+    tid = ((row * 13 + c * 7) % 31) / 31.0
+    pal = np.array([col('#8A6450'), col('#9A705A'), col('#7A584A'), col('#A07A62'), col('#86665A'), col('#6E5446'), col('#9C806A')])
+    base = pal[((row * 5 + c * 3) % len(pal))] * (0.8 + 0.35 * tid[..., None])
+    nz = fbm(n, rng, octaves=(16, 32, 64))
+    base = base * (0.82 + 0.36 * nz[..., None])
+    chip = (fbm(n, rng, octaves=(32, 64, 128)) > 0.74) & ~joint
+    base[chip] *= 0.7
+    base[joint] = col('#857B6C') * (0.75 + 0.3 * nz[joint][..., None])
+    mott = np.clip((fbm(n, rng, octaves=(1, 2, 4, 8)) - 0.42) / 0.3, -1, 1)[..., None]   # wide lime staining / damp
+    base = np.where(mott > 0, base * (1 - 0.55 * mott) + col('#C4BAA6')[None, None] * 0.55 * mott, base * (1 + 0.25 * mott))
+    soot = fbm(n, rng, octaves=(1, 2, 4))
+    base *= (1 - 0.3 * np.clip(soot - 0.5, 0, 1) * 2)[..., None]
+    jd = np.minimum(fx / 0.05, fy / 0.12)
+    height = _soft(np.clip(jd, 0, 1) * (1 - 0.5 * chip) * (0.85 + 0.15 * nz), 2)
+    return np.clip(_soft(base, 1), 0, 1), height
+
+
+def flags_old(n, rng, base_hex='#9A9284', rows=5, mortar='#5E584E'):
+    """Weathered irregular stone flags / ashlar: uneven course heights and stone lengths, per-stone tone,
+    worn edges, cracks and grime. Returns (rgb, height)."""
+    g = np.random.default_rng(11)
+    hs = g.uniform(0.7, 1.3, rows)
+    zc = np.concatenate([[0], np.cumsum(hs) / hs.sum()])
+    y, x = np.mgrid[0:n, 0:n] / n
+    y = (y + (fbm(n, rng, octaves=(4, 8)) - 0.5) * 0.02) % 1.0
+    x = (x + (fbm(n, rng, octaves=(4, 8)) - 0.5) * 0.02) % 1.0
+    row = np.clip(np.searchsorted(zc, y, side='right') - 1, 0, rows - 1)
+    fy = np.minimum(y - zc[row], zc[row + 1] - y) * rows
+    lens = g.uniform(0.6, 1.5, (rows, 8))
+    edges = np.cumsum(lens, axis=1)
+    edges = edges / edges[:, -1:]
+    xs = (x + g.uniform(0, 1, rows)[row]) % 1.0
+    c = np.zeros_like(row)
+    for k in range(7):
+        c += (xs > edges[row, k]).astype(int)
+    lo = np.where(c > 0, edges[row, np.maximum(c - 1, 0)], 0.0)
+    fx = np.minimum(xs - lo, edges[row, c] - xs) * 4
+    wear = fbm(n, rng, octaves=(16, 32))
+    joint = (fx < 0.03 + 0.03 * wear) | (fy < 0.03 + 0.03 * wear)
+    tid = ((row * 7 + c * 5) % 13) / 13.0
+    nz = fbm(n, rng, octaves=(8, 16, 32, 64))
+    rgb = col(base_hex)[None, None] * (0.86 + 0.16 * tid[..., None] + 0.3 * (nz[..., None] - 0.5))
+    crack = np.abs(fbm(n, rng, octaves=(8, 16)) - 0.5) < 0.006
+    rgb[crack] *= 0.6
+    grime = fbm(n, rng, octaves=(1, 2, 4))
+    rgb *= (1 - 0.35 * np.clip(grime - 0.45, 0, 1) * 2)[..., None]
+    rgb[joint] = col(mortar) * (0.8 + 0.3 * nz[joint][..., None])
+    dust = np.clip((fbm(n, rng, octaves=(2, 4, 8)) - 0.35) / 0.4, 0, 1)[..., None] * 0.45   # trodden dust / patina
+    rgb = rgb * (1 - dust) + col(base_hex)[None, None] * 0.9 * dust
+    height = np.clip(np.minimum(fx, fy) / 0.08, 0, 1) * (0.8 + 0.2 * nz) * (1 - 0.4 * crack)
+    return np.clip(rgb, 0, 1), height
+
+
+def _soft(img, k=2):
+    """Cheap separable box blur (k passes of a 3-tap kernel), tileable."""
+    for _ in range(k):
+        img = (np.roll(img, 1, 0) + img + np.roll(img, -1, 0)) / 3
+        img = (np.roll(img, 1, 1) + img + np.roll(img, -1, 1)) / 3
+    return img
+
+
+def portrait_dark(n, rng, seed=0):
+    """Old-master portrait, varnish-dark: sitter in 3/4 view, small softly modelled face, dark coat with a
+    lace collar and a hint of a red sash, curtain and column in the background, craquelure."""
+    g = np.random.default_rng(seed)
+    y, x = np.mgrid[0:n, 0:n] / n
+    y = 1 - y
+    nz = fbm(n, rng, octaves=(2, 4, 8, 16))
+    brush = fbm(n, rng, octaves=(32, 64, 128)) - 0.5
+    img = col('#241A12')[None, None] * (0.55 + 0.7 * nz[..., None]) * (0.6 + 0.6 * y[..., None])
+    curt = (x > 0.72) & (y > 0.3)                                  # dark red curtain at one side
+    img[curt] = col('#4A1A16') * (0.5 + 0.6 * (0.5 + 0.5 * np.sin(x[curt] * 60 + nz[curt] * 3)))[..., None]
+    colm = (x < 0.14) & (y > 0.15)                                 # column / pilaster
+    img[colm] = col('#5A4A36') * (0.6 + 0.5 * nz[colm])[..., None]
+    sx = 0.48 + g.uniform(-0.04, 0.04)
+    body = ((x - sx) / 0.36) ** 2 + ((y - 0.05) / 0.5) ** 2 < 1      # shoulders / coat
+    coat = col(g.choice(['#1C1E24', '#2A1C14', '#1E2418'])) * (0.7 + 0.6 * nz[..., None])
+    img = np.where(body[..., None], coat, img)
+    sash = body & (np.abs((y - 0.25) - (x - sx) * 0.9) < 0.035)
+    img[sash] = col('#6A1E1A') * (0.8 + 0.3 * nz[sash])[..., None]
+    fcx, fcy = sx + 0.035, 0.62                                   # face: 3/4 view, offset, smaller
+    fx, fy = (x - fcx) / 0.085, (y - fcy) / 0.12
+    r2 = fx ** 2 + fy ** 2
+    collar = (np.abs(y - 0.47) < 0.04) & (np.abs(x - sx) < 0.13 - (y - 0.47))
+    img[collar] = col('#C9C0AA') * (0.7 + 0.4 * nz[collar])[..., None]
+    hair = (((x - fcx + 0.03) / 0.11) ** 2 + ((y - fcy - 0.03) / 0.15) ** 2 < 1) & ~(r2 < 1)
+    img[hair] = col('#2A1E16') * (0.6 + 0.6 * nz[hair])[..., None]
+    shade = np.clip(0.55 + 0.45 * (-(x - fcx) / 0.085 - 0.3 * fy), 0.25, 1.0)   # light from the upper left
+    skin = col('#B08468')[None, None] * shade[..., None] * (0.9 + 0.2 * nz[..., None])
+    fm = np.clip((1 - r2) * 4, 0, 1)[..., None]
+    img = img * (1 - fm) + skin * fm
+    for ex in (-0.032, 0.022):                                     # soft eye sockets, nose shadow, mouth
+        e = np.exp(-(((x - fcx - ex) / 0.012) ** 2 + ((y - fcy - 0.02) / 0.008) ** 2))
+        img *= (1 - 0.45 * e)[..., None]
+    nose = np.exp(-(((x - fcx - 0.012) / 0.008) ** 2 + ((y - fcy + 0.02) / 0.02) ** 2))
+    img *= (1 - 0.25 * nose)[..., None]
+    mouth = np.exp(-(((x - fcx) / 0.02) ** 2 + ((y - fcy + 0.065) / 0.005) ** 2))
+    img = img * (1 - 0.4 * mouth[..., None]) + col('#6A3028')[None, None] * 0.25 * mouth[..., None]
+    img = _soft(img, 2)
+    img = img * (1 + 0.12 * brush[..., None])
+    varnish = col('#C89A50')[None, None]                           # yellowed varnish, dark vignette
+    vig = np.clip(1 - 1.6 * ((x - 0.5) ** 2 + (y - 0.55) ** 2), 0.25, 1)[..., None]
+    img = img * 0.72 * vig * (0.8 + 0.2 * varnish / varnish.max())
+    crack = np.abs(fbm(n, rng, octaves=(16, 32)) - 0.5) < 0.004
+    img[crack] *= 0.6
+    return np.clip(img, 0, 1)
+
+
+def planks_old(n, rng):
+    """Worn wooden walkway planks with dark gaps and fasteners."""
+    y, x = np.mgrid[0:n, 0:n] / n
+    rows = 8
+    ry = y * rows
+    row = np.floor(ry).astype(int)
+    fy = ry - row
+    off = ((row * 37) % 11) / 11.0
+    seg = np.floor((x + off) * 2).astype(int)
+    grain = np.sin((x * 90 + fbm(n, rng, octaves=(4, 8)) * 8 + row * 1.7)) * 0.5 + 0.5
+    nz = fbm(n, rng, octaves=(8, 16, 32))
+    tone = 0.75 + 0.25 * (((row * 7 + seg * 3) % 9) / 9.0)
+    img = col('#5A4430')[None, None] * (tone * (0.8 + 0.25 * grain) * (0.85 + 0.3 * nz))[..., None]
+    gap = (fy < 0.06) | (np.abs(((x + off) * 2) % 1.0) < 0.006)
+    img[gap] = col('#141008')
+    img *= (1 - 0.3 * np.clip(fbm(n, rng, octaves=(1, 2, 4)) - 0.5, 0, 1) * 2)[..., None]
+    return np.clip(img, 0, 1)

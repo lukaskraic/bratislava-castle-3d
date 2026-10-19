@@ -9,6 +9,7 @@ uniform sampler2D ripple_b : hint_normal, filter_linear_mipmap, repeat_enable;
 uniform float scale = 1.6;
 uniform float speed = 0.05;
 uniform float strength = 0.55;
+uniform float spec = 0.6;
 
 void fragment() {
 	vec2 wuv = (INV_VIEW_MATRIX * vec4(VERTEX, 1.0)).xz / scale;
@@ -18,7 +19,8 @@ void fragment() {
 	NORMAL_MAP_DEPTH = strength;
 	float fres = pow(1.0 - clamp(dot(NORMAL, VIEW), 0.0, 1.0), 3.0);
 	ALBEDO = mix(shallow_color, deep_color, fres);
-	ROUGHNESS = 0.06;
+	// top-down stays matte (aerial looked plasticky); at a pedestrian's grazing angle the river must mirror the sky and banks
+	ROUGHNESS = mix(0.3, 0.1, fres);
 	METALLIC = 0.0;
-	SPECULAR = 0.6;
+	SPECULAR = mix(spec, 0.5, fres);
 }

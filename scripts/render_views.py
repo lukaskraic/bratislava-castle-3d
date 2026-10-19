@@ -6,7 +6,7 @@ import sys
 from mathutils import Vector
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, 'out', 'renders')
+OUT = os.path.join(ROOT, 'out', os.environ.get('CASTLE_TAG', ''), 'renders')
 os.makedirs(OUT, exist_ok=True)
 ARGS = sys.argv[sys.argv.index('--') + 1:] if '--' in sys.argv else []
 
@@ -40,7 +40,7 @@ def look(cam, loc, tgt):
 
 def interior_points():
     import json
-    pf = os.path.join(ROOT, 'out', 'probes.json')
+    pf = os.path.join(ROOT, 'out', os.environ.get('CASTLE_TAG', ''), 'probes.json')
     if os.path.exists(pf):
         return {k: tuple(map(tuple, v)) for k, v in json.load(open(pf)).items()}
     pts = {

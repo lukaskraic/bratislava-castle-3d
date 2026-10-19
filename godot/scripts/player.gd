@@ -9,7 +9,7 @@ extends CharacterBody3D
 @export var jump_velocity := 3.8
 @export var mouse_sensitivity := 0.0025
 @export var step_height := 0.25
-@export var kill_y := -100.0
+@export var kill_y := -150.0   # the Danube embankment lies ~70 m below the castle courtyard
 
 const RADIUS := 0.3
 const HEIGHT := 1.75

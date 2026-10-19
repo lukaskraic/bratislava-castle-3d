@@ -1,7 +1,8 @@
-# Bratislavský hrad – 3D prechádzka, ktorú za jednu noc postavila AI
+# Bratislavský hrad a Staré Mesto – 3D prechádzka, ktorú postavila AI
 
 **▶ Živá ukážka v prehliadači:** https://lukaskraic.github.io/bratislava-castle-3d/
-(WebGL 2, prvé načítanie ~120 MB. Najlepšie v desktopovom Chrome, kliknutím do okna sa zachytí myš.)
+(WebGL 2. Hrad sa načíta hneď (~135 MB), Staré Mesto a nábrežie (~68 MB) sa dotiahnu na pozadí, ukazovateľ je dole na obrazovke.
+Najlepšie v desktopovom Chrome, kliknutím do okna sa zachytí myš.)
 
 > **TL;DR (EN):** A walkable first-person 3D model of Bratislava Castle, built autonomously by
 > **Claude Code** in a single overnight session (~6 h, hard deadline). The model was given a one-line
@@ -9,6 +10,9 @@
 > reference photos), wrote a procedural Blender generator and a Godot 4 walking game, tested walkability
 > with an automated walk-through, and iterated on realism against real photos with help of
 > code-review agents. A human only gave short nudges such as "too bright" or "look at the photos".
+> Follow-up rounds (V2–V5, several more long autonomous sessions with parallel sub-agents) extended it into a walk from the castle
+> down the stairs through Podhradie and the Old Town to the Danube, with faithful landmarks (SNP Bridge, St Martin's
+> Cathedral, Michael's Gate, Old Town Hall, SND), CC0 cars and people, and Google Earth–matched verification shots.
 
 ![Čestný dvor s rozhraním](docs/img/hud.jpg)
 
@@ -44,7 +48,38 @@ dvere…"*, *„ak si budeš myslieť, že to máš dobré, pozri sa na fotky :-
 a jedna nezávislá kontrola subagentom. Každá zmena bola overená automatickou prechádzkou s kolíziami
 a sadou screenshotov z hry.
 
-## Čo AI urobila sama
+## Pokračovanie: z hradu do mesta (V2–V5)
+
+| Kolo | Kedy | Zadanie (v skratke) | Výsledok |
+|---|---|---|---|
+| V2 | 16.–17. 10. | mesto, opevnenie, interiér, záhrada | Staré Mesto z OSM, brány a bašty, nové interiéry |
+| V3 | 17. 10. 20:40 – 18. 10. 05:00 | *„chcem sa prejsť ako peší z hradu do Starého Mesta a k Dunaju"* | pešie trasy po OSM, 4 zostupy z hradu, nábrežie, 38 záberov z Google Earth na porovnanie |
+| V4 | 18. 10. 11:20 – 19:05 | *„nesedia výšky… kvalita a reálnosť domov v Podhradí"* | domy sadnú na svah, schody a oporné múry, strechy, komíny, rampa mosta |
+| V5 | 18. 10. 19:15 – 19. 10. 06:00 | *„spústa chýb… zábradlia, most začína vo vzduchu… pamiatky nech sú verné"* | systematický lov chýb (368 pohľadov do 4 strán, 20× Codex), verné pamiatky podľa fotiek, autá a ľudia |
+
+Ako sa pracovalo: koordinátor rozdelil prácu medzi paralelných agentov (mesto, opevnenie, pamiatky, jadro hradu, web),
+po každom kole spravil spoločný build, automatickú prechádzku a zábery z výšky očí každých 35 m po trasách do 4 strán.
+Chyby hľadali nezávislí recenzenti (Codex, Fable) porovnaním s Google Earth a fotkami; každú opravu overil walktest.
+
+- **Pamiatky podľa fotiek** (`scripts/v2_landmarks.py`): Most SNP (šikmý A-pylón, UFO, dve roviny lán, oceľová mostovka,
+  lávky pod ňou), Dóm sv. Martina (veža s korunou vo výške 84,8 m, kaplnka s medenou kupolou), Michalská brána,
+  Stará radnica, SND, Primaciálny palác, Reduta, Klarisky.
+- **Mesto** (`scripts/v2_city.py`): budovy z OSM s fasádami, výkladmi, priechodmi a strechami, ulice, chodníky, prechody,
+  lampy, lavičky, stromy, Dunaj a nábrežie, mosty a estakády.
+- **Opevnenie a zostupy** (`scripts/v2_fortress.py`): brány, bašty, terasy, Zámocké schody, Beblavého, Mikulášska, Viedenská brána.
+- **Autá a ľudia**: CC0 modely (Quaternius, KayKit) zapečené do statických póz (`scripts/prep_props.py`),
+  v hre inštancované (`godot/scripts/street_life.gd`).
+- **Web loader**: hrad v hlavnom balíku, mesto v samostatnom `city_0.pck`, ktorý sa sťahuje počas hrania
+  (`godot/scripts/web_loader.gd`, `scripts/make_web.sh`).
+
+![Hlavné námestie vo webovej verzii](docs/img/v5_hlavne_nam.jpg)
+
+| | |
+|---|---|
+| ![](docs/img/v5_snp.jpg) **Most SNP** s UFO | ![](docs/img/v5_dom.jpg) **Dóm sv. Martina**: veža s korunou |
+| ![](docs/img/v5_old_town.jpg) **Staré Mesto** z výšky očí | ![](docs/img/v5_under_snp.jpg) Hviezdoslavovo námestie s chodcami |
+
+## Čo AI urobila sama (V1)
 
 - **Dáta:**
   - OpenStreetMap (Overpass): pôdorysy, výšky, brány, hradby, schody, stromy, lavičky, lampy, fontány.
@@ -81,7 +116,8 @@ a sadou screenshotov z hry.
 
 WASD pohyb, myš rozhliadanie, **Shift** beh, **Space** skok, **F** lietanie, **F1** kvalita (Nízka / Stredná /
 Vysoká / Ultra), **F2** denná doba, **0–9** rýchly presun na zaujímavé miesta, **Tab** skryje/zobrazí zoznam miest (aktuálne miesto je zvýraznené),
-**H** skryje rozhranie, **Esc** uvoľní myš.
+**Shift+1–6** miesta v meste (Hlavné námestie, Michalská brána, Dóm, nábrežie a Most SNP, Hviezdoslavovo námestie,
+Zámocké schody), **H** skryje rozhranie, **Esc** uvoľní myš.
 
 Web verzia beží na renderi Compatibility (WebGL 2) a nemá globálne osvetlenie ani odrazy (SDFGI, SSR).
 Plnú kvalitu poskytuje desktopová verzia.
@@ -90,13 +126,17 @@ Plnú kvalitu poskytuje desktopová verzia.
 
 ```bash
 brew install --cask blender godot
-/Applications/Blender.app/Contents/MacOS/Blender -b -P scripts/build_castle.py            # ~50 s -> out/castle.glb
-./import_model.sh && ./run_godot.sh                                                       # desktop (Forward+)
-/Applications/Blender.app/Contents/MacOS/Blender -b -P scripts/build_castle.py -- --web   # odľahčený model pre web
+B=/Applications/Blender.app/Contents/MacOS/Blender
+$B -b -P scripts/prep_props.py                                      # CC0 autá a ľudia -> godot/models/props
+$B -b -P scripts/build_castle.py -- --tag main --hires              # ~5 min -> out/main/castle.glb (~2,7 mil. polygónov)
+./import_model.sh out/main/castle.glb && ./run_godot.sh             # desktop (Forward+)
+$B -b -P scripts/build_castle.py -- --web --tag web --split && scripts/make_web.sh   # web -> build/web
 ```
 
-Testy: `godot --path godot -- --walktest` (automatická prechádzka s kolíziami: Čestný dvor → nádvorie, suterén,
-poschodia, Korunná veža, záhrada), `-- --shots <dir>`, `-- --bench`.
+Testy (`godot --path godot -- …`): `--walktest` (hrad, interiér, záhrada, 4 zostupy z hradu, Dóm → Hlavné námestie
+→ Michalská, Dóm → nábrežie, hrad → Dunaj), `--sighttest`, `--shots <dir>`, `--routeshots <dir> [--around]`
+(zábery z výšky očí po trasách), `--earthshots <dir>` (kamery zhodné so zábermi z Google Earth), `--bench`.
+Na Windows `SETUP_WINDOWS.md` a skripty `*.cmd` / `win/`.
 
 ## Čo je podľa dát a čo je odhad
 
@@ -109,14 +149,16 @@ poschodia, Korunná veža, záhrada), `-- --shots <dir>`, `-- --bench`.
 - **Rekonštrukcia:** celý interiér, pretože verejné pôdorysy neexistujú. AI ho navrhla ako typickú barokovú dispozíciu
   a doplnila o známe miestnosti: Rytierska sála, Tereziánske schodisko, klenotnica v Korunnej veži, kaplnka, suterén.
 - **Známe slabiny:**
-  - obrazy a fresky sú zjednodušené,
-  - schodisko je generické,
-  - mesto v diaľke je ploché ortofoto,
-  - okraje povrchov sú zblízka mierne zúbkované.
+  - obrazy a fresky sú zjednodušené, schodisko je generické,
+  - fasády mesta sú procedurálne (bez zapustených okien), domy sa navzájom podobajú,
+  - okraje dlažby a trávnika sú miestami zúbkované, na niekoľkých spojoch ciest sú malé schody,
+  - autá a ľudia sú nízkopolygónové a stoja na mieste,
+  - Vydrica je modelovaná ako dokončená (na Google Earth je stavenisko).
 
 ## Zdroje a licencie
 
 - © prispievatelia **OpenStreetMap**, ODbL
 - **ÚGKK SR / ZBGIS**: Ortofotomozaika SR, DMR 5.0 (otvorené údaje)
-- Referenčné fotky z Wikimedia Commons slúžili len na porovnanie a nie sú súčasťou repozitára.
+- Referenčné fotky z Wikimedia Commons a zábery z Google Earth slúžili len na porovnanie a nie sú súčasťou repozitára.
+- Autá a ľudia: CC0 1.0 – Quaternius (quaternius.com), Kay Lousberg / KayKit (`data/assets/cc0/LICENSE.md`).
 - Kód: MIT

@@ -1,6 +1,9 @@
 extends Node3D
 
 const MODEL_PATH := "res://models/castle.glb"
+## Web split build: the Old Town model and the list of its downloadable packs.
+const CITY_PATH := "res://models/city.glb"
+const WEB_PACKS := "res://web_packs.json"
 const COLLISION_KEYWORDS: PackedStringArray = [
 	"Terrain", "Palace", "Building", "Wall", "Stair", "Floor", "Hedge", "Trunk",
 ]
@@ -12,11 +15,18 @@ const SIGHTS := [
 	["Rytierska sála", Vector3(-1.0, -32.5, 1.65), Vector3(22, -34.5, 2.6)],
 	["Hlavné schodisko", Vector3(-28.5, 14.7, 7.25), Vector3(-33.8, 15.6, 8.1)],
 	["Sála s freskou", Vector3(-3.5, -31.0, 7.3), Vector3(8, -33.5, 8.5)],
-	["Korunná veža – vyhliadka", Vector3(-43.2, -33.6, 24.9), Vector3(-43.2, -140, 0)],
+	["Korunná veža – vyhliadka", Vector3(-43.42, -33.7, 24.9), Vector3(-50.0, -130, 4)],
 	["Suterén", Vector3(-12.5, -30.6, -2.95), Vector3(20, -33, -2.2)],
 	["Baroková záhrada", Vector3(28, 95, -2.4), Vector3(2, 10, 14)],
 	["Letecký pohľad", Vector3(-170, -150, 110), Vector3(0, 0, 10)],
-	["Kaplnka", Vector3(31.97, 12.33, 7.25), Vector3(33.66, 18.79, 7.0)],
+	["Hudobná sála", Vector3(31.97, 12.33, 7.25), Vector3(33.66, 18.79, 7.0)],
+	# Shift + digit: the Old Town and the embankment
+	["Hlavné námestie", Vector3(598, 112, -63.7), Vector3(640, 160, -57.6)],
+	["Michalská brána", Vector3(486, 250, -60.1), Vector3(497, 355, -48.9)],
+	["Dóm sv. Martina", Vector3(372, -8, -56.8), Vector3(343, -52, -47.8)],
+	["Nábrežie a Most SNP", Vector3(520, -297, -64.9), Vector3(300, -335, -65.9)],
+	["Hviezdoslavovo námestie", Vector3(520, -110, -64.0), Vector3(700, -20, -62.1)],
+	["Zámocké schody", Vector3(240, -82, -37.4), Vector3(150, -112, -16.2)],
 ]
 
 # Sun presets: name, azimuth (deg, compass direction the sun is in; 0 = north, 90 = east),
@@ -56,7 +66,7 @@ var quality := 2
 var forward_plus := true
 var detail_meshes: Array[MeshInstance3D] = []
 var sight_labels: Array[Label] = []
-var night_lights: Array[OmniLight3D] = []
+var night_lights: Array[Light3D] = []
 ## Interior lights from Blender (chandeliers, corridor lamps): off by day, dim warm at night.
 var model_lights: Array[Light3D] = []
 var emissive_mats: Array[StandardMaterial3D] = []
@@ -77,24 +87,20 @@ func _ready() -> void:
 	var spawn_node: Node3D
 
 	if ResourceLoader.exists(MODEL_PATH):
-		var scene := load(MODEL_PATH) as PackedScene
-		var model := scene.instantiate()
-		world.add_child(model)
-		if runtime_collision_fallback:
-			var n := _add_fallback_collision(model)
-			print("Runtime collision fallback: %d meshes" % n)
+		var model := _attach_model(MODEL_PATH)
 		spawn_node = model.find_child("Spawn", true, false) as Node3D
-		# Our own sun drives time of day; an exported Blender sun would double the light.
-		for l in model.find_children("*", "DirectionalLight3D", true, false):
-			l.queue_free()
-		_collect_model_lights(model)
-		for l: OmniLight3D in model.find_children("*", "OmniLight3D", true, false):
-			l.omni_range = imported_light_range
-			l.omni_attenuation = 1.0
-			l.light_energy = imported_light_energy
-			l.distance_fade_enabled = true
-			l.distance_fade_begin = 40.0
-			l.distance_fade_length = 10.0
+		# web: the Old Town arrives as separate packs (web_loader.gd); street life waits for its streets
+		if ResourceLoader.exists(CITY_PATH):
+			_attach_model(CITY_PATH)
+			_start_street_life()
+		elif FileAccess.file_exists(WEB_PACKS):
+			var loader: Node = preload("res://scripts/web_loader.gd").new()
+			loader.name = "WebLoader"
+			add_child(loader)
+			loader.pack_ready.connect(func(res_path: String): _attach_model(res_path))
+			loader.all_done.connect(_start_street_life)
+		else:
+			_start_street_life()
 	else:
 		print("No %s, building placeholder" % MODEL_PATH)
 		spawn_node = _build_placeholder()
@@ -121,6 +127,36 @@ func _ready() -> void:
 		add_child(tools)
 
 
+func _attach_model(path: String) -> Node:
+	var model := (load(path) as PackedScene).instantiate()
+	world.add_child(model)
+	if runtime_collision_fallback:
+		var n := _add_fallback_collision(model)
+		print("Runtime collision fallback (%s): %d meshes" % [path.get_file(), n])
+	# Our own sun drives time of day; an exported Blender sun would double the light.
+	for l in model.find_children("*", "DirectionalLight3D", true, false):
+		l.queue_free()
+	_collect_model_lights(model)
+	for l: OmniLight3D in model.find_children("*", "OmniLight3D", true, false):
+		l.omni_range = imported_light_range
+		l.omni_attenuation = 1.0
+		l.light_energy = imported_light_energy
+		l.distance_fade_enabled = true
+		l.distance_fade_begin = 40.0
+		l.distance_fade_length = 10.0
+	if player:     # a pack that arrives later follows the current quality / time settings
+		_apply_quality()
+		_apply_time()
+	return model
+
+
+func _start_street_life() -> void:
+	var life := Node3D.new()
+	life.set_script(preload("res://scripts/street_life.gd"))
+	life.name = "StreetLife"
+	world.add_child(life)
+
+
 func _collect_model_lights(model: Node) -> void:
 	for n in model.find_children("*", "OmniLight3D", true, false):
 		var l := n as OmniLight3D
@@ -128,7 +164,13 @@ func _collect_model_lights(model: Node) -> void:
 		l.omni_range = 7.0
 		l.omni_attenuation = 1.5
 		l.light_energy = 0.5
-		l.light_color = Color(1.0, 0.9, 0.78)
+		# cellar lanterns keep their authored amber colour and a short reach: warm pools of light (photo 35)
+		if l.name.containsn("cellar"):
+			l.light_color = Color(1.0, 0.68, 0.38)
+			l.omni_range = 5.0
+			l.omni_attenuation = 2.0
+		else:
+			l.light_color = Color(1.0, 0.9, 0.78)
 		l.visible = false
 		model_lights.append(l)
 	for n in model.find_children("*", "MeshInstance3D", true, false):
@@ -136,13 +178,20 @@ func _collect_model_lights(model: Node) -> void:
 		if mi.mesh == null:
 			continue
 		# small details fade out with distance (chunked meshes, so the range is per tile)
-		for pair in [["Tufts", 45.0], ["Branches", 160.0], ["Props", 140.0], ["Fountain_Jets", 80.0], ["HedgeLeaves", 70.0]]:
+		for pair in [["Tufts", 45.0], ["Branches", 450.0], ["Props", 140.0], ["Fountain_Jets", 80.0], ["HedgeLeaves", 70.0],
+				["V2City_Trees_", 1100.0], ["V2City_TreesFar", 2000.0], ["V2City_Streets_", 1300.0],
+				["V2City_StreetsFar", 1800.0], ["V2City_Bld_", 2500.0], ["V2City_BldFar", 4000.0],
+				["_Sky", 9000.0], ["TerrainFar_Hills", 20000.0], ["Kamzik", 20000.0], ["StreetProps", 600.0]]:
 			if mi.name.containsn(pair[0]):
 				mi.visibility_range_end = pair[1]
 				mi.set_meta("base_range", pair[1])
 				detail_meshes.append(mi)
 				mi.visibility_range_end_margin = 5.0
 				mi.visibility_range_fade_mode = GeometryInstance3D.VISIBILITY_RANGE_FADE_SELF
+		# flat ground layers never shadow anything visible; skipping them halves the shadow-pass draw calls
+		for kw in ["Ground_", "Terrain", "Garden_Beds", "Streets", "Water", "Danube", "TreesFar", "BldFar", "Hills", "Kamzik"]:
+			if mi.name.containsn(kw):
+				mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 		# thin detail (trims, joinery, door leaves, foliage) poisons the SDFGI field -> black artifacts
 		for kw in ["Trim", "Windows", "Furnishing", "Props", "Foliage", "Hedges", "Branches", "Garden", "Jets", "Danube", "Tufts", "Smooth", "City_Windows"]:
 			if mi.name.containsn(kw):
@@ -151,6 +200,14 @@ func _collect_model_lights(model: Node) -> void:
 			var m := mi.mesh.surface_get_material(i) as StandardMaterial3D
 			if m:
 				m.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC   # sharp ground at grazing angles
+				# bare orthophoto ground: no specular sheen (at grazing angles it read as blue water)
+				if m.resource_name.begins_with("ortho"):
+					m.roughness = 1.0
+					m.metallic_specular = 0.0
+					m.albedo_color = Color(1.0, 0.97, 0.9)
+				# city module tints shared wall/roof materials per building through vertex colours
+				if m.resource_name.begins_with("v2_") or m.resource_name.begins_with("leaves_v2city"):
+					m.vertex_color_use_as_albedo = true
 			if m and (m.resource_name.begins_with("leaves") or m.resource_name.begins_with("grass_tuft")):
 				m.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_SCISSOR
 				m.alpha_scissor_threshold = 0.45
@@ -166,8 +223,13 @@ func _collect_model_lights(model: Node) -> void:
 				wm.set_shader_parameter("ripple_a", _ripple_tex(3))
 				wm.set_shader_parameter("ripple_b", _ripple_tex(11))
 				if m.resource_name == "river":
-					wm.set_shader_parameter("scale", 18.0)
+					wm.set_shader_parameter("scale", 6.0)
 					wm.set_shader_parameter("speed", 0.02)
+					# the Danube reads blue-green from the castle hill (photo 18); the old values rendered it near
+					# black from above (Earth gs_razusovo shows an opaque mid green)
+					wm.set_shader_parameter("deep_color", Color(0.2, 0.33, 0.27))
+					wm.set_shader_parameter("shallow_color", Color(0.35, 0.5, 0.41))
+					wm.set_shader_parameter("spec", 0.06)   # less sky sheen: the Danube reads green-brown (Earth gs_zizkova)
 				mi.set_surface_override_material(i, wm)
 				continue
 			if m and m.resource_name.contains("flag"):
@@ -254,6 +316,8 @@ func _add_fallback_collision(root: Node) -> int:
 		if mi.mesh == null or _has_static_body(mi):
 			continue
 		# decorative layers: their structure already collides (walls, floors, invisible rails)
+		if mi.name.containsn("Terrain_Far") or mi.name.containsn("TerrainFar"):
+			continue        # distant backdrop only; near ground is Terrain-col / Terrain_Centre-col
 		if mi.name.containsn("Furnishing") or mi.name.containsn("Trim") or mi.name.containsn("Windows") or mi.name.containsn("WallFinish") or mi.name.containsn("HedgeLeaves") or mi.name.containsn("Smooth"):
 			continue
 		for kw in COLLISION_KEYWORDS:
@@ -336,7 +400,9 @@ func _setup_environment() -> void:
 	env.tonemap_mode = Environment.TONE_MAPPER_AGX
 	env.tonemap_exposure = 1.15
 	env.tonemap_white = 6.0
-	env.ambient_light_sky_contribution = 0.6
+	# part of the ambient is a neutral warm grey: pure sky ambient turned shaded paving and walls blue (photo 01 is grey)
+	env.ambient_light_sky_contribution = 0.45
+	env.ambient_light_color = Color(0.8, 0.77, 0.72)
 	env.sdfgi_energy = 0.7
 	env.sdfgi_bounce_feedback = 0.25
 	env.sdfgi_use_occlusion = true
@@ -350,8 +416,8 @@ func _setup_environment() -> void:
 	env.glow_hdr_threshold = 1.5
 	env.fog_enabled = true
 	env.fog_light_color = Color(0.7, 0.75, 0.82)
-	env.fog_density = 0.0004
-	env.fog_aerial_perspective = 0.5
+	env.fog_density = 0.00022
+	env.fog_aerial_perspective = 0.35
 	env.fog_sky_affect = 0.2
 
 	var we := WorldEnvironment.new()
@@ -379,6 +445,27 @@ func _spawn_night_lights(center: Vector3) -> void:
 		l.visible = false
 		add_child(l)
 		night_lights.append(l)
+	# the palace is floodlit white at night: ground spots ~22 m out from each facade (Blender coords -> Godot)
+	var corners := [Vector2(-46.5, -36.0), Vector2(36.0, -40.5), Vector2(48.5, 18.0), Vector2(-36.5, 41.0)]
+	for k in 4:
+		var a: Vector2 = corners[k]
+		var b: Vector2 = corners[(k + 1) % 4]
+		var d := (b - a).normalized()
+		var out := Vector2(d.y, -d.x)
+		for t in [0.1, 0.3, 0.5, 0.7, 0.9]:
+			var p: Vector2 = a.lerp(b, t)
+			var s := SpotLight3D.new()
+			s.light_color = Color(1.0, 0.98, 0.95)
+			s.light_energy = 8.0
+			s.spot_range = 33.0   # reaches the eaves but not the courtyard walls behind (no shadows)
+			s.spot_angle = 42.0
+			s.spot_attenuation = 0.6
+			s.shadow_enabled = false
+			s.visible = false
+			add_child(s)
+			var src := p + out * 22.0
+			s.look_at_from_position(Vector3(src.x, 1.0, -src.y), Vector3(p.x, 15.0, -p.y), Vector3.UP)
+			night_lights.append(s)
 
 
 func _panel_style(alpha := 0.72) -> StyleBoxFlat:
@@ -466,7 +553,8 @@ func _setup_hud() -> void:
 	sights_panel.add_child(sl)
 	sl.add_child(_label("Zaujímavé miesta", 16, Color(0.97, 0.9, 0.74)))
 	for k2 in SIGHTS.size():
-		var sl_lab := _label("%d   %s" % [(k2 + 1) % 10, SIGHTS[k2][0]], 14, Color(0.86, 0.88, 0.9))
+		var key_txt := ("%d" % ((k2 + 1) % 10)) if k2 < 10 else ("Shift+%d" % ((k2 - 9) % 10))
+		var sl_lab := _label("%s   %s" % [key_txt, SIGHTS[k2][0]], 14, Color(0.86, 0.88, 0.9))
 		sight_labels.append(sl_lab)
 		sl.add_child(sl_lab)
 	# toast (centre)
@@ -537,6 +625,8 @@ func _apply_time() -> void:
 		var street := l.name.begins_with("L_street")
 		l.visible = night or not street
 		l.light_energy = (0.75 if street else 1.2) if night else 0.9
+		if l.name.containsn("cellar"):
+			l.light_energy = 0.7
 		if street:
 			l.omni_range = 11.0
 	for m in emissive_mats:
@@ -556,8 +646,13 @@ func _unhandled_input(event: InputEvent) -> void:
 		time_index = (time_index + 1) % TIMES.size()
 		_apply_time()
 		_toast("Denná doba: " + TIME_NAMES[TIMES[time_index].name])
-	elif event is InputEventKey and event.pressed and not event.echo and event.keycode >= KEY_0 and event.keycode <= KEY_9:
-		goto_sight(9 if event.keycode == KEY_0 else event.keycode - KEY_1)
+	elif event is InputEventKey and event.pressed and not event.echo and event.physical_keycode >= KEY_0 and event.physical_keycode <= KEY_9:
+		# physical key: on the Slovak layout the digit row types +ľščťžýáíé without Shift
+		var idx: int = 9 if event.physical_keycode == KEY_0 else event.physical_keycode - KEY_1
+		if event.shift_pressed:      # second page: Old Town and embankment
+			idx += 10
+		if idx < SIGHTS.size():
+			goto_sight(idx)
 
 
 func _process(delta: float) -> void:
